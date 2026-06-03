@@ -1,0 +1,69 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1709254077376921
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4730242686860875}
+  - component: {fileID: 114724804207875695}
+  m_Layer: 0
+  m_Name: LSS Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4730242686860875
+Transform:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1709254077376921}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!114 &114724804207875695
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1709254077376921}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9475ade83c963c8849c9e2df7374470a, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  loadingMode: 0
+  presetName: Default
+  enableTrigger: 0
+  onTriggerExit: 0
+  loadWithTag: 0
+  startLoadingAtStart: 0
+  objectTag:
+  sceneName:
+  audioFadeDuration: 2
+  audioSources: []
+  loadingScreens:
+  - {fileID: 1709254077376921, guid: a26a2f01a8c5ce94093eb0b53ddb3135, type: 2}
+  - {fileID: 1709254077376921, guid: 9979a2ac93e18d949afb18508003a708, type: 2}
+  - {fileID: 1709254077376921, guid: 860d25d11dd0f7446b79c256497a409c, type: 2}
+  - {fileID: 1709254077376921, guid: 110acc6c86e8cf746bf52747329fe6be, type: 2}
+  - {fileID: 1709254077376921, guid: 61b0da474c5dfe74e84b72f83e9a8c56, type: 2}
+  selectedLoadingIndex: 0
+  selectedTagIndex: 0
+  onLoadingStart:
+    m_PersistentCalls:
+      m_Calls: []
+  dontDestroyOnLoad: []
+  loadedScenes: []

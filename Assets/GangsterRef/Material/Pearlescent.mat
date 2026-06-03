@@ -1,0 +1,89 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Pearlescent
+  m_Shader: {fileID: 4800000, guid: e577988775c82ef439fd55735508950a, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords:
+  - Both_T
+  m_InvalidKeywords: []
+  m_LightmapFlags: 5
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties:
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+      _Cube:
+        m_Texture: {fileID: 8900000, guid: 4baf6974b74d4eb48b59170a57fbc273, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+      _Decal:
+        m_Texture: {fileID: 2800000, guid: 60618165fb8b63d428150b5e8319780f, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+      _DiffuseBumpMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+      _MainTex:
+        m_Texture: {fileID: 2800000, guid: 60618165fb8b63d428150b5e8319780f, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+      _MainTexPearl:
+        m_Texture: {fileID: 2800000, guid: fa1ae647b172e3a4d8038288e7e008f3, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+      _PearlBumpMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+      _RenderedTexture:
+        m_Texture: {fileID: 8400000, guid: f03153ee9dbe6d849ace110852b1d621, type: 2}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: {}
+    m_Floats:
+      _BumpDens: 1
+      _CandyPower: 0
+      _CandyScale: 0
+      _DecalReflection: 1
+      _DecalTransparency: 0.792
+      _DecalUVScale: 1
+      _DiffuseUVScale: 1
+      _FlakeDens: 2
+      _FresnelPower: 0.52
+      _FresnelScale: 1
+      _MetalBrightnessIntensity: 1.41
+      _MetalIntensity: 1.46
+      _MetalScale: 2.87
+      _MetalicPower: 4.67
+      _MetalicScale: 1.44
+      _PearlUVScale: 52.2
+      _RefIntensity: 0.62
+      _RefVisibility: 2
+      _Reflect: 0.24038462
+      _ShadowIntensity: 0.48076925
+      _Shininess: 1
+      _ShininessIntensity: 1.87
+      _ShininessScale: 14.2
+    m_Colors:
+      _1DecalColor: {r: 0.9539193, g: 1, b: 0, a: 1}
+      _AmbientColor: {r: 0.86873984, g: 0.010294914, b: 0.997941, a: 1}
+      _AmbientColor2: {r: 0.9811321, g: 0.9811321, b: 0.9811321, a: 1}
+      _Color: {r: 0, g: 0.17391205, b: 1, a: 1}
+      _DecalColor: {r: 1, g: 0, b: 0, a: 1}
+      _PearlescentColor: {r: 0, g: 0.572586, b: 0.6320754, a: 1}
+      _ReflectionColor: {r: 1, g: 1, b: 1, a: 1}
+      _SpecColor: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []

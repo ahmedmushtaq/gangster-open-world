@@ -1,0 +1,18 @@
+{
+  "alertThresholdPercent": 80,
+  "pricing": {
+    "cachedInputUsdPerMillionTokens": 0,
+    "inputUsdPerMillionTokens": 0,
+    "outputUsdPerMillionTokens": 0
+  },
+  "spentUsd": 0,
+  "source": "local",
+  "updatedAtUtc": "2026-06-03T06:30:34.7087075+00:00",
+  "usage": {
+    "cachedInputTokens": 1460992,
+    "inputTokens": 1532450,
+    "outputTokens": 11171,
+    "totalCostUsd": 0,
+    "updatedAtUtc": "2026-06-03T06:30:34.7087075+00:00"
+  }
+}

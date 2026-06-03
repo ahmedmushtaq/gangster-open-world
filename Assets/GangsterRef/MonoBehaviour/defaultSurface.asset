@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52d7ddd8bb092b22c4436a0df0b5e454, type: 3}
+  m_Name: defaultSurface
+  m_EditorClassIdentifier:
+  audioSource: {fileID: 82724804207875695, guid: a6f48f22f7d0d0c42a72f1fe14953801, type: 2}
+  audioMixerGroup: {fileID: 24300024, guid: 3b5316b39e3e2ac49be51a0c37468695, type: 2}
+  TextureOrMaterialNames: []
+  audioClips:
+  - {fileID: 8300000, guid: cf54b291d5f3d524ba674471811c9fbb, type: 3}
+  - {fileID: 8300000, guid: bc1491e7805faa4468ca79b3965d4288, type: 3}
+  - {fileID: 8300000, guid: 8cb53720eaa60f34fb3ef74e0d87f2f6, type: 3}
+  - {fileID: 8300000, guid: 6fdb032f7fd04254fa5256e9bce47500, type: 3}
+  - {fileID: 8300000, guid: c44fe6258d87cf240982d43e6f4a8db8, type: 3}
+  - {fileID: 8300000, guid: c44fe6258d87cf240982d43e6f4a8db8, type: 3}
+  particleObject: {fileID: 1709254077376921, guid: afc77c6bee752f844931479b0911d754, type: 2}
+  useStepMark: 1
+  stepMark: {fileID: 1709254077376921, guid: 973d96df29c38c742bc91efb0e144212, type: 2}
+  stepLayer:
+    serializedVersion: 2
+    m_Bits: 1
+  timeToDestroy: 3

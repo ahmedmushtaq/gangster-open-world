@@ -1,0 +1,96 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1709254077376921
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4730242686860875}
+  - component: {fileID: 114724804207875695}
+  m_Layer: 0
+  m_Name: TrafficSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4730242686860875
+Transform:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1709254077376921}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!114 &114724804207875695
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1709254077376921}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00413703ec65328eec216ccdfe94cd11, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  initializeOnStart: 1
+  cars:
+  - cars: {fileID: 1709254077376921, guid: 62284f4b3961def43a1fd5d8859eea1a, type: 2}
+    frequency: 0
+  - cars: {fileID: 1709254077376921, guid: 9cc4a4f3f0a277a4d8928850d439ec3d, type: 2}
+    frequency: 0
+  - cars: {fileID: 1709254077376921, guid: f604a37dc5ba76c4d8278ee29f9b2536, type: 2}
+    frequency: 0
+  - cars: {fileID: 1709254077376921, guid: 39a4163e31792d5498a4222cd7b94d13, type: 2}
+    frequency: 0
+  - cars: {fileID: 1709254077376921, guid: af39e72bbb9c7844b98d1d33efef096d, type: 2}
+    frequency: 0
+  - cars: {fileID: 1709254077376921, guid: bf1569457c4f4cf4cb893d9976901202, type: 2}
+    frequency: 0
+  - cars: {fileID: 1709254077376921, guid: 001eb76ac4bcb484eb0be26175f53c4e, type: 2}
+    frequency: 0
+  - cars: {fileID: 1709254077376921, guid: 2d2e9faeefddd3c4e8f015ff9be818f5, type: 2}
+    frequency: 0
+  - cars: {fileID: 1709254077376921, guid: 6f46d40286c722a45847060d48ecf78f, type: 2}
+    frequency: 0
+  - cars: {fileID: 1709254077376921, guid: 7dea27dfa8345a64e8ee24ca1de19afe, type: 2}
+    frequency: 0
+  - cars: {fileID: 1709254077376921, guid: 1ea89c0ec43b90c47b2d827c4b5d5db0, type: 2}
+    frequency: 0
+  - cars: {fileID: 1709254077376921, guid: 43b32b2e27348e04599faf82e27dec8b, type: 2}
+    frequency: 0
+  - cars: {fileID: 1709254077376921, guid: e36e46ef0513d624c914ad80300010b2, type: 2}
+    frequency: 0
+  - cars: {fileID: 1709254077376921, guid: e2b1b1d51c773c54f88e233cfe14e36d, type: 2}
+    frequency: 0
+  - cars: {fileID: 1709254077376921, guid: 7882b9c05c9d5dc42858a4b3f96cd3e6, type: 2}
+    frequency: 0
+  - cars: {fileID: 1709254077376921, guid: eadbd9cf9e5eb874385d5192f46d960c, type: 2}
+    frequency: 0
+  totalAmountOfCars: 0
+  amount: 40
+  maxDistance: 40
+  offset: 150
+  closerRange: 35
+  refreshTime: 0.5
+  manager: {fileID: 0}
+  unusedCarsPosition: {x: 50000, y: 50000, z: 50000}
+  respawnIfUpSideDown: 0
+  respawnUpSideDownTime: 2
+  respawnAltitude: 0.3
+  disableMultiThreading: 0
+  globalPointOffset: {x: 0, y: 0, z: 0}
+  carsCheckedPerFrame: 10
+  initialNotSpawningRadius: 10
+  transformSpawningCheck: []

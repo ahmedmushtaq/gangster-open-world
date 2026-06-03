@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d53d4e7f46cb2664b831d97d5bcf2d62, type: 3}
+  m_Name: Configs SO
+  m_EditorClassIdentifier:
+  firebaseDebuggable: 0
+  adjustVersion: 1
+  adjustEventIAPAndroid:
+  adjustEventIAPIOS:
+  SetupAdType: 1
+  IsMediationManually: 0
+  IsInitAOManually: 0
+  IsInitARManually: 0
+  IsInitFAManually: 1
+  IsInitRWManually: 1
+  IsInitBNManually: 1
+  IsInitMRECManually: 0
+  breakAdsIgnoreTimeScale: 1
+  isUseCollapByDefault: 1
+  adsConfigsAndroid: '{"interstitial":{"isEnable":true,"minTimeInterstitialShow":20,"decreaseInterTPI":0,"posInfos":[{"pos":"complete_all_step","isShow":true,"timeShow":20},{"pos":"menu_settings","isShow":true,"timeShow":60},{"pos":"menu_arrowsController","isShow":true,"timeShow":60},{"pos":"menu_openCars","isShow":true,"timeShow":60},{"pos":"menu_openVisual","isShow":true,"timeShow":60},{"pos":"menu_button","isShow":true,"timeShow":60},{"pos":"menu_play","isShow":true,"timeShow":30},{"pos":"menu_back","isShow":true,"timeShow":60},{"pos":"gameplay_main_button","isShow":true,"timeShow":60},{"pos":"gameplay_settings","isShow":true,"timeShow":60},{"pos":"gameplay_repair_car","isShow":true,"timeShow":60},{"pos":"gameplay_event_archievement","isShow":true,"timeShow":60},{"pos":"gameplay_checkpoint","isShow":false,"timeShow":0},{"pos":"gameplay_finish","isShow":true,"timeShow":50},{"pos":"gameplay_eventbtn","isShow":true,"timeShow":60},{"pos":"gameplay_taptoclaim","isShow":true,"timeShow":60}],"breakAd":{"isUse":true,"notiTimeBeforeBreakAd":3,"breakTime":120}},"rewarded":{"isEnable":true},"banner":{"isEnable":true,"isAutoShow":false,"pos":1},"openApp":{"isEnable":true,"isShowWhenLaunch":true,"isShowWhenResume":true,"ignoreFirstTimeLaunch":false,"waitTimeOut":9},"mrec":{"isEnable":true,"posInfos":[{"isEnable":false,"pos":"temp"}]},"native":{"isEnable":false,"posInfos":[{"isEnable":true,"pos":"loading","reloadTime":4},{"isEnable":false,"pos":"SelectAge_0","reloadTime":100},{"isEnable":false,"pos":"SelectAge_1","reloadTime":100},{"isEnable":true,"pos":"TutorialFull","reloadTime":4},{"isEnable":true,"pos":"Tutorial_0","reloadTime":3},{"isEnable":true,"pos":"Tutorial_1","reloadTime":100},{"isEnable":false,"pos":"Tutorial_2","reloadTime":100},{"isEnable":true,"pos":"FinishEventGameplay","reloadTime":5}]}}'
+  adsConfigsIOS: '{"interstitial":{"isEnable":true,"minTimeInterstitialShow":20,"decreaseInterTPI":0,"posInfos":[{"pos":"complete_all_step","isShow":true,"timeShow":20},{"pos":"menu_settings","isShow":true,"timeShow":60},{"pos":"menu_arrowsController","isShow":true,"timeShow":60},{"pos":"menu_openCars","isShow":true,"timeShow":60},{"pos":"menu_openVisual","isShow":true,"timeShow":60},{"pos":"menu_button","isShow":true,"timeShow":60},{"pos":"menu_play","isShow":true,"timeShow":30},{"pos":"menu_back","isShow":true,"timeShow":60},{"pos":"gameplay_main_button","isShow":true,"timeShow":60},{"pos":"gameplay_settings","isShow":true,"timeShow":60},{"pos":"gameplay_repair_car","isShow":true,"timeShow":60},{"pos":"gameplay_event_archievement","isShow":true,"timeShow":60},{"pos":"gameplay_checkpoint","isShow":false,"timeShow":0},{"pos":"gameplay_finish","isShow":true,"timeShow":50},{"pos":"gameplay_eventbtn","isShow":true,"timeShow":60},{"pos":"gameplay_taptoclaim","isShow":true,"timeShow":60}],"breakAd":{"isUse":true,"notiTimeBeforeBreakAd":3,"breakTime":120}},"rewarded":{"isEnable":true},"banner":{"isEnable":true,"isAutoShow":false,"pos":1},"openApp":{"isEnable":true,"isShowWhenLaunch":true,"isShowWhenResume":true,"ignoreFirstTimeLaunch":false,"waitTimeOut":9},"mrec":{"isEnable":true,"posInfos":[{"isEnable":false,"pos":"temp"}]},"native":{"isEnable":false,"posInfos":[{"isEnable":true,"pos":"loading","reloadTime":4},{"isEnable":false,"pos":"SelectAge_0","reloadTime":100},{"isEnable":false,"pos":"SelectAge_1","reloadTime":100},{"isEnable":true,"pos":"TutorialFull","reloadTime":4},{"isEnable":true,"pos":"Tutorial_0","reloadTime":3},{"isEnable":true,"pos":"Tutorial_1","reloadTime":100},{"isEnable":false,"pos":"Tutorial_2","reloadTime":100},{"isEnable":true,"pos":"FinishEventGameplay","reloadTime":5}]}}'
+  adCoreConfigsAndroid:
+    adConfigCore0:
+    adConfigCore1:
+    adConfigCore2:
+    adConfigCore3:
+    admobNative:
+  adCoreConfigsIOS:
+    adConfigCore0:
+    adConfigCore1:
+    adConfigCore2:
+    adConfigCore3:
+    admobNative:
+  customConfigsAndroid: '{"Splash":{"loadIntro":true,"testSegment":1000,"interComplete":true,"timeoutMin":12,"timeoutMax":20,"splashConfigs":[{"type":"AgeLeft"},{"type":"Intro"}],"selectAgeConfig":{"buttonType":"WithImage","buttonPos":"BottomLeft","delayShowButtonTime":1,"nextType":"AnyClick","adsType":"MREC","nextTime":6,"textValue":"none","buttonColor":"#4285F4","textColor":"#FFFFFF","adsPosition":["SelectAge_0"]},"introConfig":{"delayShowButtonTime":3,"isAutoNext":false,"nextTime":3,"tutorialCount":3,"delayShowClose":5,"adsType":"Native","buttonType":"ScreenButton","buttonPos":"Center","textValue":"none","buttonColor":"#4285F4","textColor":"#FFFFFF","adsPosition":["Tutorial_0","TutorialFull","Tutorial_1","Tutorial_2"],"tipText":["Tap the gas pedal to accelerate and overtake other cars.","Use the brake to drift around sharp corners safely.","Watch traffic lights and avoid collisions in busy streets.","Drive close to other vehicles to earn bonus points!"]},"selectLanguageConfig":{"adsType":"Native","buttonType":"WithImage","buttonPos":"BottomLeft"}},"Gameplay":{"configs":[{"id":0,"adsPosition":"loading","active":false}]},"Custom":{"customConfigId":"full_step","showAgeStep":true,"waitForIgnoreAgeStep":5,"showTutorialStep":true,"waitForIgnoreTutorialStep":5,"defaultCash":2000,"defaultDiamond":5,"isFakeIntro":true,"cooldownFirstOpenLoading":10,"eventPopup_AutoEventTime":40,"eventPopup_TimeDisable":7,"missionProgression_FirstRequireKM":0.1,"missionProgression_RequireKM":0.65,"missionMileage_DeltaKM":125000,"rate":true,"hideRateIapShowAd":true,"carUnlockByRewards":[{"carId":"130","rewardUnlockCount":2},{"carId":"150","rewardUnlockCount":3},{"carId":"155","rewardUnlockCount":4},{"carId":"190","rewardUnlockCount":5},{"carId":"195","rewardUnlockCount":6}],"missionProgressions":[{"missionId":0},{"missionId":1},{"missionId":2}]}}'
+  customConfigsIOS: '{"Splash":{"loadIntro":true,"testSegment":1000,"interComplete":true,"timeoutMin":12,"timeoutMax":20,"splashConfigs":[{"type":"AgeLeft"},{"type":"Intro"}],"selectAgeConfig":{"buttonType":"WithImage","buttonPos":"BottomLeft","delayShowButtonTime":1,"nextType":"AnyClick","adsType":"MREC","nextTime":6,"textValue":"none","buttonColor":"#4285F4","textColor":"#FFFFFF","adsPosition":["SelectAge_0"]},"introConfig":{"delayShowButtonTime":3,"isAutoNext":false,"nextTime":3,"tutorialCount":3,"delayShowClose":5,"adsType":"Native","buttonType":"ScreenButton","buttonPos":"Center","textValue":"none","buttonColor":"#4285F4","textColor":"#FFFFFF","adsPosition":["Tutorial_0","TutorialFull","Tutorial_1","Tutorial_2"],"tipText":["Tap the gas pedal to accelerate and overtake other cars.","Use the brake to drift around sharp corners safely.","Watch traffic lights and avoid collisions in busy streets.","Drive close to other vehicles to earn bonus points!"]},"selectLanguageConfig":{"adsType":"Native","buttonType":"WithImage","buttonPos":"BottomLeft"}},"Gameplay":{"configs":[{"id":0,"adsPosition":"loading","active":false}]},"Custom":{"customConfigId":"full_step","showAgeStep":true,"waitForIgnoreAgeStep":5,"showTutorialStep":true,"waitForIgnoreTutorialStep":5,"defaultCash":2000,"defaultDiamond":5,"isFakeIntro":true,"cooldownFirstOpenLoading":10,"eventPopup_AutoEventTime":40,"eventPopup_TimeDisable":7,"missionProgression_FirstRequireKM":0.1,"missionProgression_RequireKM":0.65,"missionMileage_DeltaKM":125000,"rate":true,"hideRateIapShowAd":true,"carUnlockByRewards":[{"carId":"130","rewardUnlockCount":2},{"carId":"150","rewardUnlockCount":3},{"carId":"155","rewardUnlockCount":4},{"carId":"190","rewardUnlockCount":5},{"carId":"195","rewardUnlockCount":6}],"missionProgressions":[{"missionId":0},{"missionId":1},{"missionId":2}]}}'

@@ -1,0 +1,103 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a488e9adce6d27d78b447f304d62a74, type: 3}
+  m_Name: RCC_Settings
+  m_EditorClassIdentifier:
+  toolbarSelectedIndex: 1
+  overrideFixedTimeStep: 0
+  fixedTimeStep: 0.02
+  maxAngularVelocity: 8
+  behaviorType: 5
+  useFixedWheelColliders: 1
+  controllerType: 1
+  verticalInput: Vertical
+  horizontalInput: Horizontal
+  handbrakeKB: 32
+  startEngineKB: 105
+  lowBeamHeadlightsKB: 108
+  highBeamHeadlightsKB: 107
+  rightIndicatorKB: 101
+  leftIndicatorKB: 113
+  hazardIndicatorKB: 122
+  shiftGearUp: 304
+  shiftGearDown: 306
+  boostKB: 102
+  changeCameraKB: 99
+  enterExitVehicleKB: 13
+  useAutomaticGear: 1
+  runEngineAtAwake: 1
+  keepEnginesAlive: 1
+  autoReverse: 1
+  contactParticles: {fileID: 1709254077376921, guid: 651fe5a91c34adb48bdea2f84cc1198c, type: 2}
+  units: 0
+  uiType: 0
+  useTelemetry: 0
+  useAccelerometerForSteering: 0
+  useSteeringWheelForSteering: 0
+  UIButtonSensitivity: 5
+  UIButtonGravity: 5
+  gyroSensitivity: 2
+  useLightsAsVertexLights: 1
+  useLightProjectorForLightingEffect: 0
+  setTagsAndLayers: 1
+  RCCLayer: Player
+  RCCTag: Player
+  tagAllChildrenGameobjects: 1
+  chassisJoint: {fileID: 1709254077376921, guid: aa27e5bf438dbb84a9e18bc67592c67d, type: 2}
+  exhaustGas: {fileID: 1709254077376921, guid: 3190bfeceab392e4a9d59ab54464d1cb, type: 2}
+  skidmarksManager: {fileID: 114703437598541787, guid: c95aa12d648e5ac419712bcfea6198eb, type: 2}
+  projector: {fileID: 1709254077376921, guid: 993af4a19abc3ce4495aab4e73fec5bd, type: 2}
+  projectorIgnoreLayer:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  headLights: {fileID: 1709254077376921, guid: 6719aa34f4941f54092ea3cf8b15d13b, type: 2}
+  brakeLights: {fileID: 1709254077376921, guid: 6f22ba24f00fc43479236c2d514fd2db, type: 2}
+  reverseLights: {fileID: 1709254077376921, guid: cadfb9a8b8ae91648a8393a0417070ff, type: 2}
+  indicatorLights: {fileID: 1709254077376921, guid: 03702c69d74d2174b8e846170898b731, type: 2}
+  mirrors: {fileID: 1709254077376921, guid: 8ec78c77b83fd104e8e35fddb974692e, type: 2}
+  dontUseAnyParticleEffects: 0
+  dontUseChassisJoint: 0
+  dontUseSkidmarks: 0
+  gearShiftingClips:
+  - {fileID: 8300000, guid: 9a4676ba9d7af70489beb7c47ad4589e, type: 3}
+  - {fileID: 8300000, guid: 76ba7a96969b00645b7c466aa5695690, type: 3}
+  - {fileID: 8300000, guid: f7a74383887b338488aa3156944027d6, type: 3}
+  - {fileID: 8300000, guid: 39ab6dadac95cf04fad7055f10d2be0e, type: 3}
+  - {fileID: 8300000, guid: 681dfb4bb77d7c149ae90a1ed5d17e87, type: 3}
+  crashClips:
+  - {fileID: 8300000, guid: 25a1f4f98df914b45be5ce72c7e22231, type: 3}
+  reversingClip: {fileID: 8300000, guid: fba7cd80703d4264089f69cd2d0fb2b8, type: 3}
+  windClip: {fileID: 8300000, guid: 68d0145ec8e8ce44ebe747fce5b98893, type: 3}
+  brakeClip: {fileID: 8300000, guid: 1eecc0838338f3942abed39c5784f1da, type: 3}
+  indicatorClip: {fileID: 8300000, guid: f4e67d459345a7643b37f68c3f766e98, type: 3}
+  NOSClip: {fileID: 8300000, guid: 0e0be67c535d3ae4685cfad86fdc4e08, type: 3}
+  turboClip: {fileID: 8300000, guid: 0fbcad2760619d549802d3a11918a414, type: 3}
+  blowoutClip:
+  - {fileID: 8300000, guid: 39ef1b7cb1a21384a83e17466c23bf47, type: 3}
+  - {fileID: 8300000, guid: dff1b6c845dbabd42b7eb7678423285a, type: 3}
+  exhaustFlameClips:
+  - {fileID: 8300000, guid: 676452ebeba2777478cc47a2ab82a409, type: 3}
+  - {fileID: 8300000, guid: 34f1381b7096c2c4695c8664fbc4c79f, type: 3}
+  - {fileID: 8300000, guid: 81e706ece6dceb4458578d54f049387d, type: 3}
+  - {fileID: 8300000, guid: 2c441a8e2a4e5fc43884bbd24b8d7a0b, type: 3}
+  useSharedAudioSources: 1
+  maxGearShiftingSoundVolume: 0.25
+  maxCrashSoundVolume: 0.025
+  maxWindSoundVolume: 0.1
+  maxBrakeSoundVolume: 0.1
+  foldGeneralSettings: 1
+  foldControllerSettings: 1
+  foldUISettings: 1
+  foldWheelPhysics: 1
+  foldSFX: 1
+  foldOptimization: 1
+  foldTagsAndLayers: 1

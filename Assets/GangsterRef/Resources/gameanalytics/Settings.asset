@@ -1,0 +1,98 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2cced7019a5f5d9570f88fdc17461e50, type: 3}
+  m_Name: Settings
+  m_EditorClassIdentifier:
+  TotalMessagesSubmitted: 0
+  TotalMessagesFailed: 0
+  DesignMessagesSubmitted: 0
+  DesignMessagesFailed: 0
+  QualityMessagesSubmitted: 0
+  QualityMessagesFailed: 0
+  ErrorMessagesSubmitted: 0
+  ErrorMessagesFailed: 0
+  BusinessMessagesSubmitted: 0
+  BusinessMessagesFailed: 0
+  UserMessagesSubmitted: 0
+  UserMessagesFailed: 0
+  CustomArea:
+  gameKey:
+  - f755bb0afde22bebd00ea91d62b6fe27
+  secretKey:
+  - 05733162b5abbb27065d156f78a48c28de508cb3
+  Build:
+  - 1.1
+  SelectedPlatformOrganization:
+  - Elegant Games
+  SelectedPlatformStudio:
+  - ElegantGames
+  SelectedPlatformGame:
+  - Grand Gangster Crime Mafia 2.0
+  SelectedPlatformGameID: 3c110400
+  SelectedOrganization: 01000000
+  SelectedStudio: 01000000
+  SelectedGame: 01000000
+  NewVersion:
+  Changes:
+  SignUpOpen: 0
+  StudioName: Elegant Games
+  GameName: Grand Gangster Crime Mafia
+  OrganizationName:
+  OrganizationIdentifier:
+  EmailGA: elegantgamestudio@gmail.com
+  IntroScreen: 0
+  InfoLogEditor: 1
+  InfoLogBuild: 1
+  VerboseLogBuild: 0
+  UseManualSessionHandling: 0
+  SendExampleGameDataToMyGame: 0
+  InternetConnectivity: 0
+  CustomDimensions01: []
+  CustomDimensions02: []
+  CustomDimensions03: []
+  ResourceItemTypes: []
+  ResourceCurrencies: []
+  LastCreatedGamePlatform: -1
+  Platforms: 0b000000
+  CurrentInspectorState: 3
+  ClosedHints:
+  DisplayHints: 0
+  DisplayHintsScrollState: {x: 0, y: 0}
+  Logo: {fileID: 2800000, guid: a10f3d0027ea73647be230c85d3c1fe3, type: 3}
+  UpdateIcon: {fileID: 2800000, guid: 0084cef1b5c909b42bbacad04d7c783b, type: 3}
+  InfoIcon: {fileID: 2800000, guid: db66105dbeadf8d49aaafba20685aa6e, type: 3}
+  DeleteIcon: {fileID: 2800000, guid: 9c639442a99863d43bd3d870e89537f7, type: 3}
+  GameIcon: {fileID: 2800000, guid: ac00ebb049a0a6b47a84ad7ad5a3d1f1, type: 3}
+  HomeIcon: {fileID: 2800000, guid: def83680beade1b48a10dbcad856508b, type: 3}
+  InstrumentIcon: {fileID: 2800000, guid: 545c89c0de0f8544cbddd7787f017c5d, type: 3}
+  QuestionIcon: {fileID: 2800000, guid: 1c5ea9a9da5469b44a3b360696d108f4, type: 3}
+  UserIcon: {fileID: 2800000, guid: ebffab86660e4ee46be511bd4f979cac, type: 3}
+  AmazonIcon: {fileID: 0}
+  GooglePlayIcon: {fileID: 0}
+  iosIcon: {fileID: 0}
+  macIcon: {fileID: 0}
+  windowsPhoneIcon: {fileID: 0}
+  UsePlayerSettingsBuildNumber: 1
+  SubmitErrors: 1
+  NativeErrorReporting: 0
+  MaxErrorCount: 10
+  SubmitFpsAverage: 0
+  SubmitFpsCritical: 0
+  IncludeGooglePlay: 1
+  FpsCriticalThreshold: 20
+  FpsCirticalSubmitInterval: 1
+  PlatformFoldOut: 01
+  CustomDimensions01FoldOut: 0
+  CustomDimensions02FoldOut: 0
+  CustomDimensions03FoldOut: 0
+  ResourceItemTypesFoldOut: 0
+  ResourceCurrenciesFoldOut: 0

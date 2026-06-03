@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 343095018c6da5ceae11340a50da0454, type: 3}
+  m_Name: Mission mileage data 1
+  m_EditorClassIdentifier:
+  Type: 1
+  Title: 10000 CASH
+  Description: Tap here to claim!
+  RequireKilometer: 6
+  CarReward:
+    CarId: 090
+    CarIcon: {fileID: 21300000, guid: 11a012d9db99f6d43ac302093c52ffae, type: 2}
+  CashReward:
+    Value: 10000

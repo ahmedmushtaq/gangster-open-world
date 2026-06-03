@@ -1,0 +1,115 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a488e9adce6d27d78b447f304d62a74, type: 3}
+  m_Name: RCC_Settings
+  m_EditorClassIdentifier:
+  toolbarSelectedIndex: 2
+  overrideFixedTimeStep: 1
+  fixedTimeStep: 0.02
+  maxAngularVelocity: 7.6
+  behaviorType: 5
+  useFixedWheelColliders: 1
+  controllerType: 2
+  verticalInput: Vertical
+  horizontalInput: Horizontal
+  handbrakeKB: 32
+  startEngineKB: 105
+  lowBeamHeadlightsKB: 108
+  highBeamHeadlightsKB: 107
+  rightIndicatorKB: 101
+  leftIndicatorKB: 113
+  hazardIndicatorKB: 122
+  shiftGearUp: 304
+  shiftGearDown: 306
+  NGear: 110
+  boostKB: 102
+  slowMotionKB: 103
+  changeCameraKB: 99
+  enterExitVehicleKB: 13
+  useAutomaticGear: 1
+  runEngineAtAwake: 1
+  keepEnginesAlive: 1
+  autoReverse: 1
+  autoReset: 1
+  contactParticles: {fileID: 1709254077376921, guid: 9cdc5c139bc05264fa8c8a39087a9ced, type: 2}
+  units: 0
+  uiType: 1
+  useTelemetry: 0
+  useAccelerometerForSteering: 0
+  useSteeringWheelForSteering: 1
+  UIButtonSensitivity: 5
+  UIButtonGravity: 5
+  gyroSensitivity: 2
+  useLightsAsVertexLights: 1
+  useLightProjectorForLightingEffect: 0
+  setTagsAndLayers: 1
+  RCCLayer: RCC
+  RCCTag: Player
+  tagAllChildrenGameobjects: 1
+  chassisJoint: {fileID: 1709254077376921, guid: 26cf066232512a84ba2e06db79fa744c, type: 2}
+  exhaustGas: {fileID: 1709254077376921, guid: 99479a796518f9c4791202cd4e28ad40, type: 2}
+  skidmarksManager: {fileID: 114703437598541787, guid: 460d2cdf941031146bfcae7d86493278, type: 2}
+  projector: {fileID: 1709254077376921, guid: 1eaa45c4d542dad4281c58a63f06f345, type: 2}
+  projectorIgnoreLayer:
+    serializedVersion: 2
+    m_Bits: 512
+  headLights: {fileID: 1709254077376921, guid: 60bddf1a236cdc641ba1407aae8d8b84, type: 2}
+  brakeLights: {fileID: 1709254077376921, guid: 80b1299d3d834e343ad3e5d946064b49, type: 2}
+  reverseLights: {fileID: 1709254077376921, guid: 798d32f85873d334d9d29cfd9c26a565, type: 2}
+  indicatorLights: {fileID: 1709254077376921, guid: 1f942b31aaa76374bbdeecbf73cee8cc, type: 2}
+  mirrors: {fileID: 1709254077376921, guid: 99b45289e62a35345b942eedfe594f49, type: 2}
+  RCCMainCamera: {fileID: 114703437598541787, guid: 411106bb329048d4396721e603870d58, type: 2}
+  hoodCamera: {fileID: 1709254077376921, guid: 886da939b7f9c2e4eb387b9623139da6, type: 2}
+  cinematicCamera: {fileID: 1709254077376921, guid: f87082252b756c74e9b3f0de739db9ed, type: 2}
+  RCCCanvas: {fileID: 1709254077376921, guid: 0b672ea65c0a8844886a527fd765c772, type: 2}
+  dontUseAnyParticleEffects: 0
+  dontUseChassisJoint: 0
+  dontUseSkidmarks: 0
+  gearShiftingClips:
+  - {fileID: 8300000, guid: 567cb8cf83a281b408f278ed5fa96698, type: 3}
+  - {fileID: 8300000, guid: aa44e66040d3e6b45a96e60bf84357a1, type: 3}
+  - {fileID: 8300000, guid: c994cb0e78ed63641b310a2f5f527b99, type: 3}
+  - {fileID: 8300000, guid: 60e5395e75b34324b9b7652464a5d4d9, type: 3}
+  - {fileID: 8300000, guid: 7c0013f332c3402489c57f9e5fa58309, type: 3}
+  crashClips:
+  - {fileID: 8300000, guid: c1222cc3b47402d42a7c7dd0a4bf9490, type: 3}
+  - {fileID: 8300000, guid: 26a25bbb969268e42a818a5358bffbef, type: 3}
+  - {fileID: 8300000, guid: 6c5489e90564a754d953e44ec1c80844, type: 3}
+  - {fileID: 8300000, guid: 835bb538c0da0404e8d29ed0b19e4e55, type: 3}
+  reversingClip: {fileID: 8300000, guid: 7aeb442426739fd479bfa2169d5c704a, type: 3}
+  windClip: {fileID: 8300000, guid: 31a4f226329fe584d98f192852970272, type: 3}
+  brakeClip: {fileID: 8300000, guid: f1d1f5769660dbc43bdd5ad7cbdcf20a, type: 3}
+  indicatorClip: {fileID: 8300000, guid: b8d927834227dff40800ee71207cf9a1, type: 3}
+  NOSClip: {fileID: 8300000, guid: 1afe7da8cb771b34a8814f2f60dfa599, type: 3}
+  NOSClipTwo: {fileID: 8300000, guid: c4f4f3897b2737b429ae0efd9a124838, type: 3}
+  NOSStartClip: {fileID: 8300000, guid: b539233008367124da6c5766acfd4cbd, type: 3}
+  turboClip: {fileID: 8300000, guid: 1afe7da8cb771b34a8814f2f60dfa599, type: 3}
+  blowoutClip:
+  - {fileID: 8300000, guid: 12c848762288e0849959b1f7de624397, type: 3}
+  - {fileID: 8300000, guid: 84c605528efdfd344bb68d7391fe1f4c, type: 3}
+  exhaustFlameClips:
+  - {fileID: 8300000, guid: 9b1e3dd43c6cf2745a2836b11de3d4fa, type: 3}
+  - {fileID: 8300000, guid: 2fda048a401a9de4ea6fc3232722519b, type: 3}
+  - {fileID: 8300000, guid: 7af6f1f39b9522340b375c2c5c75ccef, type: 3}
+  - {fileID: 8300000, guid: 503911a1ceaa3e44688c26e8e4d45a8e, type: 3}
+  useSharedAudioSources: 1
+  maxGearShiftingSoundVolume: 0.25
+  maxCrashSoundVolume: 0.4
+  maxWindSoundVolume: 1
+  maxBrakeSoundVolume: 1
+  foldGeneralSettings: 1
+  foldControllerSettings: 1
+  foldUISettings: 1
+  foldWheelPhysics: 1
+  foldSFX: 1
+  foldOptimization: 1
+  foldTagsAndLayers: 1

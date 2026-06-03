@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ef71c99c3b83ff4606bce7dfe6e0953, type: 3}
+  m_Name: vMelee_ItemListData
+  m_EditorClassIdentifier:
+  items:
+  - {fileID: 11400000, guid: aea691de21ea7ee40896f456b77d4e62, type: 2}
+  - {fileID: 11400000, guid: 8457fc17aaf86964ba0167d929c6e7ed, type: 2}
+  - {fileID: 11400000, guid: 7ce6300fc727204499666dfda33b79d6, type: 2}
+  - {fileID: 11400000, guid: d03ee63e95673d943a7d36aaa136d76f, type: 2}
+  - {fileID: 11400000, guid: 1acc1a170b6d4064ab29a69d9d7197e6, type: 2}
+  - {fileID: 11400000, guid: 8cb5f1fb8f43dc347888d5d8b0e4e313, type: 2}
+  - {fileID: 11400000, guid: 7df6d300005d05c4895b1170f4a8afd0, type: 2}
+  - {fileID: 11400000, guid: f36a0258b50a2f04a8616a4e0807fd4b, type: 2}
+  - {fileID: 11400000, guid: 131255e05d4b4fd4a980203044af8d65, type: 2}
+  - {fileID: 11400000, guid: 8e60c6e12b97cc544839041f3144ed1e, type: 2}
+  - {fileID: 11400000, guid: 341e9b1d239c7424e8686a488e0e0cf1, type: 2}
+  - {fileID: 11400000, guid: f42c2382f68a5bd448c31728dc5cadf6, type: 2}
+  - {fileID: 11400000, guid: 2dc7cb96789be1a44943c9fcfda1f2c8, type: 2}
+  - {fileID: 11400000, guid: 7e550f2ee8769a34ab635c247bcec1c8, type: 2}
+  inEdition: 0
+  itemsHidden: 1

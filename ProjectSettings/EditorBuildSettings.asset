@@ -6,7 +6,10 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 99c9720ab356a0642a771bea13969a05
+    path: Assets/Scenes/CarSelection.unity
+    guid: c8ac96ea33587dd46a6fa8e077e7887b
+  - enabled: 1
+    path: Assets/Scenes/Carmaker.unity
+    guid: 56844a280b072164283aba0a1366aa46
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}

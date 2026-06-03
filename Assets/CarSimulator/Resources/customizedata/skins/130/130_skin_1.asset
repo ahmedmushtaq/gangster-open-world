@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85ce301227044d4f9ef90e29edcdfe46, type: 3}
+  m_Name: 130_skin_1
+  m_EditorClassIdentifier:
+  OptionType: 4
+  Color: {r: 0, g: 0, b: 0, a: 0}
+  Prefab: {fileID: 0}
+  RimIcon: {fileID: 0}
+  Skin: {fileID: 2800000, guid: d61157f1c7084c94e9bc8ae3f1677585, type: 3}
+  SkinIcon: {fileID: 21300000, guid: 5bcb956e36fe76c47a0bd4c63ea979ad, type: 2}
+  BuyMethodOptionOne: 0
+  BuyCostOptionOne: 10000
+  BuyMethodOptionTwo: 2
+  BuyCostOptionTwo: 2

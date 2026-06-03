@@ -1,0 +1,1330 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f0a9dc884795379d0a7bfb5d2442684, type: 3}
+  m_Name: Stats SO A
+  m_EditorClassIdentifier:
+  UpgradeCosts:
+  - UpgradeType: 0
+    CashCost: 200
+    CashCostForLevel: 10
+  - UpgradeType: 1
+    CashCost: 300
+    CashCostForLevel: 10
+  - UpgradeType: 3
+    CashCost: 150
+    CashCostForLevel: 10
+  - UpgradeType: 2
+    CashCost: 100
+    CashCostForLevel: 10
+  defaultCar: 010
+  ListCarProperties:
+  - Upgrades:
+    - UpgradeType: 0
+      UpgradeMaxLevel: 3
+    - UpgradeType: 1
+      UpgradeMaxLevel: 2
+    - UpgradeType: 3
+      UpgradeMaxLevel: 2
+    - UpgradeType: 2
+      UpgradeMaxLevel: 2
+    UnlockWithMission: {fileID: 0}
+    defaultNitroValue: 12
+    defaultHandlingValue: 26
+    carID: 010
+    requiredLevel: 1
+    nameCar: Aventador
+    avaCar: {fileID: 21300000, guid: 68382efde65d78042bf91672648b9062, type: 2}
+    countStar: 2
+    price: 0
+    buyMethob: 0
+    defaultMainColor: 15
+    defaultRimColor: 10
+    defaultWindowColor: 10
+    defaultCaliperColor: 1
+    defaultRimModel: 0
+    defaultMainColorId: {r: 0.0627451, g: 0.38431373, b: 0.83137256, a: 1}
+    defaultRimColorId: {r: 0, g: 0, b: 0, a: 1}
+    defaultWindowColorId: {r: 0, g: 0, b: 0, a: 1}
+    defaultCaliperColorId: {r: 1, g: 0.10980392, b: 0.10980392, a: 1}
+    defaultRimModelId: 0
+    defaultMainColorStats: {fileID: 11400000, guid: 4fd3f5ef69c010344a451a800af502f5, type: 2}
+    defaultRimColorStats: {fileID: 11400000, guid: 340bd55dccfe12248b469a7d7cda3c9e, type: 2}
+    defaultWindowStats: {fileID: 11400000, guid: 558caf783a316b241bd8225e8d32a75f, type: 2}
+    defaultCaliperColorStats: {fileID: 11400000, guid: 6e814621d9c71b34791f8dd1fb80d799, type: 2}
+    defaultRimStats: {fileID: 11400000, guid: 52abd2e0c1c26694897912d8755ff2c2, type: 2}
+    defaultCarSkinStats: {fileID: 11400000, guid: 074265fe9c8f3b1458c60550401d985c, type: 2}
+    stockBodySoftness: 0.97
+    stockTireSizeID: 030
+    stockTireType: Standard
+    stockTorque: 4200
+    stockTopSpeed: 232
+    stockHandling: 0.3
+    stockTireTime: 37
+    stockDurability: 14
+    stockTransmissionType: AWD
+    stockGearDelay: 0.15
+    stockAccelerationMenu: 0.21
+    stockTopSpeedMenu: 0.2
+    stockHandlingMenu: 0.25
+    electricLevel: 0
+    stockRimMetallic: 0
+    stockRimSoftness: 0.7
+    stockBuildType: Street
+    stockCamber: 0
+    stockSuspensionHeight: 0.05
+    stockCarAttraction: 13
+    stockLevelPointMultiplier: 1
+    stockFrontLightColor: {r: 0, g: 0, b: 0, a: 0.07843138}
+    stockRearLightColor: {r: 0, g: 0, b: 0, a: 0.07843138}
+    stockCarViewDistance: 1.6
+    stockOffroadAbility: 1.1
+    aerodynamicMultiplier: 1.12
+    carType: COUPE
+    fuelType: GAS
+    weight: 0
+    stockFrontPositionX: 0.8505002
+    stockRearPositionX: 0.872
+    tiresFirst:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    rimsFirst:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    headLensStrenght: 1
+  - Upgrades:
+    - UpgradeType: 0
+      UpgradeMaxLevel: 2
+    - UpgradeType: 1
+      UpgradeMaxLevel: 2
+    - UpgradeType: 3
+      UpgradeMaxLevel: 2
+    - UpgradeType: 2
+      UpgradeMaxLevel: 2
+    UnlockWithMission: {fileID: 11400000, guid: b3faa322bbf559b4785b0cd144188893, type: 2}
+    defaultNitroValue: 10
+    defaultHandlingValue: 17
+    carID: 050
+    requiredLevel: 1
+    nameCar: 1970 Ford
+    avaCar: {fileID: 21300000, guid: eae19b222424eb549abb0bac717a90f8, type: 2}
+    countStar: 2
+    price: 10000
+    buyMethob: 3
+    defaultMainColor: 16
+    defaultRimColor: 10
+    defaultWindowColor: 10
+    defaultCaliperColor: 1
+    defaultRimModel: 9
+    defaultMainColorId: {r: 0.75686276, g: 0.12941177, b: 0.16470589, a: 1}
+    defaultRimColorId: {r: 0, g: 0, b: 0, a: 1}
+    defaultWindowColorId: {r: 0, g: 0, b: 0, a: 1}
+    defaultCaliperColorId: {r: 1, g: 0.10980392, b: 0.10980392, a: 1}
+    defaultRimModelId: 9
+    defaultMainColorStats: {fileID: 11400000, guid: 9a94c044e072ae74fb99f52b39783eeb, type: 2}
+    defaultRimColorStats: {fileID: 11400000, guid: 340bd55dccfe12248b469a7d7cda3c9e, type: 2}
+    defaultWindowStats: {fileID: 11400000, guid: 558caf783a316b241bd8225e8d32a75f, type: 2}
+    defaultCaliperColorStats: {fileID: 11400000, guid: 6e814621d9c71b34791f8dd1fb80d799, type: 2}
+    defaultRimStats: {fileID: 11400000, guid: f4e1463d9ec12674a85ecb38f90a8c93, type: 2}
+    defaultCarSkinStats: {fileID: 11400000, guid: 3170dbdadc2fde245a673fd682d63505, type: 2}
+    stockBodySoftness: 0.97
+    stockTireSizeID: 030
+    stockTireType: Standard
+    stockTorque: 3760
+    stockTopSpeed: 223
+    stockHandling: 0.2
+    stockTireTime: 22
+    stockDurability: 5
+    stockTransmissionType: AWD
+    stockGearDelay: 0.15
+    stockAccelerationMenu: 0.21
+    stockTopSpeedMenu: 0.2
+    stockHandlingMenu: 0.25
+    electricLevel: 0
+    stockRimMetallic: 1
+    stockRimSoftness: 0.7
+    stockBuildType: Street
+    stockCamber: 0
+    stockSuspensionHeight: 0.1
+    stockCarAttraction: 13
+    stockLevelPointMultiplier: 1
+    stockFrontLightColor: {r: 0, g: 0, b: 0, a: 0.07843138}
+    stockRearLightColor: {r: 0, g: 0, b: 0, a: 0.07843138}
+    stockCarViewDistance: 1.6
+    stockOffroadAbility: 1.7
+    aerodynamicMultiplier: 1.12
+    carType: COUPE
+    fuelType: GAS
+    weight: 0
+    stockFrontPositionX: 0.75
+    stockRearPositionX: 0.7799999
+    tiresFirst:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    rimsFirst:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    headLensStrenght: 1
+  - Upgrades:
+    - UpgradeType: 0
+      UpgradeMaxLevel: 2
+    - UpgradeType: 1
+      UpgradeMaxLevel: 2
+    - UpgradeType: 3
+      UpgradeMaxLevel: 2
+    - UpgradeType: 2
+      UpgradeMaxLevel: 2
+    UnlockWithMission: {fileID: 11400000, guid: 1d82af8d4bb2dc348bea263ab10651f3, type: 2}
+    defaultNitroValue: 11
+    defaultHandlingValue: 25
+    carID: 090
+    requiredLevel: 1
+    nameCar: Maybach S
+    avaCar: {fileID: 21300000, guid: 11a012d9db99f6d43ac302093c52ffae, type: 2}
+    countStar: 2
+    price: 1
+    buyMethob: 3
+    defaultMainColor: 17
+    defaultRimColor: 13
+    defaultWindowColor: 10
+    defaultCaliperColor: 1
+    defaultRimModel: 0
+    defaultMainColorId: {r: 0.8392157, g: 0.8392157, b: 0.8392157, a: 1}
+    defaultRimColorId: {r: 0.6792453, g: 0.6792453, b: 0.6792453, a: 1}
+    defaultWindowColorId: {r: 0, g: 0, b: 0, a: 1}
+    defaultCaliperColorId: {r: 1, g: 0.10980392, b: 0.10980392, a: 1}
+    defaultRimModelId: 0
+    defaultMainColorStats: {fileID: 11400000, guid: edb48fe358108934f8ad3b367f014692, type: 2}
+    defaultRimColorStats: {fileID: 11400000, guid: 340bd55dccfe12248b469a7d7cda3c9e, type: 2}
+    defaultWindowStats: {fileID: 11400000, guid: 558caf783a316b241bd8225e8d32a75f, type: 2}
+    defaultCaliperColorStats: {fileID: 11400000, guid: 6e814621d9c71b34791f8dd1fb80d799, type: 2}
+    defaultRimStats: {fileID: 11400000, guid: 52abd2e0c1c26694897912d8755ff2c2, type: 2}
+    defaultCarSkinStats: {fileID: 11400000, guid: a55fc0c7393190745bffcd95d215f049, type: 2}
+    stockBodySoftness: 0.97
+    stockTireSizeID: 030
+    stockTireType: Standard
+    stockTorque: 4000
+    stockTopSpeed: 228
+    stockHandling: 0.3
+    stockTireTime: 26
+    stockDurability: 10
+    stockTransmissionType: AWD
+    stockGearDelay: 0.15
+    stockAccelerationMenu: 0.21
+    stockTopSpeedMenu: 0.2
+    stockHandlingMenu: 0.25
+    electricLevel: 0
+    stockRimMetallic: 0
+    stockRimSoftness: 0.7
+    stockBuildType: Street
+    stockCamber: 0
+    stockSuspensionHeight: 0.1
+    stockCarAttraction: 13
+    stockLevelPointMultiplier: 1
+    stockFrontLightColor: {r: 0, g: 0, b: 0, a: 0.07843138}
+    stockRearLightColor: {r: 0, g: 0, b: 0, a: 0.07843138}
+    stockCarViewDistance: 1.6
+    stockOffroadAbility: 1.4
+    aerodynamicMultiplier: 1.12
+    carType: COUPE
+    fuelType: GAS
+    weight: 0
+    stockFrontPositionX: 0.80077
+    stockRearPositionX: 0.82054
+    tiresFirst:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    rimsFirst:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    headLensStrenght: 1
+  - Upgrades:
+    - UpgradeType: 0
+      UpgradeMaxLevel: 2
+    - UpgradeType: 1
+      UpgradeMaxLevel: 2
+    - UpgradeType: 3
+      UpgradeMaxLevel: 2
+    - UpgradeType: 2
+      UpgradeMaxLevel: 2
+    UnlockWithMission: {fileID: 11400000, guid: 737330e9addedb0409285705c2d9a0ea, type: 2}
+    defaultNitroValue: 12
+    defaultHandlingValue: 28
+    carID: 095
+    requiredLevel: 1
+    nameCar: Defender 110
+    avaCar: {fileID: 21300000, guid: 4a0bc9fdf1188aa4d9196a02fd081ce2, type: 2}
+    countStar: 2
+    price: 1
+    buyMethob: 3
+    defaultMainColor: 17
+    defaultRimColor: 10
+    defaultWindowColor: 10
+    defaultCaliperColor: 1
+    defaultRimModel: 4
+    defaultMainColorId: {r: 0.8392157, g: 0.8392157, b: 0.8392157, a: 1}
+    defaultRimColorId: {r: 0, g: 0, b: 0, a: 1}
+    defaultWindowColorId: {r: 0, g: 0, b: 0, a: 1}
+    defaultCaliperColorId: {r: 1, g: 0.10980392, b: 0.10980392, a: 1}
+    defaultRimModelId: 4
+    defaultMainColorStats: {fileID: 11400000, guid: edb48fe358108934f8ad3b367f014692, type: 2}
+    defaultRimColorStats: {fileID: 11400000, guid: 340bd55dccfe12248b469a7d7cda3c9e, type: 2}
+    defaultWindowStats: {fileID: 11400000, guid: 558caf783a316b241bd8225e8d32a75f, type: 2}
+    defaultCaliperColorStats: {fileID: 11400000, guid: 6e814621d9c71b34791f8dd1fb80d799, type: 2}
+    defaultRimStats: {fileID: 11400000, guid: 1ff2d43fc59ff7f4dbc76205d7b65700, type: 2}
+    defaultCarSkinStats: {fileID: 11400000, guid: 35fb78bae691f9f4b91ac74013d632ec, type: 2}
+    stockBodySoftness: 0.97
+    stockTireSizeID: 050
+    stockTireType: Standard
+    stockTorque: 4160
+    stockTopSpeed: 235
+    stockHandling: 0.15
+    stockTireTime: 26
+    stockDurability: 10
+    stockTransmissionType: AWD
+    stockGearDelay: 0.15
+    stockAccelerationMenu: 0.21
+    stockTopSpeedMenu: 0.2
+    stockHandlingMenu: 0.25
+    electricLevel: 0
+    stockRimMetallic: 0
+    stockRimSoftness: 0.7
+    stockBuildType: Street
+    stockCamber: 0
+    stockSuspensionHeight: 0.1
+    stockCarAttraction: 13
+    stockLevelPointMultiplier: 1
+    stockFrontLightColor: {r: 0, g: 0, b: 0, a: 0.07843138}
+    stockRearLightColor: {r: 0, g: 0, b: 0, a: 0.07843138}
+    stockCarViewDistance: 1.9
+    stockOffroadAbility: 5
+    aerodynamicMultiplier: 1.12
+    carType: COUPE
+    fuelType: GAS
+    weight: 0
+    stockFrontPositionX: 0.851
+    stockRearPositionX: 0.8510001
+    tiresFirst:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    rimsFirst:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    headLensStrenght: 1
+  - Upgrades:
+    - UpgradeType: 0
+      UpgradeMaxLevel: 2
+    - UpgradeType: 1
+      UpgradeMaxLevel: 2
+    - UpgradeType: 3
+      UpgradeMaxLevel: 2
+    - UpgradeType: 2
+      UpgradeMaxLevel: 2
+    UnlockWithMission: {fileID: 0}
+    defaultNitroValue: 12
+    defaultHandlingValue: 24
+    carID: 100
+    requiredLevel: 2
+    nameCar: Urus
+    avaCar: {fileID: 21300000, guid: aa8683b02bfa12c4082bbb72416eb636, type: 2}
+    countStar: 2
+    price: 42000
+    buyMethob: 0
+    defaultMainColor: 19
+    defaultRimColor: 10
+    defaultWindowColor: 10
+    defaultCaliperColor: 1
+    defaultRimModel: 12
+    defaultMainColorId: {r: 0.8784314, g: 0.77254903, b: 0.19607843, a: 1}
+    defaultRimColorId: {r: 0, g: 0, b: 0, a: 1}
+    defaultWindowColorId: {r: 0, g: 0, b: 0, a: 1}
+    defaultCaliperColorId: {r: 1, g: 0.10980392, b: 0.10980392, a: 1}
+    defaultRimModelId: 12
+    defaultMainColorStats: {fileID: 11400000, guid: b99af4b49168d4b4e9b4da78b9180e2a, type: 2}
+    defaultRimColorStats: {fileID: 11400000, guid: 340bd55dccfe12248b469a7d7cda3c9e, type: 2}
+    defaultWindowStats: {fileID: 11400000, guid: 558caf783a316b241bd8225e8d32a75f, type: 2}
+    defaultCaliperColorStats: {fileID: 11400000, guid: 6e814621d9c71b34791f8dd1fb80d799, type: 2}
+    defaultRimStats: {fileID: 11400000, guid: 93b4b149c9882d740932848266d8a143, type: 2}
+    defaultCarSkinStats: {fileID: 11400000, guid: 29052fe99e6ab66488eb1e3e53a1d0ef, type: 2}
+    stockBodySoftness: 0.97
+    stockTireSizeID: 030
+    stockTireType: Standard
+    stockTorque: 4000
+    stockTopSpeed: 235
+    stockHandling: 0.3
+    stockTireTime: 25
+    stockDurability: 10
+    stockTransmissionType: AWD
+    stockGearDelay: 0.15
+    stockAccelerationMenu: 0.21
+    stockTopSpeedMenu: 0.2
+    stockHandlingMenu: 0.25
+    electricLevel: 0
+    stockRimMetallic: 0
+    stockRimSoftness: 0.7
+    stockBuildType: Street
+    stockCamber: 0
+    stockSuspensionHeight: 0.07
+    stockCarAttraction: 13
+    stockLevelPointMultiplier: 1
+    stockFrontLightColor: {r: 0, g: 0, b: 0, a: 0.07843138}
+    stockRearLightColor: {r: 0, g: 0, b: 0, a: 0.07843138}
+    stockCarViewDistance: 1.6
+    stockOffroadAbility: 1.4
+    aerodynamicMultiplier: 1.12
+    carType: COUPE
+    fuelType: GAS
+    weight: 0
+    stockFrontPositionX: 0.87394
+    stockRearPositionX: 0.87394
+    tiresFirst:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    rimsFirst:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    headLensStrenght: 0.7
+  - Upgrades:
+    - UpgradeType: 0
+      UpgradeMaxLevel: 3
+    - UpgradeType: 1
+      UpgradeMaxLevel: 3
+    - UpgradeType: 3
+      UpgradeMaxLevel: 3
+    - UpgradeType: 2
+      UpgradeMaxLevel: 3
+    UnlockWithMission: {fileID: 11400000, guid: 39152ba1a9eb7a44dad41343b912c91b, type: 2}
+    defaultNitroValue: 13
+    defaultHandlingValue: 27
+    carID: 110
+    requiredLevel: 2
+    nameCar: F1
+    avaCar: {fileID: 21300000, guid: a4e5625c19e43c546ac3c3483f35fc5a, type: 2}
+    countStar: 3
+    price: 45000
+    buyMethob: 3
+    defaultMainColor: 20
+    defaultRimColor: 10
+    defaultWindowColor: 10
+    defaultCaliperColor: 1
+    defaultRimModel: 3
+    defaultMainColorId: {r: 0.67058825, g: 0, b: 0.02745098, a: 1}
+    defaultRimColorId: {r: 0, g: 0, b: 0, a: 1}
+    defaultWindowColorId: {r: 0, g: 0, b: 0, a: 1}
+    defaultCaliperColorId: {r: 1, g: 0.10980392, b: 0.10980392, a: 1}
+    defaultRimModelId: 3
+    defaultMainColorStats: {fileID: 11400000, guid: 9a94c044e072ae74fb99f52b39783eeb, type: 2}
+    defaultRimColorStats: {fileID: 11400000, guid: 340bd55dccfe12248b469a7d7cda3c9e, type: 2}
+    defaultWindowStats: {fileID: 11400000, guid: 558caf783a316b241bd8225e8d32a75f, type: 2}
+    defaultCaliperColorStats: {fileID: 11400000, guid: 6e814621d9c71b34791f8dd1fb80d799, type: 2}
+    defaultRimStats: {fileID: 11400000, guid: 3ab919033b695e74280b6c497cd7ab51, type: 2}
+    defaultCarSkinStats: {fileID: 11400000, guid: 1ecd227243538244e87417fb13992df7, type: 2}
+    stockBodySoftness: 0.97
+    stockTireSizeID: 060
+    stockTireType: Standard
+    stockTorque: 4560
+    stockTopSpeed: 247
+    stockHandling: 0.2
+    stockTireTime: 22
+    stockDurability: 5
+    stockTransmissionType: AWD
+    stockGearDelay: 0.15
+    stockAccelerationMenu: 0.21
+    stockTopSpeedMenu: 0.2
+    stockHandlingMenu: 0.25
+    electricLevel: 0
+    stockRimMetallic: 0
+    stockRimSoftness: 0.7
+    stockBuildType: Street
+    stockCamber: 0
+    stockSuspensionHeight: 0.1
+    stockCarAttraction: 13
+    stockLevelPointMultiplier: 1
+    stockFrontLightColor: {r: 0, g: 0, b: 0, a: 0.07843138}
+    stockRearLightColor: {r: 0, g: 0, b: 0, a: 0.07843138}
+    stockCarViewDistance: 1.7
+    stockOffroadAbility: 1.45
+    aerodynamicMultiplier: 1.12
+    carType: COUPE
+    fuelType: GAS
+    weight: 0
+    stockFrontPositionX: 0.83259
+    stockRearPositionX: 0.679
+    tiresFirst:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    rimsFirst:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    headLensStrenght: 1
+  - Upgrades:
+    - UpgradeType: 0
+      UpgradeMaxLevel: 3
+    - UpgradeType: 1
+      UpgradeMaxLevel: 3
+    - UpgradeType: 3
+      UpgradeMaxLevel: 3
+    - UpgradeType: 2
+      UpgradeMaxLevel: 3
+    UnlockWithMission: {fileID: 0}
+    defaultNitroValue: 13
+    defaultHandlingValue: 27.5
+    carID: 120
+    requiredLevel: 2
+    nameCar: Centenario
+    avaCar: {fileID: 21300000, guid: 1e04f24677919bc4ab74164f8e7dc151, type: 2}
+    countStar: 3
+    price: 54000
+    buyMethob: 0
+    defaultMainColor: 21
+    defaultRimColor: 13
+    defaultWindowColor: 10
+    defaultCaliperColor: 1
+    defaultRimModel: 17
+    defaultMainColorId: {r: 0.1254902, g: 0.1254902, b: 0.1254902, a: 1}
+    defaultRimColorId: {r: 0.6792453, g: 0.6792453, b: 0.6792453, a: 1}
+    defaultWindowColorId: {r: 0, g: 0, b: 0, a: 1}
+    defaultCaliperColorId: {r: 1, g: 0.10980392, b: 0.10980392, a: 1}
+    defaultRimModelId: 17
+    defaultMainColorStats: {fileID: 11400000, guid: b6b954fb0defe284bb275167e18a265f, type: 2}
+    defaultRimColorStats: {fileID: 11400000, guid: 340bd55dccfe12248b469a7d7cda3c9e, type: 2}
+    defaultWindowStats: {fileID: 11400000, guid: 558caf783a316b241bd8225e8d32a75f, type: 2}
+    defaultCaliperColorStats: {fileID: 11400000, guid: 6e814621d9c71b34791f8dd1fb80d799, type: 2}
+    defaultRimStats: {fileID: 11400000, guid: 54f14d08a05866f4bb6d08f6f1fb54ae, type: 2}
+    defaultCarSkinStats: {fileID: 11400000, guid: 132be8a75891a034599e2065155e7e19, type: 2}
+    stockBodySoftness: 0.97
+    stockTireSizeID: 030
+    stockTireType: Standard
+    stockTorque: 4240
+    stockTopSpeed: 255
+    stockHandling: 0.3
+    stockTireTime: 30
+    stockDurability: 11
+    stockTransmissionType: AWD
+    stockGearDelay: 0.15
+    stockAccelerationMenu: 0.21
+    stockTopSpeedMenu: 0.2
+    stockHandlingMenu: 0.25
+    electricLevel: 0
+    stockRimMetallic: 0
+    stockRimSoftness: 0.7
+    stockBuildType: Street
+    stockCamber: 0
+    stockSuspensionHeight: 0.07
+    stockCarAttraction: 13
+    stockLevelPointMultiplier: 1
+    stockFrontLightColor: {r: 0, g: 0, b: 0, a: 0.07843138}
+    stockRearLightColor: {r: 0, g: 0, b: 0, a: 0.07843138}
+    stockCarViewDistance: 1.6
+    stockOffroadAbility: 1.3
+    aerodynamicMultiplier: 1.12
+    carType: COUPE
+    fuelType: GAS
+    weight: 0
+    stockFrontPositionX: 0.85075
+    stockRearPositionX: 0.87202
+    tiresFirst:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    rimsFirst:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    headLensStrenght: 1
+  - Upgrades:
+    - UpgradeType: 0
+      UpgradeMaxLevel: 3
+    - UpgradeType: 1
+      UpgradeMaxLevel: 3
+    - UpgradeType: 3
+      UpgradeMaxLevel: 3
+    - UpgradeType: 2
+      UpgradeMaxLevel: 3
+    UnlockWithMission: {fileID: 11400000, guid: c86a567a71c393145b6bf90ff9b46bfa, type: 2}
+    defaultNitroValue: 13
+    defaultHandlingValue: 26.5
+    carID: 130
+    requiredLevel: 2
+    nameCar: Dark Horse
+    avaCar: {fileID: 21300000, guid: 04ab82eaa3aff32449162dbafc1444ae, type: 2}
+    countStar: 3
+    price: 70000
+    buyMethob: 3
+    defaultMainColor: 22
+    defaultRimColor: 10
+    defaultWindowColor: 10
+    defaultCaliperColor: 1
+    defaultRimModel: 23
+    defaultMainColorId: {r: 0.011764706, g: 0.30980393, b: 0.8156863, a: 1}
+    defaultRimColorId: {r: 0, g: 0, b: 0, a: 1}
+    defaultWindowColorId: {r: 0, g: 0, b: 0, a: 1}
+    defaultCaliperColorId: {r: 1, g: 0.10980392, b: 0.10980392, a: 1}
+    defaultRimModelId: 23
+    defaultMainColorStats: {fileID: 11400000, guid: 4fd3f5ef69c010344a451a800af502f5, type: 2}
+    defaultRimColorStats: {fileID: 11400000, guid: 340bd55dccfe12248b469a7d7cda3c9e, type: 2}
+    defaultWindowStats: {fileID: 11400000, guid: 558caf783a316b241bd8225e8d32a75f, type: 2}
+    defaultCaliperColorStats: {fileID: 11400000, guid: 6e814621d9c71b34791f8dd1fb80d799, type: 2}
+    defaultRimStats: {fileID: 11400000, guid: 8f8c696b421f9704ab763c7b3819e391, type: 2}
+    defaultCarSkinStats: {fileID: 11400000, guid: 46aacfe1971b48a4c8b9bafc8794c4c5, type: 2}
+    stockBodySoftness: 0.97
+    stockTireSizeID: 030
+    stockTireType: Standard
+    stockTorque: 4040
+    stockTopSpeed: 259
+    stockHandling: 0.35
+    stockTireTime: 25
+    stockDurability: 10
+    stockTransmissionType: AWD
+    stockGearDelay: 0.15
+    stockAccelerationMenu: 0.21
+    stockTopSpeedMenu: 0.2
+    stockHandlingMenu: 0.25
+    electricLevel: 0
+    stockRimMetallic: 0
+    stockRimSoftness: 0.7
+    stockBuildType: Street
+    stockCamber: 0
+    stockSuspensionHeight: 0.07
+    stockCarAttraction: 13
+    stockLevelPointMultiplier: 1
+    stockFrontLightColor: {r: 0, g: 0, b: 0, a: 0.07843138}
+    stockRearLightColor: {r: 0, g: 0, b: 0, a: 0.07843138}
+    stockCarViewDistance: 1.6
+    stockOffroadAbility: 1.35
+    aerodynamicMultiplier: 1.12
+    carType: COUPE
+    fuelType: GAS
+    weight: 0
+    stockFrontPositionX: 0.7969998
+    stockRearPositionX: 0.7969998
+    tiresFirst:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    rimsFirst:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    headLensStrenght: 0.7
+  - Upgrades:
+    - UpgradeType: 0
+      UpgradeMaxLevel: 3
+    - UpgradeType: 1
+      UpgradeMaxLevel: 3
+    - UpgradeType: 3
+      UpgradeMaxLevel: 3
+    - UpgradeType: 2
+      UpgradeMaxLevel: 3
+    UnlockWithMission: {fileID: 0}
+    defaultNitroValue: 14
+    defaultHandlingValue: 28.5
+    carID: 150
+    requiredLevel: 2
+    nameCar: Porsche 911
+    avaCar: {fileID: 21300000, guid: 18ad5ff699b78fe4b9dae7c65913c136, type: 2}
+    countStar: 3
+    price: 3
+    buyMethob: 2
+    defaultMainColor: 23
+    defaultRimColor: 13
+    defaultWindowColor: 10
+    defaultCaliperColor: 1
+    defaultRimModel: 5
+    defaultMainColorId: {r: 0.9056604, g: 0.75599617, b: 0, a: 1}
+    defaultRimColorId: {r: 0.6792453, g: 0.6792453, b: 0.6792453, a: 1}
+    defaultWindowColorId: {r: 0, g: 0, b: 0, a: 1}
+    defaultCaliperColorId: {r: 1, g: 0.10980392, b: 0.10980392, a: 1}
+    defaultRimModelId: 5
+    defaultMainColorStats: {fileID: 11400000, guid: c3a04b97ae109b44aaa3b569176556a1, type: 2}
+    defaultRimColorStats: {fileID: 11400000, guid: 340bd55dccfe12248b469a7d7cda3c9e, type: 2}
+    defaultWindowStats: {fileID: 11400000, guid: 558caf783a316b241bd8225e8d32a75f, type: 2}
+    defaultCaliperColorStats: {fileID: 11400000, guid: 6e814621d9c71b34791f8dd1fb80d799, type: 2}
+    defaultRimStats: {fileID: 11400000, guid: 6730ed2566b9cfe4b92c622b00653eb8, type: 2}
+    defaultCarSkinStats: {fileID: 11400000, guid: 4529f0900863a5745bd7265c095ac9b0, type: 2}
+    stockBodySoftness: 0.97
+    stockTireSizeID: 030
+    stockTireType: Standard
+    stockTorque: 4480
+    stockTopSpeed: 267
+    stockHandling: 0.4
+    stockTireTime: 35
+    stockDurability: 16
+    stockTransmissionType: AWD
+    stockGearDelay: 0.15
+    stockAccelerationMenu: 0.21
+    stockTopSpeedMenu: 0.2
+    stockHandlingMenu: 0.25
+    electricLevel: 0
+    stockRimMetallic: 0
+    stockRimSoftness: 0.7
+    stockBuildType: Street
+    stockCamber: 0
+    stockSuspensionHeight: 0.05
+    stockCarAttraction: 13
+    stockLevelPointMultiplier: 1
+    stockFrontLightColor: {r: 0, g: 0, b: 0, a: 0.07843138}
+    stockRearLightColor: {r: 0, g: 0, b: 0, a: 0.07843138}
+    stockCarViewDistance: 1.6
+    stockOffroadAbility: 1.3
+    aerodynamicMultiplier: 1.12
+    carType: COUPE
+    fuelType: GAS
+    weight: 0
+    stockFrontPositionX: 0.809
+    stockRearPositionX: 0.809
+    tiresFirst:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    rimsFirst:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    headLensStrenght: 1
+  - Upgrades:
+    - UpgradeType: 0
+      UpgradeMaxLevel: 3
+    - UpgradeType: 1
+      UpgradeMaxLevel: 3
+    - UpgradeType: 3
+      UpgradeMaxLevel: 3
+    - UpgradeType: 2
+      UpgradeMaxLevel: 3
+    UnlockWithMission: {fileID: 0}
+    defaultNitroValue: 14
+    defaultHandlingValue: 27
+    carID: 155
+    requiredLevel: 2
+    nameCar: Corvette C8
+    avaCar: {fileID: 21300000, guid: a3281742345ded7429912163464c36ea, type: 2}
+    countStar: 3
+    price: 3
+    buyMethob: 2
+    defaultMainColor: 24
+    defaultRimColor: 13
+    defaultWindowColor: 10
+    defaultCaliperColor: 1
+    defaultRimModel: 16
+    defaultMainColorId: {r: 0.81960785, g: 0.003921569, b: 0.043137256, a: 1}
+    defaultRimColorId: {r: 0.6792453, g: 0.6792453, b: 0.6792453, a: 1}
+    defaultWindowColorId: {r: 0, g: 0, b: 0, a: 1}
+    defaultCaliperColorId: {r: 1, g: 0.10980392, b: 0.10980392, a: 1}
+    defaultRimModelId: 16
+    defaultMainColorStats: {fileID: 11400000, guid: 9a94c044e072ae74fb99f52b39783eeb, type: 2}
+    defaultRimColorStats: {fileID: 11400000, guid: 340bd55dccfe12248b469a7d7cda3c9e, type: 2}
+    defaultWindowStats: {fileID: 11400000, guid: 558caf783a316b241bd8225e8d32a75f, type: 2}
+    defaultCaliperColorStats: {fileID: 11400000, guid: 6e814621d9c71b34791f8dd1fb80d799, type: 2}
+    defaultRimStats: {fileID: 11400000, guid: 264be6cda5b7913469adf0304fb751bb, type: 2}
+    defaultCarSkinStats: {fileID: 11400000, guid: 01816f7ea012acc4685de1cb05ce3e2b, type: 2}
+    stockBodySoftness: 0.97
+    stockTireSizeID: 030
+    stockTireType: Standard
+    stockTorque: 4800
+    stockTopSpeed: 274
+    stockHandling: 0.45
+    stockTireTime: 35
+    stockDurability: 16
+    stockTransmissionType: AWD
+    stockGearDelay: 0.15
+    stockAccelerationMenu: 0.21
+    stockTopSpeedMenu: 0.2
+    stockHandlingMenu: 0.25
+    electricLevel: 0
+    stockRimMetallic: 0
+    stockRimSoftness: 0.7
+    stockBuildType: Street
+    stockCamber: 0
+    stockSuspensionHeight: 0.05
+    stockCarAttraction: 13
+    stockLevelPointMultiplier: 1
+    stockFrontLightColor: {r: 0, g: 0, b: 0, a: 0.07843138}
+    stockRearLightColor: {r: 0, g: 0, b: 0, a: 0.07843138}
+    stockCarViewDistance: 1.6
+    stockOffroadAbility: 1.4
+    aerodynamicMultiplier: 1.12
+    carType: COUPE
+    fuelType: GAS
+    weight: 0
+    stockFrontPositionX: 0.8505002
+    stockRearPositionX: 0.8504403
+    tiresFirst:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    rimsFirst:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    headLensStrenght: 1
+  - Upgrades:
+    - UpgradeType: 0
+      UpgradeMaxLevel: 4
+    - UpgradeType: 1
+      UpgradeMaxLevel: 4
+    - UpgradeType: 3
+      UpgradeMaxLevel: 4
+    - UpgradeType: 2
+      UpgradeMaxLevel: 4
+    UnlockWithMission: {fileID: 0}
+    defaultNitroValue: 15
+    defaultHandlingValue: 28
+    carID: 160
+    requiredLevel: 2
+    nameCar: AMG One
+    avaCar: {fileID: 21300000, guid: fb7e6fb4069caf8468131bf7d0cd51ce, type: 2}
+    countStar: 4
+    price: 270000
+    buyMethob: 0
+    defaultMainColor: 25
+    defaultRimColor: 9
+    defaultWindowColor: 10
+    defaultCaliperColor: 1
+    defaultRimModel: 5
+    defaultMainColorId: {r: 0.654902, g: 0.72156864, b: 0.83137256, a: 1}
+    defaultRimColorId: {r: 0.9191176, g: 0.9191176, b: 0.9191176, a: 1}
+    defaultWindowColorId: {r: 0, g: 0, b: 0, a: 1}
+    defaultCaliperColorId: {r: 1, g: 0.10980392, b: 0.10980392, a: 1}
+    defaultRimModelId: 5
+    defaultMainColorStats: {fileID: 11400000, guid: bfbfbf104477eec47a34d8f760b76c21, type: 2}
+    defaultRimColorStats: {fileID: 11400000, guid: 340bd55dccfe12248b469a7d7cda3c9e, type: 2}
+    defaultWindowStats: {fileID: 11400000, guid: 558caf783a316b241bd8225e8d32a75f, type: 2}
+    defaultCaliperColorStats: {fileID: 11400000, guid: 6e814621d9c71b34791f8dd1fb80d799, type: 2}
+    defaultRimStats: {fileID: 11400000, guid: 6730ed2566b9cfe4b92c622b00653eb8, type: 2}
+    defaultCarSkinStats: {fileID: 11400000, guid: 8c4c201939589144fb695eb884320e5e, type: 2}
+    stockBodySoftness: 0.97
+    stockTireSizeID: 030
+    stockTireType: Standard
+    stockTorque: 4880
+    stockTopSpeed: 283
+    stockHandling: 0.5
+    stockTireTime: 35
+    stockDurability: 16
+    stockTransmissionType: AWD
+    stockGearDelay: 0.15
+    stockAccelerationMenu: 0.21
+    stockTopSpeedMenu: 0.2
+    stockHandlingMenu: 0.25
+    electricLevel: 0
+    stockRimMetallic: 0
+    stockRimSoftness: 0.7
+    stockBuildType: Street
+    stockCamber: 0
+    stockSuspensionHeight: 0.05
+    stockCarAttraction: 13
+    stockLevelPointMultiplier: 1
+    stockFrontLightColor: {r: 0, g: 0, b: 0, a: 0.07843138}
+    stockRearLightColor: {r: 0, g: 0, b: 0, a: 0.07843138}
+    stockCarViewDistance: 1.6
+    stockOffroadAbility: 1.35
+    aerodynamicMultiplier: 1.12
+    carType: COUPE
+    fuelType: GAS
+    weight: 0
+    stockFrontPositionX: 0.8
+    stockRearPositionX: 0.8
+    tiresFirst:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    rimsFirst:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    headLensStrenght: 0.6
+  - Upgrades:
+    - UpgradeType: 0
+      UpgradeMaxLevel: 4
+    - UpgradeType: 1
+      UpgradeMaxLevel: 4
+    - UpgradeType: 3
+      UpgradeMaxLevel: 4
+    - UpgradeType: 2
+      UpgradeMaxLevel: 4
+    UnlockWithMission: {fileID: 0}
+    defaultNitroValue: 15
+    defaultHandlingValue: 29
+    carID: 170
+    requiredLevel: 2
+    nameCar: AMG G63
+    avaCar: {fileID: 21300000, guid: 637dd700566ee7540a8b97aa5870fa85, type: 2}
+    countStar: 4
+    price: 600000
+    buyMethob: 0
+    defaultMainColor: 26
+    defaultRimColor: 9
+    defaultWindowColor: 10
+    defaultCaliperColor: 9
+    defaultRimModel: 0
+    defaultMainColorId: {r: 0, g: 0, b: 0, a: 1}
+    defaultRimColorId: {r: 0.9191176, g: 0.9191176, b: 0.9191176, a: 1}
+    defaultWindowColorId: {r: 0, g: 0, b: 0, a: 1}
+    defaultCaliperColorId: {r: 0.9191176, g: 0.9191176, b: 0.9191176, a: 1}
+    defaultRimModelId: 0
+    defaultMainColorStats: {fileID: 11400000, guid: f6efd1f04fa54f24aa3320b1daf7d266, type: 2}
+    defaultRimColorStats: {fileID: 11400000, guid: 340bd55dccfe12248b469a7d7cda3c9e, type: 2}
+    defaultWindowStats: {fileID: 11400000, guid: 558caf783a316b241bd8225e8d32a75f, type: 2}
+    defaultCaliperColorStats: {fileID: 11400000, guid: 6e814621d9c71b34791f8dd1fb80d799, type: 2}
+    defaultRimStats: {fileID: 11400000, guid: 52abd2e0c1c26694897912d8755ff2c2, type: 2}
+    defaultCarSkinStats: {fileID: 11400000, guid: 41d51006167daef44b4d7a2ee4ead732, type: 2}
+    stockBodySoftness: 0.97
+    stockTireSizeID: 050
+    stockTireType: Standard
+    stockTorque: 6000
+    stockTopSpeed: 235
+    stockHandling: 0.5
+    stockTireTime: 26
+    stockDurability: 10
+    stockTransmissionType: AWD
+    stockGearDelay: 0.15
+    stockAccelerationMenu: 0.21
+    stockTopSpeedMenu: 0.2
+    stockHandlingMenu: 0.25
+    electricLevel: 0
+    stockRimMetallic: 0
+    stockRimSoftness: 0.7
+    stockBuildType: Street
+    stockCamber: 0
+    stockSuspensionHeight: 0.1
+    stockCarAttraction: 13
+    stockLevelPointMultiplier: 1
+    stockFrontLightColor: {r: 0, g: 0, b: 0, a: 0.07843138}
+    stockRearLightColor: {r: 0, g: 0, b: 0, a: 0.07843138}
+    stockCarViewDistance: 1.9
+    stockOffroadAbility: 8.1
+    aerodynamicMultiplier: 1.12
+    carType: COUPE
+    fuelType: GAS
+    weight: 0
+    stockFrontPositionX: 0.79588
+    stockRearPositionX: 0.81493
+    tiresFirst:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    rimsFirst:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    headLensStrenght: 0.7
+  - Upgrades:
+    - UpgradeType: 0
+      UpgradeMaxLevel: 4
+    - UpgradeType: 1
+      UpgradeMaxLevel: 4
+    - UpgradeType: 3
+      UpgradeMaxLevel: 4
+    - UpgradeType: 2
+      UpgradeMaxLevel: 4
+    UnlockWithMission: {fileID: 11400000, guid: 442b30c180ec94f42af33b8e794f402e, type: 2}
+    defaultNitroValue: 16
+    defaultHandlingValue: 27.5
+    carID: 190
+    requiredLevel: 2
+    nameCar: Huayra
+    avaCar: {fileID: 21300000, guid: 5533cefabd808a840bbb51b46aa6d8b5, type: 2}
+    countStar: 4
+    price: 800000
+    buyMethob: 3
+    defaultMainColor: 27
+    defaultRimColor: 1
+    defaultWindowColor: 10
+    defaultCaliperColor: 1
+    defaultRimModel: 12
+    defaultMainColorId: {r: 0.88235295, g: 0.28235295, b: 0.007843138, a: 1}
+    defaultRimColorId: {r: 1, g: 0.10980392, b: 0.10980392, a: 1}
+    defaultWindowColorId: {r: 0, g: 0, b: 0, a: 1}
+    defaultCaliperColorId: {r: 1, g: 0.10980392, b: 0.10980392, a: 1}
+    defaultRimModelId: 12
+    defaultMainColorStats: {fileID: 11400000, guid: 948dd46beeb1c1f469f967abaad76e79, type: 2}
+    defaultRimColorStats: {fileID: 11400000, guid: 340bd55dccfe12248b469a7d7cda3c9e, type: 2}
+    defaultWindowStats: {fileID: 11400000, guid: 558caf783a316b241bd8225e8d32a75f, type: 2}
+    defaultCaliperColorStats: {fileID: 11400000, guid: 6e814621d9c71b34791f8dd1fb80d799, type: 2}
+    defaultRimStats: {fileID: 11400000, guid: 93b4b149c9882d740932848266d8a143, type: 2}
+    defaultCarSkinStats: {fileID: 11400000, guid: a857d8b843a99f94fba13cf3adf0d54b, type: 2}
+    stockBodySoftness: 0.97
+    stockTireSizeID: 030
+    stockTireType: Standard
+    stockTorque: 5600
+    stockTopSpeed: 288
+    stockHandling: 0.6
+    stockTireTime: 43
+    stockDurability: 20
+    stockTransmissionType: AWD
+    stockGearDelay: 0.1
+    stockAccelerationMenu: 0.21
+    stockTopSpeedMenu: 0.2
+    stockHandlingMenu: 0.25
+    electricLevel: 0
+    stockRimMetallic: 0
+    stockRimSoftness: 0.7
+    stockBuildType: Street
+    stockCamber: 0
+    stockSuspensionHeight: 0.05
+    stockCarAttraction: 13
+    stockLevelPointMultiplier: 1
+    stockFrontLightColor: {r: 0, g: 0, b: 0, a: 0.07843138}
+    stockRearLightColor: {r: 0, g: 0, b: 0, a: 0.07843138}
+    stockCarViewDistance: 1.6
+    stockOffroadAbility: 1.8
+    aerodynamicMultiplier: 1.12
+    carType: COUPE
+    fuelType: GAS
+    weight: 0
+    stockFrontPositionX: 0.8505002
+    stockRearPositionX: 0.872041
+    tiresFirst:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    rimsFirst:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    headLensStrenght: 1
+  - Upgrades:
+    - UpgradeType: 0
+      UpgradeMaxLevel: 5
+    - UpgradeType: 1
+      UpgradeMaxLevel: 5
+    - UpgradeType: 3
+      UpgradeMaxLevel: 5
+    - UpgradeType: 2
+      UpgradeMaxLevel: 5
+    UnlockWithMission: {fileID: 0}
+    defaultNitroValue: 16
+    defaultHandlingValue: 29
+    carID: 195
+    requiredLevel: 3
+    nameCar: Bolide
+    avaCar: {fileID: 21300000, guid: 27396eeae304e7c449e448d50c71da75, type: 2}
+    countStar: 5
+    price: 1000000
+    buyMethob: 0
+    defaultMainColor: 28
+    defaultRimColor: 10
+    defaultWindowColor: 10
+    defaultCaliperColor: 1
+    defaultRimModel: 0
+    defaultMainColorId: {r: 0.019607844, g: 0.7058824, b: 0.9529412, a: 1}
+    defaultRimColorId: {r: 0, g: 0, b: 0, a: 1}
+    defaultWindowColorId: {r: 0, g: 0, b: 0, a: 1}
+    defaultCaliperColorId: {r: 1, g: 0.10980392, b: 0.10980392, a: 1}
+    defaultRimModelId: 0
+    defaultMainColorStats: {fileID: 11400000, guid: 9112ea5efccd401499dbf96cb167912c, type: 2}
+    defaultRimColorStats: {fileID: 11400000, guid: 340bd55dccfe12248b469a7d7cda3c9e, type: 2}
+    defaultWindowStats: {fileID: 11400000, guid: 558caf783a316b241bd8225e8d32a75f, type: 2}
+    defaultCaliperColorStats: {fileID: 11400000, guid: 6e814621d9c71b34791f8dd1fb80d799, type: 2}
+    defaultRimStats: {fileID: 11400000, guid: 52abd2e0c1c26694897912d8755ff2c2, type: 2}
+    defaultCarSkinStats: {fileID: 11400000, guid: 20eb87478cdf40e42b98c5eb415cb339, type: 2}
+    stockBodySoftness: 0.97
+    stockTireSizeID: 020
+    stockTireType: Standard
+    stockTorque: 6000
+    stockTopSpeed: 297
+    stockHandling: 0.65
+    stockTireTime: 43
+    stockDurability: 20
+    stockTransmissionType: AWD
+    stockGearDelay: 0.1
+    stockAccelerationMenu: 0.21
+    stockTopSpeedMenu: 0.2
+    stockHandlingMenu: 0.25
+    electricLevel: 0
+    stockRimMetallic: 0
+    stockRimSoftness: 0.7
+    stockBuildType: Street
+    stockCamber: 0
+    stockSuspensionHeight: 0.05
+    stockCarAttraction: 13
+    stockLevelPointMultiplier: 1
+    stockFrontLightColor: {r: 0, g: 0, b: 0, a: 0.07843138}
+    stockRearLightColor: {r: 0, g: 0, b: 0, a: 0.07843138}
+    stockCarViewDistance: 1.6
+    stockOffroadAbility: 1.7
+    aerodynamicMultiplier: 1.12
+    carType: COUPE
+    fuelType: GAS
+    weight: 0
+    stockFrontPositionX: 0.8532004
+    stockRearPositionX: 0.8586006
+    tiresFirst:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    rimsFirst:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    headLensStrenght: 1
+  - Upgrades:
+    - UpgradeType: 0
+      UpgradeMaxLevel: 5
+    - UpgradeType: 1
+      UpgradeMaxLevel: 5
+    - UpgradeType: 3
+      UpgradeMaxLevel: 5
+    - UpgradeType: 2
+      UpgradeMaxLevel: 5
+    UnlockWithMission: {fileID: 0}
+    defaultNitroValue: 17
+    defaultHandlingValue: 30
+    carID: 200
+    requiredLevel: 3
+    nameCar: Divo
+    avaCar: {fileID: 21300000, guid: c0d05bdc6b4dcba4cb89b1db916f8ca1, type: 2}
+    countStar: 5
+    price: 1300000
+    buyMethob: 0
+    defaultMainColor: 29
+    defaultRimColor: 10
+    defaultWindowColor: 10
+    defaultCaliperColor: 1
+    defaultRimModel: 0
+    defaultMainColorId: {r: 0.27450982, g: 0.34117648, b: 0.4117647, a: 1}
+    defaultRimColorId: {r: 0, g: 0, b: 0, a: 1}
+    defaultWindowColorId: {r: 0, g: 0, b: 0, a: 1}
+    defaultCaliperColorId: {r: 1, g: 0.10980392, b: 0.10980392, a: 1}
+    defaultRimModelId: 0
+    defaultMainColorStats: {fileID: 11400000, guid: 1c28641ae49035c4f8e3fe2fabfbd21b, type: 2}
+    defaultRimColorStats: {fileID: 11400000, guid: 340bd55dccfe12248b469a7d7cda3c9e, type: 2}
+    defaultWindowStats: {fileID: 11400000, guid: 558caf783a316b241bd8225e8d32a75f, type: 2}
+    defaultCaliperColorStats: {fileID: 11400000, guid: 6e814621d9c71b34791f8dd1fb80d799, type: 2}
+    defaultRimStats: {fileID: 11400000, guid: 52abd2e0c1c26694897912d8755ff2c2, type: 2}
+    defaultCarSkinStats: {fileID: 11400000, guid: 133b403a52762d444b4b284e9ead770f, type: 2}
+    stockBodySoftness: 0.97
+    stockTireSizeID: 030
+    stockTireType: Standard
+    stockTorque: 6560
+    stockTopSpeed: 311
+    stockHandling: 0.7
+    stockTireTime: 43
+    stockDurability: 20
+    stockTransmissionType: AWD
+    stockGearDelay: 0.05
+    stockAccelerationMenu: 0.21
+    stockTopSpeedMenu: 0.2
+    stockHandlingMenu: 0.25
+    electricLevel: 0
+    stockRimMetallic: 0
+    stockRimSoftness: 0.7
+    stockBuildType: Street
+    stockCamber: 0
+    stockSuspensionHeight: 0.05
+    stockCarAttraction: 13
+    stockLevelPointMultiplier: 1
+    stockFrontLightColor: {r: 0, g: 0, b: 0, a: 0.07843138}
+    stockRearLightColor: {r: 0, g: 0, b: 0, a: 0.07843138}
+    stockCarViewDistance: 1.6
+    stockOffroadAbility: 2.5
+    aerodynamicMultiplier: 1.12
+    carType: COUPE
+    fuelType: GAS
+    weight: 0
+    stockFrontPositionX: 0.8971827
+    stockRearPositionX: 0.8971825
+    tiresFirst:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    rimsFirst:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    headLensStrenght: 0.4
+  mainColorPrice: 2000
+  ListMainColors:
+  - {r: 0.9558824, g: 0.3362069, b: 0, a: 1}
+  - {r: 1, g: 0.10980392, b: 0.10980392, a: 1}
+  - {r: 0, g: 0.6689658, b: 1, a: 1}
+  - {r: 0.5330188, g: 0.692489, b: 1, a: 1}
+  - {r: 0.2724377, g: 0.3161765, b: 0.2138841, a: 1}
+  - {r: 0.7264151, g: 0.047581762, b: 0, a: 1}
+  - {r: 0.55420727, g: 0.990566, b: 0.22895159, a: 1}
+  - {r: 0.14198764, g: 0.6698113, b: 0, a: 1}
+  - {r: 1, g: 0.8279877, b: 0, a: 1}
+  - {r: 0.9191176, g: 0.9191176, b: 0.9191176, a: 1}
+  - {r: 0, g: 0, b: 0, a: 1}
+  - {r: 1, g: 0.611645, b: 0, a: 1}
+  - {r: 1, g: 0.1745283, b: 0.7656027, a: 1}
+  - {r: 0.6792453, g: 0.6792453, b: 0.6792453, a: 1}
+  - {r: 0.65396947, g: 0, b: 0.8301887, a: 1}
+  - {r: 0.0627451, g: 0.38431373, b: 0.83137256, a: 1}
+  - {r: 0.75686276, g: 0.12941177, b: 0.16470589, a: 1}
+  - {r: 0.8392157, g: 0.8392157, b: 0.8392157, a: 1}
+  - {r: 0.75448245, g: 1, b: 0.43867922, a: 1}
+  - {r: 0.8784314, g: 0.77254903, b: 0.19607843, a: 1}
+  - {r: 0.67058825, g: 0, b: 0.02745098, a: 1}
+  - {r: 0.1254902, g: 0.1254902, b: 0.1254902, a: 1}
+  - {r: 0.011764706, g: 0.30980393, b: 0.8156863, a: 1}
+  - {r: 0.9056604, g: 0.75599617, b: 0, a: 1}
+  - {r: 0.81960785, g: 0.003921569, b: 0.043137256, a: 1}
+  - {r: 0.654902, g: 0.72156864, b: 0.83137256, a: 1}
+  - {r: 0, g: 0, b: 0, a: 1}
+  - {r: 0.88235295, g: 0.28235295, b: 0.007843138, a: 1}
+  - {r: 0.019607844, g: 0.7058824, b: 0.9529412, a: 1}
+  - {r: 0.27450982, g: 0.34117648, b: 0.4117647, a: 1}
+  rimColorPrice: 500
+  ListRimColors:
+  - {r: 0.9558824, g: 0.3362069, b: 0, a: 1}
+  - {r: 1, g: 0.10980392, b: 0.10980392, a: 1}
+  - {r: 0, g: 0.6689658, b: 1, a: 1}
+  - {r: 0.0610943, g: 0.3849361, b: 0.8308824, a: 1}
+  - {r: 0.2724377, g: 0.3161765, b: 0.2138841, a: 1}
+  - {r: 0.9862967, g: 1, b: 0.2783019, a: 1}
+  - {r: 0.55420727, g: 0.990566, b: 0.22895159, a: 1}
+  - {r: 0.14198764, g: 0.6698113, b: 0, a: 1}
+  - {r: 1, g: 0.8279877, b: 0, a: 1}
+  - {r: 0.9191176, g: 0.9191176, b: 0.9191176, a: 1}
+  - {r: 0, g: 0, b: 0, a: 1}
+  - {r: 1, g: 0.611645, b: 0, a: 1}
+  - {r: 1, g: 0.1745283, b: 0.7656027, a: 1}
+  - {r: 0.6792453, g: 0.6792453, b: 0.6792453, a: 1}
+  - {r: 0.65396947, g: 0, b: 0.8301887, a: 1}
+  windowColorPrice: 500
+  ListWindowColors:
+  - {r: 0.9558824, g: 0.3362069, b: 0, a: 1}
+  - {r: 1, g: 0.10980392, b: 0.10980392, a: 1}
+  - {r: 0, g: 0.6689658, b: 1, a: 1}
+  - {r: 0.0610943, g: 0.3849361, b: 0.8308824, a: 1}
+  - {r: 0.2724377, g: 0.3161765, b: 0.2138841, a: 1}
+  - {r: 0.9862967, g: 1, b: 0.2783019, a: 1}
+  - {r: 0.55420727, g: 0.990566, b: 0.22895159, a: 1}
+  - {r: 0.14198764, g: 0.6698113, b: 0, a: 1}
+  - {r: 1, g: 0.8279877, b: 0, a: 1}
+  - {r: 0.9191176, g: 0.9191176, b: 0.9191176, a: 1}
+  - {r: 0, g: 0, b: 0, a: 1}
+  - {r: 1, g: 0.611645, b: 0, a: 1}
+  - {r: 1, g: 0.1745283, b: 0.7656027, a: 1}
+  - {r: 0.6792453, g: 0.6792453, b: 0.6792453, a: 1}
+  - {r: 0.65396947, g: 0, b: 0.8301887, a: 1}
+  caliperColorPrice: 250
+  ListCaliperColors:
+  - {r: 0.9558824, g: 0.3362069, b: 0, a: 1}
+  - {r: 1, g: 0.10980392, b: 0.10980392, a: 1}
+  - {r: 0, g: 0.6689658, b: 1, a: 1}
+  - {r: 0.0610943, g: 0.3849361, b: 0.8308824, a: 1}
+  - {r: 0.2724377, g: 0.3161765, b: 0.2138841, a: 1}
+  - {r: 0.9862967, g: 1, b: 0.2783019, a: 1}
+  - {r: 0.55420727, g: 0.990566, b: 0.22895159, a: 1}
+  - {r: 0.14198764, g: 0.6698113, b: 0, a: 1}
+  - {r: 1, g: 0.8279877, b: 0, a: 1}
+  - {r: 0.9191176, g: 0.9191176, b: 0.9191176, a: 1}
+  - {r: 0, g: 0, b: 0, a: 1}
+  - {r: 1, g: 0.611645, b: 0, a: 1}
+  - {r: 1, g: 0.1745283, b: 0.7656027, a: 1}
+  - {r: 0.6792453, g: 0.6792453, b: 0.6792453, a: 1}
+  - {r: 0.65396947, g: 0, b: 0.8301887, a: 1}
+  rimModelPrice: 500
+  rimModelPrefabs:
+  - {fileID: 1709254077376921, guid: 3dd0801ed24dbdd48bcdd8714fd51986, type: 2}
+  - {fileID: 1709254077376921, guid: 3e70ec57b45ff47409855f1aab30ab64, type: 2}
+  - {fileID: 1709254077376921, guid: f9f06ca0e8e1e5b4eb20e49ecdfefa84, type: 2}
+  - {fileID: 1709254077376921, guid: 1debe90a1d5980248aaa035dc7bdd732, type: 2}
+  - {fileID: 1709254077376921, guid: dafac3d82d5352746ae143d88a2bab20, type: 2}
+  - {fileID: 1709254077376921, guid: 5657982afc9b71b409bb9c410f4093b7, type: 2}
+  - {fileID: 1709254077376921, guid: dabfff0f556f4384a9bf4ed030f4b9b2, type: 2}
+  - {fileID: 1709254077376921, guid: b9a9a59e883ba5449b8896d074d94bb1, type: 2}
+  - {fileID: 1709254077376921, guid: 01f19c988f54e004d9cec61a98de47ee, type: 2}
+  - {fileID: 1709254077376921, guid: 2efe916de48c7414199c1d4243fb749b, type: 2}
+  - {fileID: 1709254077376921, guid: c8c6ec0ca820aa44592f7939db8bc5d0, type: 2}
+  - {fileID: 1709254077376921, guid: dd8ab2df5309e0842803abc0ba416f95, type: 2}
+  - {fileID: 1709254077376921, guid: 25f15711c2fc9934aafd965e5963c904, type: 2}
+  - {fileID: 1709254077376921, guid: 254f855dc834d364484e58fa029c2cab, type: 2}
+  - {fileID: 1709254077376921, guid: f2c9048f860d5624c8312d85a46ab67c, type: 2}
+  - {fileID: 1709254077376921, guid: b5df7aa23a0fc3c47aca7a034bf0ba21, type: 2}
+  - {fileID: 1709254077376921, guid: 7a438a225929b8941a8fda09cba9bf09, type: 2}
+  - {fileID: 1709254077376921, guid: 31d888e12a0b94241905a7e0caebdbce, type: 2}
+  - {fileID: 1709254077376921, guid: d505d779ccacb4a4e992ab7230578618, type: 2}
+  - {fileID: 1709254077376921, guid: 922aeefbaec78da468ceda18aa195115, type: 2}
+  - {fileID: 1709254077376921, guid: fd5eda24ac5b7434fa1aaa1b3cdc76ac, type: 2}
+  - {fileID: 1709254077376921, guid: 44d58f37a3475d14e9ab9687298695f2, type: 2}
+  - {fileID: 1709254077376921, guid: 948ceb1e634aea547bf26245906148ca, type: 2}
+  - {fileID: 1709254077376921, guid: 48062d74b380e30489cbaacd5137d444, type: 2}
+  - {fileID: 1709254077376921, guid: 7f20d1d0fbca799458308f0d47ca87b6, type: 2}
+  - {fileID: 1709254077376921, guid: 9499027d216ebbe4fa31f801b3239c82, type: 2}
+  - {fileID: 1709254077376921, guid: 7a78dedd418bd604992c46b1115428c9, type: 2}
+  - {fileID: 1709254077376921, guid: af4a2b2090a6c51498f28fb932f13af1, type: 2}
+  - {fileID: 1709254077376921, guid: 398a9cb6273bf1d4aa749cb437115e69, type: 2}
+  decalPrice: 3000
+  ListDecalTextures:
+  - {fileID: 2800000, guid: 5aebaf8adf82879458a9d04da2fdac7d, type: 3}
+  - {fileID: 2800000, guid: 1b73c9b98f067e541892427c7115f74d, type: 3}
+  - {fileID: 2800000, guid: e52c5aeba98cc6d4888d6cecd3b2383d, type: 3}
+  - {fileID: 2800000, guid: 1e09be1c0c52986468abf20e6414edd2, type: 3}
+  - {fileID: 2800000, guid: eadcc3bb097e53d498daef8feb7067be, type: 3}
+  - {fileID: 2800000, guid: 2eb997ecaabf0ea4cb613fcf94e8bcb1, type: 3}
+  - {fileID: 2800000, guid: 7fb05b63248c44b4391cfe6f3f74b6db, type: 3}
+  - {fileID: 2800000, guid: c432ca515803c1d458c15233a6c87236, type: 3}
+  - {fileID: 2800000, guid: 033694a447d00e94da29afa99f66a4ae, type: 3}
+  - {fileID: 2800000, guid: 05448ccba5938a348b53944d2aead80d, type: 3}
+  - {fileID: 2800000, guid: d7e8a10df8343244cafd69049af122f0, type: 3}
+  - {fileID: 2800000, guid: 846e3885a76a4c141a22dd2d0aeddca3, type: 3}
+  - {fileID: 2800000, guid: af170913d8d79c5429d8965b0e6f54a1, type: 3}
+  - {fileID: 2800000, guid: 951f037e37711384a8f362bb91dea31c, type: 3}
+  - {fileID: 2800000, guid: 7697a4d84255dae44a76840d0b4ed308, type: 3}
+  - {fileID: 2800000, guid: 2a2278018b7beec4787f484ec6bf1567, type: 3}
+  - {fileID: 2800000, guid: 0fbc60c7b6618e948b0e8e448b9435a6, type: 3}
+  - {fileID: 2800000, guid: 03f8eec8af3915541943de2a41ed03d0, type: 3}
+  - {fileID: 2800000, guid: 128d4c56a3c36d945b3677ea7c85101b, type: 3}
+  - {fileID: 2800000, guid: 7ef54834c8cb14643a196c878d59c26a, type: 3}
+  - {fileID: 2800000, guid: e824ed358330a1b4d89191ab1c65067e, type: 3}
+  - {fileID: 2800000, guid: 42309b86a8b0c934cba65fc87067dbac, type: 3}
+  - {fileID: 2800000, guid: 8477a1b1f2ecc6343be9c93c6d044d1b, type: 3}
+  - {fileID: 2800000, guid: 902501fd738bc834fb17036b1d267d98, type: 3}
+  - {fileID: 2800000, guid: 838f9bd45786a2348b27e935099c8b8c, type: 3}
+  - {fileID: 2800000, guid: 28dc57da8a878064391dc78eb29dce39, type: 3}
+  - {fileID: 2800000, guid: 7671092c5a69b804bbc4be3acc266d00, type: 3}
+  - {fileID: 2800000, guid: f6061454b26d383488350fda428d2e89, type: 3}
+  - {fileID: 2800000, guid: 71bc25306d1c846468d35ab60c761acc, type: 3}
+  - {fileID: 2800000, guid: 715efdd30b56e804580b0ff54326e2ef, type: 3}

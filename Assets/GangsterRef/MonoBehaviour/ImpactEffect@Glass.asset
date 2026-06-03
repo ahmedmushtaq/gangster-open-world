@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0493e6d9f780cd23e643fadc7cf4dc3, type: 3}
+  m_Name: ImpactEffect@Glass
+  m_EditorClassIdentifier:
+  decals:
+  - {fileID: 1709254077376921, guid: ed17977ab37e4484589eec9e5b043325, type: 2}
+  hitEffects:
+  - {fileID: 1709254077376921, guid: ac6e9c7a99ff0994fb5c85ff9f77ee03, type: 2}

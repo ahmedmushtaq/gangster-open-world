@@ -1,0 +1,118 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: carpaint_door
+  m_Shader: {fileID: 4800000, guid: 6b379b09efdfcb849a94ab0a3101a7b5, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords:
+  - _OCCLUSIONMAP
+  m_InvalidKeywords:
+  - _EMISSION
+  m_LightmapFlags: 2
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties:
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+      _BumpMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+      _EmissionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+      _FlakesBumpMap:
+        m_Texture: {fileID: 2800000, guid: 1db4439f78734b84bbab51d172c1604d, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+      _FlakesColorMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+      _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+      _MetallicGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+      _OcclusionMap:
+        m_Texture: {fileID: 2800000, guid: 5783e03577f81e348bd3523aa4381f3b, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+      _OverlayMainTex:
+        m_Texture: {fileID: 2800000, guid: d8107f783f8179142858a4ecc7777453, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+      _OverlaySpecGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+      _ReflectionSpecularMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: {}
+    m_Floats:
+      _BumpScale: 1
+      _CandyPower: 0
+      _CandyScale: 0
+      _Cutoff: 0.5
+      _DecalColoring: 0.5
+      _DetailNormalMapScale: 1
+      _DstBlend: 0
+      _FlakeDens: 11
+      _FlakesBumpMapScale: 20
+      _FlakesBumpStrength: 0.05
+      _FlakesColorCutoff: 0.5
+      _FlakesColorMapScale: 10
+      _FlakesColorStrength: 2.39
+      _FresnelPower: 3.53
+      _FresnelScale: 1
+      _GlossMapScale: 1
+      _Glossiness: 0.95
+      _GlossyReflections: 1
+      _MetalicPower: 3
+      _MetalicScale: 1
+      _Metallic: 0
+      _Mode: 0
+      _OcclusionStrength: 0.4
+      _OverlayGlossiness: 0.95
+      _Parallax: 0.02
+      _ReflectionGlossiness: 0.95
+      _Shininess: 0.179
+      _SmoothnessTextureChannel: 0
+      _Sparkle: 0.01
+      _SpecularHighlights: 1
+      _SrcBlend: 1
+      _UVSec: 0
+      _ZWrite: 1
+    m_Colors:
+      _AmbientColor: {r: 0.6172413, g: 0.6172413, b: 0.6172413, a: 1}
+      _AmbientColor2: {r: 1, g: 1, b: 1, a: 1}
+      _Color: {r: 0.437931, g: 0.437931, b: 0.437931, a: 1}
+      _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+      _FlakeColor: {r: 0.3382353, g: 0.3382353, b: 0.3382353, a: 1}
+      _FresnelColor: {r: 0.2358012, g: 0.2720037, b: 0.3206896, a: 1}
+      _HighlightColor: {r: 0.7835821, g: 0.7835821, b: 0.7835821, a: 1}
+      _OverlayColor: {r: 1, g: 1, b: 1, a: 1}
+      _OverlaySpecular: {r: 0.1691176, g: 0.1691176, b: 0.1691176, a: 1}
+      _ReflectColor: {r: 0.2034483, g: 0.2034483, b: 0.2034483, a: 1}
+      _ReflectionColor: {r: 1, g: 1, b: 1, a: 1}
+      _ReflectionSpecular: {r: 0, g: 0, b: 0, a: 1}
+      _SpecColor: {r: 1, g: 1, b: 1, a: 1}
+      _SpecularColor: {r: 0.7058824, g: 0.7058824, b: 0.7450981, a: 1}
+  m_BuildTextureStacks: []
