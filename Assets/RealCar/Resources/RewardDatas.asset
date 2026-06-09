@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d79b37fab2ab48d506e46d5bb0799eb, type: 3}
+  m_Name: RewardDatas
+  m_EditorClassIdentifier:
+  datas:
+  - id: coin-50
+    type: 0
+    value: 50
+    usePercent: 0
+  - id: coin-75
+    type: 0
+    value: 75
+    usePercent: 0
+  - id: coin-100
+    type: 0
+    value: 100
+    usePercent: 0
+  - id: coin-125
+    type: 0
+    value: 125
+    usePercent: 0
+  - id: coin-150
+    type: 0
+    value: 150
+    usePercent: 0
+  - id: coin-175
+    type: 0
+    value: 175
+    usePercent: 0
+  - id: coin-200
+    type: 0
+    value: 200
+    usePercent: 0
+  - id: coin-250
+    type: 0
+    value: 250
+    usePercent: 0
+  - id: coin-300
+    type: 0
+    value: 300
+    usePercent: 0
+  - id: coin-350
+    type: 0
+    value: 350
+    usePercent: 0

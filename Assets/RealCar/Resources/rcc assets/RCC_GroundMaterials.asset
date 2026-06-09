@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 65b2daed9736e696c0fc0c323ed435c6, type: 3}
+  m_Name: RCC_GroundMaterials
+  m_EditorClassIdentifier:
+  frictions:
+  - groundMaterial: {fileID: 13400000, guid: 07cdabb985096dc4591fcabf30885449, type: 2}
+    forwardStiffness: 1.2
+    sidewaysStiffness: 1.2
+    slip: 0.125
+    damp: 0.4
+    volume: 1
+    groundParticles: {fileID: 1709254077376921, guid: 187d65635047d9b4f8ec4b423555d891, type: 2}
+    groundSound: {fileID: 8300000, guid: c7b89f4ee00285c4f9a52b178bc4711e, type: 3}
+    skidmark: {fileID: 114703437598541787, guid: 6be86e8d6df26284488395454a4f81aa, type: 2}
+  terrainFrictions: []

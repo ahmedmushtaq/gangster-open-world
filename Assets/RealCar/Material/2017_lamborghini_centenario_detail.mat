@@ -1,0 +1,164 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 2017_lamborghini_centenario_detail
+  m_Shader: {fileID: 4800000, guid: b18ee69ec84276c41961e554e7bd3004, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords:
+  - _DETAIL_ON
+  - _METALLIC_ON
+  - _OCCLUSION_ON
+  m_InvalidKeywords:
+  - _COLORIZED_ON
+  - _DETAIL_MULX2
+  - _RECEIVE_SHADOWS_OFF
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses:
+  - SHADOWCASTER
+  m_LockedProperties:
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+      _DecalTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+      _DetailTex:
+        m_Texture: {fileID: 2800000, guid: e038b76d03164a44ca12b1315f473f6f, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+      _MainTex:
+        m_Texture: {fileID: 2800000, guid: 0079537b65719dc4d8c3ee6c59d9697f, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+      _NormalTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: {}
+    m_Floats:
+      _AlphaClip: 0
+      _BASE_COLOR_WEIGHT: 1
+      _BUMP_MAP_STRENGTH: 0.3
+      _Blend: 0
+      _BlendOp: 0
+      _BumpScale: 1
+      _CastShadows: 0
+      _CausticsColorSplit: 0
+      _CausticsHeight: 0
+      _CausticsHeightSmoothness: 0
+      _CausticsStrength: 1
+      _ClearCoatMask: 0
+      _ClearCoatSmoothness: 0
+      _Cull: 0
+      _Cutoff: 0.5
+      _DecalForce: 1
+      _DetailAlbedoMapScale: 1
+      _DetailColorForce: 0
+      _DetailForce: 1
+      _DetailNormalMapScale: 1
+      _DiffuseColorForce: 1.25
+      _DisplacementAmount: 0
+      _DisplacementSpeed: 0
+      _DstBlend: 0
+      _EMISSION_WEIGHT: 1
+      _EnvironmentReflections: 1
+      _GlossMapScale: 1
+      _Glossiness: 0.5
+      _GlossinessSource: 0
+      _GlossyReflections: 1
+      _METALNESS: 0
+      _MaxTessellationDistance: 100
+      _Metallic: 0.05
+      _MinOffset: 0.2
+      _Mode: 0
+      _NormalStrength: 1
+      _Occlusion: 1
+      _OcclusionStrength: 1
+      _OffsetAmount: 1
+      _Parallax: 0.02
+      _QueueControl: 0
+      _QueueOffset: 0
+      _REFLECTIONS_IOR: 1.52
+      _REFLECTIONS_ROUGHNESS: 1
+      _REFLECTIONS_WEIGHT: 1
+      _ReceiveShadows: 0
+      _SPECULARHIGHLIGHTS_OFF: 1
+      _SPECULAR_HIGHLIGHT: 0
+      _SampleGI: 0
+      _ShadowStep: 0.5
+      _Shininess: 0
+      _ShoreColorThreshold: 0
+      _ShoreIntersectionThreshold: 0
+      _Situation: 0.94
+      _Smoothness: 0.85
+      _SmoothnessSource: 0
+      _SmoothnessTextureChannel: 1
+      _SnowLevel: 0
+      _SpecSource: 0
+      _SpecularHighlights: 1
+      _Speed: 1
+      _SrcBlend: 1
+      _Surface: 0
+      _TRANSPARENCY: 0
+      _Tessellation: 1
+      _TransparencyIntersectionThresholdMax: 0
+      _TransparencyIntersectionThresholdMin: 0
+      _USEDECAL: 0
+      _UVSec: 0
+      _UseColorized: 1
+      _UseDecal: 0
+      _UseDetail: 1
+      _UseMetallic: 1
+      _UseNormal: 0
+      _UseOcclusion: 1
+      _Use_Colorized: 1
+      _Use_Decal: 1
+      _Use_Detail: 1
+      _VectorLength: 0.1
+      _WorkflowMode: 1
+      _ZTest: 4
+      _ZWrite: 1
+      _ZWriteControl: 0
+    m_Colors:
+      _BASE_COLOR: {r: 1, g: 1, b: 1, a: 1}
+      _BaseColor: {r: 1, g: 1, b: 1, a: 1}
+      _CausticsProperties: {r: 0, g: 0, b: 0, a: 0}
+      _Color: {r: 1, g: 1, b: 1, a: 1}
+      _DecalColor: {r: 1, g: 1, b: 1, a: 1}
+      _DetailColor: {r: 1, g: 1, b: 1, a: 1}
+      _DiffuseColor: {r: 1, g: 1, b: 1, a: 1}
+      _DisplacementProperties: {r: 0, g: 0, b: 0, a: 0}
+      _EMISSION_COLOR: {r: 0, g: 0, b: 0, a: 0}
+      _Emission: {r: 1, g: 1, b: 1, a: 1}
+      _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+      _FoamIntersectionProperties: {r: 0, g: 0, b: 0, a: 0}
+      _FoamProperties: {r: 0, g: 0, b: 0, a: 0}
+      _MainColor: {r: 1, g: 1, b: 1, a: 1}
+      _MaskColor: {r: 1, g: 1, b: 1, a: 1}
+      _MaskScale: {r: 1, g: 1, b: 1, a: 1}
+      _NoiseAProperties: {r: 0, g: 0, b: 1, a: 1}
+      _NoiseBProperties: {r: 0, g: 0, b: 1, a: 1}
+      _Offset: {r: 0, g: 0, b: 0, a: 0}
+      _REFLECTIONS_COLOR: {r: 1, g: 1, b: 1, a: 1}
+      _ShoreColor: {r: 1, g: 1, b: 1, a: 1}
+      _SnowColor: {r: 1, g: 1, b: 1, a: 1}
+      _SnowDirection: {r: 1, g: 1, b: 1, a: 1}
+      _SpecColor: {r: 0.5, g: 0.5, b: 0.5, a: 0.5}
+      _SpecularColor: {r: 0, g: 0, b: 0, a: 0}
+      _TiflColor: {r: 1, g: 1, b: 1, a: 1}
+      _Tilings: {r: 1, g: 1, b: 0, a: 0}
+      _Till_and_Offest: {r: 0, g: 0, b: 0, a: 0}
+      _Tilling: {r: 1, g: 1, b: 0, a: 0}
+  m_BuildTextureStacks: []

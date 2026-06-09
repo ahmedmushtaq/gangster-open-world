@@ -1,0 +1,88 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Toon_Cyan
+  m_Shader: {fileID: 4800000, guid: ad22bf90831c27649b8bde3ab1ff366d, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords:
+  - _EMISSION_ON
+  m_InvalidKeywords:
+  - TCP2_RAMPTEXT
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 1
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties:
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+      _Diffuse:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+      _EmissionTexture:
+        m_Texture: {fileID: 2800000, guid: 32e31ed07b32b7c45b5c6778489f49cb, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+      _ToonRamp:
+        m_Texture: {fileID: 2800000, guid: ac230faf72c67d24f8c55a5b70dcd7ad, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+      _texcoord:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: {}
+    m_Floats:
+      _BumpScale: 1
+      _Cutoff: 0.5
+      _DetailNormalMapScale: 1
+      _DstBlend: 0
+      _DstBlendOutline: 10
+      _Emission: 1
+      _EmissionForce: 1
+      _GlossMapScale: 1
+      _Glossiness: 0.5
+      _GlossyReflections: 1
+      _Metallic: 0
+      _Mode: 0
+      _OcclusionStrength: 1
+      _Offset1: 0
+      _Offset2: 0
+      _Outline: 1
+      _Parallax: 0.02
+      _RampSmooth: 0.1
+      _RampThreshold: 0.5
+      _RimMax: 1
+      _RimMin: 0.5
+      _RimOffset: -0.05
+      _RimPower: 0.8
+      _SmoothnessTextureChannel: 0
+      _SpecularHighlights: 1
+      _SrcBlend: 1
+      _SrcBlendOutline: 5
+      _TexLod: 5
+      _Texture: 0
+      _UVSec: 0
+      _ZSmooth: -0.5
+      _ZWrite: 1
+      __dirty: 1
+    m_Colors:
+      _Color: {r: 0, g: 0.5921569, b: 1, a: 1}
+      _DiffuseColor: {r: 0, g: 0.7372546, b: 1, a: 1}
+      _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
+      _HColor: {r: 0.7028302, g: 0.9067703, b: 1, a: 1}
+      _OutlineColor: {r: 0.2, g: 0.2, b: 0.2, a: 1}
+      _RimColor: {r: 0.7688679, g: 0.9829621, b: 1, a: 1}
+      _RimDir: {r: 0, g: 0, b: 1, a: 0}
+      _SColor: {r: 0, g: 0.08378568, b: 0.20754719, a: 1}
+  m_BuildTextureStacks: []

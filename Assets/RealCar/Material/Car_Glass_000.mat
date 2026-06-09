@@ -1,0 +1,99 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Car_Glass_000
+  m_Shader: {fileID: 4800000, guid: 719aeb65232a79745a2c175886726e13, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords:
+  - FRONT_DUAL_TINT
+  - _ALPHAPREMULTIPLY_ON
+  - _METALLIC_ON
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties:
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+      _Cube:
+        m_Texture: {fileID: 8900000, guid: 814f8cdd775faf44796e3cf18dc471c8, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: {}
+    m_Floats:
+      _AmbientInt: 1
+      _BlurCube: 0
+      _BumpScale: 1
+      _ChromaticAberration: 0.05
+      _Cutoff: 0.5
+      _DetailNormalMapScale: 1
+      _DiffuseColorForce: 0.35
+      _DstBlend: 10
+      _EmissionForce: 1
+      _Fresnel_I: 1.57
+      _Fresnel_S: 0.72
+      _FrontTransitionBias: 2.24
+      _GlassBroken: 0
+      _GlossMapScale: 0.924
+      _Glossiness: 1
+      _GlossyReflections: 1
+      _LightsReflectionIntensity: 0.58
+      _MainReflectionIntensity: 1
+      _MainTintTransitionBias: 1
+      _Metallic: 1
+      _MetallicAmount: 1
+      _MetallicIntensity: 2
+      _Mode: 3
+      _OcclusionIntensity: 1
+      _OcclusionStrength: 1
+      _Parallax: 0.02
+      _ReflectionIntensity: 1
+      _RefractionValue: 0.98
+      _RimGlow: 1
+      _RimWidth: 3
+      _ShadowIntensity: 0.68702173
+      _Shininess: 0.8
+      _Smoothness: 0.75
+      _SmoothnessAlpha: 0
+      _SmoothnessTextureChannel: 0
+      _SpecShininess: 26
+      _SpecSmoothnes: 1.3
+      _SpecularHighlights: 1
+      _SpecularInt: 19.7
+      _SpecularSmooth: 0.56
+      _SrcBlend: 1
+      _TintGlasses: 0.5
+      _UVSec: 0
+      _UseEmission: 0
+      _UseMetallic: 1
+      _ZWrite: 0
+      __dirty: 1
+    m_Colors:
+      _AlbedoColor: {r: 0, g: 0, b: 0, a: 1}
+      _AmbientColorCar: {r: 1, g: 1, b: 1, a: 1}
+      _BackTint: {r: 1, g: 1, b: 1, a: 0.20392157}
+      _Color: {r: 0.03137255, g: 0, b: 0, a: 0.5019608}
+      _DiffuseColor: {r: 1, g: 1, b: 1, a: 1}
+      _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+      _FresnelColor: {r: 0, g: 0, b: 0, a: 1}
+      _FrontSecondaryTint: {r: 1, g: 1, b: 1, a: 0.43529412}
+      _FrontTint: {r: 0, g: 0, b: 0, a: 0.16862746}
+      _InnerColor: {r: 0, g: 0, b: 0.09803922, a: 0.12941177}
+      _MainSecondaryTint: {r: 1, g: 1, b: 1, a: 0.6509804}
+      _MainTint: {r: 0.4433962, g: 0.4433962, b: 0.4433962, a: 0.3764706}
+      _ReflectColor: {r: 0.06043077, g: 0.09625313, b: 0.13207549, a: 1}
+      _RimColor: {r: 0.8632076, g: 0.9659583, b: 1, a: 0}
+      _SpecColor: {r: 0.8066038, g: 0.8576896, b: 1, a: 0.12156863}
+      _Specular: {r: 0.03137255, g: 0, b: 0.047058824, a: 1}
+  m_BuildTextureStacks: []

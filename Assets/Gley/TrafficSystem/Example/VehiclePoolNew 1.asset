@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 151b8a3ba5d344f47b4955a0d785806a, type: 3}
+  m_Name: VehiclePoolNew 1
+  m_EditorClassIdentifier: 
+  trafficCars:
+  - vehiclePrefab: {fileID: 3916128111216202398, guid: 070f1dc0a72bdc74199e941d27841fce, type: 3}
+    percent: 0
+    dontInstantiate: 0
+  - vehiclePrefab: {fileID: 8971578775566715629, guid: b1420adae1de1e14fb0600930c35a971, type: 3}
+    percent: 0
+    dontInstantiate: 0
+  - vehiclePrefab: {fileID: 5479720588323132773, guid: 7614c78b67211174e90a1c487b92ace2, type: 3}
+    percent: 0
+    dontInstantiate: 0
+  - vehiclePrefab: {fileID: 4415830048148751166, guid: 80cf8c313cb9df9409f5fb12ce8c6b1e, type: 3}
+    percent: 0
+    dontInstantiate: 0
+  - vehiclePrefab: {fileID: 9144916218632603350, guid: 321b22361d6d7374eb33ebdca805ac32, type: 3}
+    percent: 0
+    dontInstantiate: 0
+  - vehiclePrefab: {fileID: 9162626240016493663, guid: 3242484c80283914d8f2a41208d1d1b9, type: 3}
+    percent: 0
+    dontInstantiate: 0
+  - vehiclePrefab: {fileID: 5650655010075564134, guid: cdd720cc3b3a9f84f96105b120fda15c, type: 3}
+    percent: 0
+    dontInstantiate: 0

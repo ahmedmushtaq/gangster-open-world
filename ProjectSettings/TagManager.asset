@@ -3,7 +3,35 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 3
-  tags: []
+  tags:
+  - AIPlayer
+  - Wheels
+  - caliper
+  - diskRim
+  - Level
+  - CityCar
+  - Teleport
+  - PoliceCar
+  - Weapon
+  - Street
+  - HeliTrigger
+  - Ignore Ragdoll
+  - BikeTrigger
+  - BiCycleTrigger
+  - Water
+  - Sound
+  - PlayerUI
+  - TrainHandle
+  - TrafficCar
+  - tnt
+  - checkpoint
+  - Canvas
+  - destructibleProp
+  - interactiveTrigger
+  - nitroparticle
+  - nitroboostparticle
+  - reverseparticle
+  - TrafficLight
   layers:
   - Default
   - TransparentFX
@@ -11,14 +39,14 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
+  - Road
+  - Traffic
   - RCCP_Vehicle
   - RCCP_WheelCollider
   - RCCP_DetachablePart
   - RCCP_Prop
   - RCCP_Obstacle
-  - 
+  - Player
   - 
   - 
   - 

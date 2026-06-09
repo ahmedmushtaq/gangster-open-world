@@ -1,0 +1,27 @@
+fileFormatVersion: 2
+guid: 5d2a4c22a919d3448aa1db66c8d5017a
+timeCreated: 1780552398
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  externalObjects: {}
+  fontSize: 24
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Oswald Regular
+  - UVN Tin Tuc Hep Them
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 67638993480d4224986c8491c33798cd, type: 3}
+  customCharacters:
+  fontRenderingMode: 0
+  output:
+    hasEmptyFontData: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData:
+  assetBundleName:
+  assetBundleVariant:

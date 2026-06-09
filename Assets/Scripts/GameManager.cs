@@ -1,3 +1,4 @@
+using Gley.TrafficSystem;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -19,6 +20,10 @@ public class GameManager : MonoBehaviour
     [Header("Vehicle References")]
     [SerializeField] private RCC_CarControllerV3[] cars;
     [SerializeField] private RCC_CarControllerV3 activeCar;
+
+
+    [Header("TrafficController")]
+    [SerializeField] private TrafficComponent trafficComponent;
 
     [Header("UI References")]
     [SerializeField] private Button behaviour1Btn;
@@ -54,6 +59,8 @@ public class GameManager : MonoBehaviour
         currentCarIndex = PlayerPrefs.GetInt("SelectedCarIndex", 0);
         cars[currentCarIndex].gameObject.SetActive(true);
         activeCar = cars[currentCarIndex];
+        trafficComponent.player = activeCar.transform; // Set the traffic system's player reference to the active car
+        trafficComponent.gameObject.SetActive(true);
         Invoke(nameof(GetActiveCar), 1f); // Delay to ensure RCC_SceneManager has initialized
     }
 

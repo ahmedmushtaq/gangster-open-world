@@ -1,0 +1,173 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Prop_Cargo_Helicopter
+  m_Shader: {fileID: 4800000, guid: b18ee69ec84276c41961e554e7bd3004, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords:
+  - _METALLIC_ON
+  m_InvalidKeywords:
+  - _GLOSSINESS_FROM_BASE_ALPHA
+  - _RECEIVE_SHADOWS_OFF
+  - _SPECULAR_COLOR
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses:
+  - MOTIONVECTORS
+  m_LockedProperties:
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+      _DecalTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+      _DetailTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+      _MainTex:
+        m_Texture: {fileID: 2800000, guid: 16e0ee2fd29d81646ad09a58a9e9a679, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+      _NormalTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: {}
+    m_Floats:
+      _AddPrecomputedVelocity: 0
+      _Alpha: 1
+      _AlphaClip: 0
+      _AlphaCutoff: 0
+      _AlphaToMask: 0
+      _AmbientBoost: 0.3
+      _BaseAlpha: 1
+      _BaseColorAlpha: 0
+      _BaseColorBlendStrength: 1
+      _BaseTexIntensity: 1
+      _Blend: 0
+      _BlendMode: 0
+      _BlendModePreserveSpecular: 1
+      _BlendOp: 0
+      _BumpScale: 1
+      _CastShadows: 0
+      _ClearCoat: 0
+      _ClearCoatMask: 0
+      _ClearCoatSmoothness: 0
+      _Clipping: 0.5
+      _Cull: 2
+      _CullMode: 2
+      _Cutoff: 0
+      _DecalBlend: 1
+      _DecalHue: 0
+      _DecalRotation: 0
+      _DecalTemp: 0
+      _DetailAlbedoMapScale: 1
+      _DetailBlendMode: 1
+      _DetailColorForce: 0
+      _DetailNormalMapScale: 1
+      _DiffuseColorForce: 1
+      _DirtAmount: 0
+      _DirtSpread: 1
+      _DstBlend: 0
+      _DstBlendAlpha: 0
+      _EnableBaseColor: 1
+      _EnableBaseTexture: 1
+      _EnvironmentReflections: 1
+      _FlakesPower: 0
+      _FresnelPower: 3.67
+      _FresnelScale: 0.6
+      _GlassOpacity: 0.5
+      _GlossMapScale: 0
+      _Glossiness: 0
+      _GlossinessSource: 0
+      _GlossyReflections: 0
+      _HoloSpeed: 2
+      _HoloStrength: 0.592
+      _HoloToggle: 0
+      _HoloWave: 1
+      _Level: 1
+      _Metallic: 0.05
+      _MetallicStrength: 1
+      _Occlusion: 1
+      _OcclusionStrength: 1
+      _Parallax: 0.005
+      _PearlescentPower: 3
+      _QueueControl: 0
+      _QueueOffset: 0
+      _ReceiveShadows: 0
+      _Reflection: 0.05
+      _ReflectionIntensity: 0.1
+      _ReflectionStrength: 1
+      _Rusty: 0
+      _RustyPower: 0.1
+      _Shininess: 0
+      _Smoothness: 0.1
+      _SmoothnessSource: 1
+      _SmoothnessTextureChannel: 1
+      _SpecSource: 0
+      _SpecularHighlights: 0
+      _SrcBlend: 1
+      _SrcBlendAlpha: 1
+      _Surface: 0
+      _SurfaceType: 0
+      _UseAlphaCutoff: 1
+      _UseBaseColor: 1
+      _UseBaseTex: 1
+      _UseCustomLightProbe: 0
+      _UseDecal: 0
+      _UseDetail: 0
+      _UseDetailColorOnly: 0
+      _UseDetailTex: 0
+      _UseDetailTexture: 1
+      _UseDirtTex: 1
+      _UseFlakes: 1
+      _UseGlass: 0
+      _UseHolo: 0
+      _UseHoloSpeed: 0
+      _UseHoloWave: 1
+      _UseHolographic: 0
+      _UseMetallic: 1
+      _UseMetallicAlpha: 0
+      _UseMetallicMap: 0
+      _UseNormal: 0
+      _UseOcclusion: 0
+      _UsePearlescent: 1
+      _UseRusty: 1
+      _UseSimpleLighting: 0
+      _UseSubTex: 0
+      _WaveSpeed: 1
+      _WorkflowMode: 1
+      _XRMotionVectorsPass: 0
+      _ZTest: 4
+      _ZWrite: 1
+      _ZWriteControl: 0
+    m_Colors:
+      _BaseColor: {r: 0.9529412, g: 0.69411767, b: 0, a: 0.1}
+      _BaseTilingOffset: {r: 1, g: 1, b: 0, a: 0}
+      _Color: {r: 0.9529412, g: 0.69411767, b: 0, a: 0.1}
+      _DecalColor: {r: 1, g: 1, b: 1, a: 1}
+      _DetailColor: {r: 1, g: 1, b: 1, a: 1}
+      _DetailTilingOffset: {r: 1, g: 1, b: 0, a: 0}
+      _DiffuseColor: {r: 1, g: 0.72638464, b: 0, a: 1}
+      _DirtTilingOffset: {r: 1, g: 1, b: 0, a: 0}
+      _Emission: {r: 0, g: 0, b: 0, a: 0}
+      _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+      _FlakesColor: {r: 1, g: 1, b: 1, a: 1}
+      _FresnelColor: {r: 0, g: 1, b: 1, a: 1}
+      _HoloColor: {r: 1, g: 0.08962262, b: 0.6083273, a: 1}
+      _PearlescentColor: {r: 1, g: 0.9961791, b: 0.9481132, a: 1}
+      _ProbeColor: {r: 1, g: 1, b: 1, a: 1}
+      _SpecColor: {r: 0.19999993, g: 0.19999993, b: 0.19999993, a: 0.8}
+  m_BuildTextureStacks: []

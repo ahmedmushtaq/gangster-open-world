@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1479924935, guid: 431b5a09feef39c755e31e790438de49, type: 3}
+  m_Name: TokenAsset
+  m_EditorClassIdentifier:
+  token: AAC2SQam4QjmxrHv3/gdT5pOeHTReMRUY29tLnJlYWwuY2FyLmRyaXZpbmcub3Blbi5zYW5kYm94LnRyYWZmaWMucmFjaW5nLmdhbWVjb20ucmVhbC5jYXIuZHJpdmluZy5vcGVuLnNhbmRib3gudHJhZmZpYy5yYWNpbmcuZ2FtZXRyaXBAMTIz
+  packageId: com.real.car.driving.open.sandbox.traffic.racing.game
+  bundleId: com.real.car.driving.open.sandbox.traffic.racing.game
+  securityStamp: efb1c6e6-f8df-4f1d-9a4e-7874d178c454
+  expired: 00:00 01/01/2029
+  description: Token for com.real.car.driving.open.sandbox.traffic.racing.game expired 00:00 01/01/2029
+  error:
