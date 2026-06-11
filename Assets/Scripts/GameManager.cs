@@ -118,6 +118,9 @@ public class GameManager : MonoBehaviour
 
         if (activeCar != null)
             activeCar.gameObject.SetActive(true);
+
+        PlayerPrefs.SetInt("SelectedCarIndex", currentCarIndex);
+        PlayerPrefs.Save();
     }
 
     public void ChangeCarBehaviour(int index)
