@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Events;
 
 public class ParkingFinish : MonoBehaviour
 {
@@ -6,15 +7,44 @@ public class ParkingFinish : MonoBehaviour
     [Tooltip("Tag of the player's car root object")]
     public string carTag = "Player";
 
+    [Header("Visual Feedback")]
+    public MeshRenderer parkingSlotRenderer;   // Assign the renderer of the parking slot (or child object)
+    public Material parkingSlotMaterial;       // Optional: assign material directly (overrides renderer.sharedMaterial)
+    public Color idleColor = Color.blue;       // No car inside
+    public Color enterColor = Color.red;       // Car entered but not fully inside
+    public Color insideColor = Color.green;    // Car fully inside (timer counting)
+
+    [Header("Timer")]
+    public float requiredInsideTime = 3f;      // Seconds the car must stay fully inside to complete
+    private float currentInsideTimer = 0f;
+    private bool isTimerRunning = false;
+
+    // ========== NEW: Win Effects Section ==========
+    [Header("Win Effects")]
+    public LevelData levelData;                // Reference to LevelData (contains winVFX & successCamera)
+    // ============================================
+
     [Header("Debug")]
     public bool isCarFullyInside = false;
 
     // Private references
-    public Collider triggerCollider;
-    public GameObject playerCar;
+    private Collider triggerCollider;
+    private GameObject playerCar;
+    private bool wasFullyInside = false;
+    public Material activeMaterial;            // The material instance we actually modify
 
-    // For detecting when the state changes
-    public bool wasFullyInside = false;
+    // ========== NEW: Events for MissionManager ==========
+    [Header("Events for MissionManager")]
+    public UnityEvent OnCarFullyInside;
+    public UnityEvent OnCarExited;
+    public UnityEvent OnParkingSuccess;
+
+    // ========== NEW: Public method to manually trigger success (optional) ==========
+    public void TriggerParkingSuccess()
+    {
+        OnParkingSuccess?.Invoke();
+    }
+    // ====================================================
 
     void Start()
     {
@@ -23,33 +53,79 @@ public class ParkingFinish : MonoBehaviour
         {
             Debug.LogError("ParkingFinish: This script requires a Trigger Collider on the same GameObject!");
         }
+
+        // Set up the material for color changes
+        if (parkingSlotRenderer != null)
+        {
+            activeMaterial = parkingSlotRenderer.material; // Creates an instance
+        }
+        else if (parkingSlotMaterial != null)
+        {
+            activeMaterial = new Material(parkingSlotMaterial); // Create instance
+            // If you assign a material directly, you'll need to apply it to a renderer manually
+            Debug.LogWarning("ParkingFinish: parkingSlotRenderer not assigned; using fallback material but it won't be visible.");
+        }
+        else
+        {
+            Debug.LogError("ParkingFinish: No MeshRenderer or Material assigned for visual feedback!");
+        }
+
+        // Set initial color (idle/blue)
+        SetColor(idleColor);
+
+        // ========== NEW: Auto-find LevelData if not assigned ==========
+        if (levelData == null)
+        {
+            // Try to find LevelData on the same GameObject or a parent
+            levelData = GetComponentInParent<LevelData>();
+            if (levelData == null)
+                levelData = GetComponent<LevelData>();
+
+            if (levelData == null)
+                Debug.LogWarning("ParkingFinish: LevelData not assigned and could not be found. Win VFX/success camera will not activate.");
+        }
+        // ==============================================================
+
+        // Automatically subscribe to MissionManager if available
+        if (MissionManager.Instance != null)
+        {
+            OnCarFullyInside.AddListener(MissionManager.Instance.OnCarFullyInside);
+            OnCarExited.AddListener(MissionManager.Instance.OnCarExited);
+            OnParkingSuccess.AddListener(MissionManager.Instance.OnParkingSuccess);
+            Debug.Log("ParkingFinish: Subscribed to MissionManager events.");
+        }
+        else
+        {
+            Debug.LogWarning("ParkingFinish: MissionManager.Instance not found – events will not trigger mission logic.");
+        }
     }
 
     void OnTriggerEnter(Collider other)
     {
-        Debug.LogError($"ParkingFinish: OnTriggerEnter with '{other.transform.root.gameObject.name}' (tag: {other.transform.root.gameObject.tag})");
-        // Get the root object of whatever entered
         Transform root = other.transform.root;
         if (root.CompareTag(carTag))
         {
             if (playerCar == null)
             {
                 playerCar = root.gameObject;
-                Debug.Log($"ParkingFinish: Detected player car '{playerCar.name}'");
+                Debug.Log($"ParkingFinish: Car entered the area -> color RED");
+                SetColor(enterColor);
             }
+            // Reset timer when car enters (even if partially)
+            ResetTimer();
         }
     }
 
     void OnTriggerExit(Collider other)
     {
-        //Debug.LogError($"ParkingFinish: OnTriggerExit with '{other.gameObject.name}' (tag: {other.gameObject.tag})");
         Transform root = other.transform.root;
         if (root.CompareTag(carTag))
         {
-            // Car has completely left the trigger area
             playerCar = null;
             isCarFullyInside = false;
-            Debug.Log("ParkingFinish: Car left the parking area");
+            ResetTimer();
+            SetColor(idleColor);
+            Debug.Log("ParkingFinish: Car left the parking area -> color BLUE");
         }
     }
 
@@ -65,11 +141,55 @@ public class ParkingFinish : MonoBehaviour
             isCarFullyInside = false;
         }
 
-        // Detect rising edge (just became fully inside)
-        if (isCarFullyInside && !wasFullyInside)
+        // Handle timer logic when fully inside
+        if (isCarFullyInside)
         {
-            OnCarParked();
+            if (!isTimerRunning)
+            {
+                // Just became fully inside – start timer and change color to green
+                isTimerRunning = true;
+                currentInsideTimer = 0f;
+                SetColor(insideColor);
+                OnCarFullyInside.Invoke();
+                Debug.Log("ParkingFinish: Car fully inside! Starting timer...");
+            }
+            else
+            {
+                // Increment timer
+                currentInsideTimer += Time.deltaTime;
+                float progress = currentInsideTimer / requiredInsideTime;
+                if (MissionManager.Instance.fillImage != null)
+                    MissionManager.Instance.fillImage.fillAmount = 1f - Mathf.Clamp01(progress);
+                if (MissionManager.Instance.fillText != null)
+                    MissionManager.Instance.fillText.text = "Parking in " + (requiredInsideTime - currentInsideTimer).ToString("F1")/* + "s"*/;
+                
+                if (currentInsideTimer >= requiredInsideTime)
+                {
+                    // Timer complete – level success
+                    Debug.LogError("CAR FULLY PARKED!");
+                    OnParkingSuccess?.Invoke();
+                    OnCarParked();
+                    // Reset timer so we don't trigger again
+                    ResetTimer();
+                }
+            }
         }
+        else
+        {
+            // Car is not fully inside (either partially or left)
+            if (isTimerRunning)
+            {
+                ResetTimer();
+                // If car is still inside the trigger (but not fully), set color red
+                if (playerCar != null)
+                {
+                    SetColor(enterColor);
+                    OnCarExited?.Invoke();
+                    Debug.Log("ParkingFinish: Car partially inside -> color RED, timer reset.");
+                }
+            }
+        }
+
         wasFullyInside = isCarFullyInside;
     }
 
@@ -82,15 +202,11 @@ public class ParkingFinish : MonoBehaviour
         if (playerCar == null || triggerCollider == null)
             return false;
 
-        // Get the combined bounding box of all car colliders in world space
         Bounds carBounds = GetCombinedBounds(playerCar);
-
-        // Convert the 8 corners of the car's bounds into the trigger's local space
         Vector3[] carCorners = GetBoundsCorners(carBounds);
         foreach (Vector3 worldCorner in carCorners)
         {
             Vector3 localCorner = transform.InverseTransformPoint(worldCorner);
-            // Check if this point is inside the trigger's collider volume
             if (!IsPointInsideTriggerCollider(localCorner))
             {
                 return false;
@@ -99,9 +215,6 @@ public class ParkingFinish : MonoBehaviour
         return true;
     }
 
-    /// <summary>
-    /// Gets the combined world-space bounds of all colliders on a GameObject and its children.
-    /// </summary>
     private Bounds GetCombinedBounds(GameObject obj)
     {
         Collider[] colliders = obj.GetComponentsInChildren<Collider>();
@@ -116,9 +229,6 @@ public class ParkingFinish : MonoBehaviour
         return combined;
     }
 
-    /// <summary>
-    /// Returns the 8 corner points of a bounding box in world space.
-    /// </summary>
     private Vector3[] GetBoundsCorners(Bounds bounds)
     {
         Vector3[] corners = new Vector3[8];
@@ -135,41 +245,77 @@ public class ParkingFinish : MonoBehaviour
         return corners;
     }
 
-    /// <summary>
-    /// Checks whether a point (in the trigger's local space) is inside the trigger's collider volume.
-    /// Supports BoxCollider, SphereCollider, CapsuleCollider, and MeshCollider (convex).
-    /// </summary>
     private bool IsPointInsideTriggerCollider(Vector3 localPoint)
     {
-        // Use the built-in ClosestPoint method - if the closest point is the same as the input point, it's inside
-        Vector3 closestPoint = triggerCollider.ClosestPoint(transform.TransformPoint(localPoint));
-        return Vector3.Distance(triggerCollider.ClosestPoint(transform.TransformPoint(localPoint)), transform.TransformPoint(localPoint)) < 0.001f;
+        Vector3 worldPoint = transform.TransformPoint(localPoint);
+        Vector3 closestPoint = triggerCollider.ClosestPoint(worldPoint);
+        return Vector3.Distance(closestPoint, worldPoint) < 0.001f;
     }
 
-    /// <summary>
-    /// Called when the car becomes fully inside the parking area.
-    /// Override this or add your own logic (e.g., play sound, finish level, etc.)
-    /// </summary>
+    private void ResetTimer()
+    {
+        isTimerRunning = false;
+        currentInsideTimer = 0f;
+    }
+
+    private void SetColor(Color color)
+    {
+        if (activeMaterial != null)
+        {
+            activeMaterial.SetColor("_TintColor", color);
+            //activeMaterial.color = color;
+        }
+    }
+
     private void OnCarParked()
     {
-        Debug.LogError("CAR FULLY PARKED!");
+        Debug.Log("ParkingFinish: CAR SUCCESSFULLY PARKED! Activating win effects.");
 
-        Invoke(nameof(LevelComplete), 1f); // Delay to allow for any final adjustments or effects
+        // ========== NEW: Activate win VFX and success camera from LevelData ==========
+        if (levelData != null)
+        {
+            if (levelData.winVFX != null)
+            {
+                levelData.winVFX.SetActive(true);
+                ParticleSystem ps = levelData.winVFX.GetComponent<ParticleSystem>();
+                if (ps != null) ps.Play();
+                Debug.Log("ParkingFinish: Win VFX activated.");
+            }
+            //if (levelData.successCamera != null)
+            //{
+            //    //levelData.successCamera.SetActive(true);
+            //    Debug.Log("ParkingFinish: Success camera activated.");
+            //}
+        }
+        else
+        {
+            Debug.LogWarning("ParkingFinish: LevelData missing – win effects not played.");
+        }
+        // ============================================================================
 
-        // Example: Disable car movement, show UI, load next level, etc.
-        // You can also expose a UnityEvent in the inspector for flexibility.
+        // Optional: disable car controls, play effects, etc.
+        Invoke(nameof(LevelComplete), 1f); // Small delay for visual feedback
     }
 
     public void LevelComplete()
     {
-        MissionManager.Instance.LevelComplete();
+        Debug.LogError("CAR FULLY PARKED!");
+        
+        if (MissionManager.Instance != null)
+        {
+            MissionManager.Instance.LevelComplete();
+            GetComponent<BoxCollider>().enabled = false;
+            enabled = false;
+        }
+        else
+            Debug.LogError("MissionManager.Instance is null!");
+
+
     }
 
     // ========== GIZMOS FOR VISUAL DEBUGGING ==========
-
     private void OnDrawGizmos()
     {
-        // Draw the trigger collider (always)
         if (triggerCollider == null)
             triggerCollider = GetComponent<Collider>();
 
@@ -179,29 +325,14 @@ public class ParkingFinish : MonoBehaviour
             DrawColliderGizmo(triggerCollider);
         }
 
-        // Draw the car's combined bounds if a car is inside
         if (playerCar != null && Application.isPlaying)
         {
             Bounds carBounds = GetCombinedBounds(playerCar);
             Gizmos.color = isCarFullyInside ? Color.green : Color.red;
             Gizmos.DrawWireCube(carBounds.center, carBounds.size);
-
-            // Optionally draw the 8 corner points for debugging
-            if (isCarFullyInside == false && carBounds.size.magnitude > 0.1f)
-            {
-                Vector3[] corners = GetBoundsCorners(carBounds);
-                Gizmos.color = Color.magenta;
-                foreach (Vector3 corner in corners)
-                {
-                    Gizmos.DrawSphere(corner, 0.1f);
-                }
-            }
         }
     }
 
-    /// <summary>
-    /// Helper to draw gizmo for different collider types.
-    /// </summary>
     private void DrawColliderGizmo(Collider col)
     {
         if (col is BoxCollider box)
@@ -214,19 +345,8 @@ public class ParkingFinish : MonoBehaviour
         {
             Gizmos.DrawWireSphere(transform.TransformPoint(sphere.center), sphere.radius);
         }
-        else if (col is CapsuleCollider capsule)
-        {
-            // Simple approximation: draw the capsule as a cylinder + spheres
-            Vector3 worldCenter = transform.TransformPoint(capsule.center);
-            float radius = capsule.radius;
-            float height = capsule.height;
-            int direction = capsule.direction;
-            // Not implementing full capsule gizmo for brevity, but you can extend.
-            Gizmos.DrawWireSphere(worldCenter, radius);
-        }
         else
         {
-            // Fallback: draw bounds
             Gizmos.DrawWireCube(col.bounds.center, col.bounds.size);
         }
     }
