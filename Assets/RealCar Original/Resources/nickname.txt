@@ -1,0 +1,563 @@
+﻿{
+	"items": [{
+			"name": "Evillious Energy"
+		},
+		{
+			"name": "Duke of Doom"
+		},
+		{
+			"name": "Eat Bullets"
+		},
+		{
+			"name": "Monstrous Michel"
+		},
+		{
+			"name": "Collateral Damage"
+		},
+		{
+			"name": "Gabriel Groomer"
+		},
+		{
+			"name": "Annihilator"
+		},
+		{
+			"name": "Veteran of Death"
+		},
+		{
+			"name": "Walk Alone Bravely"
+		},
+		{
+			"name": "Tonight Gamer"
+		},
+		{
+			"name": "Walking Pegasus"
+		},
+		{
+			"name": "Dead Deal"
+		},
+		{
+			"name": "Killer Romeo"
+		},
+		{
+			"name": "Overkill"
+		},
+		{
+			"name": "Best Bluster"
+		},
+		{
+			"name": "Brute Fact"
+		},
+		{
+			"name": "Green Ghost"
+		},
+		{
+			"name": "Bloss Flop"
+		},
+		{
+			"name": "Terrific Tornado"
+		},
+		{
+			"name": "Tango Boss"
+		},
+		{
+			"name": "Accurate Arrow"
+		},
+		{
+			"name": "Kill Spree"
+		},
+		{
+			"name": "Optimal Aces"
+		},
+		{
+			"name": "Dark Knight"
+		},
+		{
+			"name": "Inimical Thugs"
+		},
+		{
+			"name": "Knuckle Duster"
+		},
+		{
+			"name": "Local Back Stabber"
+		},
+		{
+			"name": "Happy Killing"
+		},
+		{
+			"name": "Fear Butchers"
+		},
+		{
+			"name": "Guncap Slingbad"
+		},
+		{
+			"name": "Highlander Monk"
+		},
+		{
+			"name": "Left Divide"
+		},
+		{
+			"name": "Jack The Ripper"
+		},
+		{
+			"name": "Hog Butcher"
+		},
+		{
+			"name": "Psychedelic Servicemen"
+		},
+		{
+			"name": "Militaristic"
+		},
+		{
+			"name": "Fighting Machine"
+		},
+		{
+			"name": "Keen Team Six"
+		},
+		{
+			"name": "Junkyard Dog"
+		},
+		{
+			"name": "Fuzzy Pack"
+		},
+		{
+			"name": "Straight Gangsters"
+		},
+		{
+			"name": "Mortified Coercion"
+		},
+		{
+			"name": "Lyrical Armed Services"
+		},
+		{
+			"name": "Outrageous Dominance"
+		},
+		{
+			"name": "Brash Thugs"
+		},
+		{
+			"name": "Complex Slayers"
+		},
+		{
+			"name": "Faulty Devils"
+		},
+		{
+			"name": "Odd Hooligans"
+		},
+		{
+			"name": "Organic Punks"
+		},
+		{
+			"name": "Hungry Admirals"
+		},
+		{
+			"name": "Cloudy Perpetrator"
+		},
+		{
+			"name": "Keen Team Six"
+		},
+		{
+			"name": "Inimical Thugs"
+		},
+		{
+			"name": "Agent Hercules"
+		},
+		{
+			"name": "Metal Star"
+		},
+		{
+			"name": "Night Magnet"
+		},
+		{
+			"name": "Headshooter"
+		},
+		{
+			"name": "Optimal Aces"
+		},
+		{
+			"name": "Alpha Returns"
+		},
+		{
+			"name": "Dancing Madman"
+		},
+		{
+			"name": "Abnormal Vigor"
+		},
+		{
+			"name": "Ball Blaster"
+		},
+		{
+			"name": "Kill Switch"
+		},
+		{
+			"name": "Pixie Soldier"
+		},
+		{
+			"name": "Pro Headshot"
+		},
+		{
+			"name": "Grave Digger"
+		},
+		{
+			"name": "Cool Shooter"
+		},
+		{
+			"name": "Dead Shot"
+		},
+		{
+			"name": "Thunderbeast"
+		},
+		{
+			"name": "Bad Soldier"
+		},
+		{
+			"name": "Local Grim Reaper"
+		},
+		{
+			"name": "Captain Jack Sparrow"
+		},
+		{
+			"name": "Outrageous Dominance"
+		},
+		{
+			"name": "Agent 47"
+		},
+		{
+			"name": "Lyrical Armed Services"
+		},
+		{
+			"name": "Quarrelsome Strategy"
+		},
+		{
+			"name": "Hungry Admirals"
+		},
+		{
+			"name": "Cloudy Perpetrator"
+		},
+		{
+			"name": "Fuzzy Pack"
+		},
+		{
+			"name": "Straight Gangsters"
+		},
+		{
+			"name": "Psychedelic Servicemen"
+		},
+		{
+			"name": "Homely Sharpshooters"
+		},
+		{
+			"name": "Plain Privileg"
+		},
+		{
+			"name": "Annoyed Power"
+		},
+		{
+			"name": "Demonic Criminals"
+		},
+		{
+			"name": "Fear Butchers"
+		},
+		{
+			"name": "Left Divide"
+		},
+		{
+			"name": "Spicy Senorita"
+		},
+		{
+			"name": "Girl Royale"
+		},
+		{
+			"name": "Blade Woman"
+		},
+		{
+			"name": "Giggle Fluff"
+		},
+		{
+			"name": "Candy Cough"
+		},
+		{
+			"name": "Dexterous Queen"
+		},
+		{
+			"name": "Panda Heart"
+		},
+		{
+			"name": "Princess Pickney"
+		},
+		{
+			"name": "Magic Peach"
+		},
+		{
+			"name": "Tiger Kitty"
+		},
+		{
+			"name": "Lady Killer"
+		},
+		{
+			"name": "Dangerous Damsel"
+		},
+		{
+			"name": "Koi Diva"
+		},
+		{
+			"name": "PubgPie"
+		},
+		{
+			"name": "Auspicious Olivia"
+		},
+		{
+			"name": "Luna Star"
+		},
+		{
+			"name": "Ancient Ambrosia"
+		},
+		{
+			"name": "Curious Caroline"
+		},
+		{
+			"name": "Crazy Cinderella"
+		},
+		{
+			"name": "Tragic Girl"
+		},
+		{
+			"name": "Girls of Neptune"
+		},
+		{
+			"name": "Broken Paws"
+		},
+		{
+			"name": "Anonymous Girl"
+		},
+		{
+			"name": "Tiny Hunter"
+		},
+		{
+			"name": "Leading Light"
+		},
+		{
+			"name": "Acid Queen"
+		},
+		{
+			"name": "Video Game Heroine"
+		},
+		{
+			"name": "Cool Whip"
+		},
+		{
+			"name": "Claudia Clouds"
+		},
+		{
+			"name": "Princess of PUBG"
+		},
+		{
+			"name": "Gun Digger"
+		},
+		{
+			"name": "TeKilla Sunrise"
+		},
+		{
+			"name": "Little Drunk Girl"
+		},
+		{
+			"name": "Digital Goddess"
+		},
+		{
+			"name": "Peanut Butter Woman"
+		},
+		{
+			"name": "Sleek Assassin"
+		},
+		{
+			"name": "Treasure Devil"
+		},
+		{
+			"name": "Lady Fantastic"
+		},
+		{
+			"name": "Opulent Gamer"
+		},
+		{
+			"name": "Wildcat Talent"
+		},
+		{
+			"name": "Pink Nightmare"
+		},
+		{
+			"name": "Miss Fix It"
+		},
+		{
+			"name": "Feral Filly"
+		},
+		{
+			"name": "Troubled Chick"
+		},
+		{
+			"name": "Freeze Queen"
+		},
+		{
+			"name": "Eye Candy Kitten"
+		},
+		{
+			"name": "Romance Princess"
+		},
+		{
+			"name": "Titanium Ladybug"
+		},
+		{
+			"name": "Emerald Goddess"
+		},
+		{
+			"name": "Marshmallow Treat"
+		},
+		{
+			"name": "Queen Bee"
+		},
+		{
+			"name": "Microwave Chardonnay"
+		},
+		{
+			"name": "Gamer Bean"
+		},
+		{
+			"name": "Mafia Princess"
+		},
+		{
+			"name": "Woodland Beauty"
+		},
+		{
+			"name": "Darkside Hooker"
+		},
+		{
+			"name": "Saturn Extreme"
+		},
+		{
+			"name": "Battle Mistress"
+		},
+		{
+			"name": "Sassy Muffin"
+		},
+		{
+			"name": "Canary Apple Red"
+		},
+		{
+			"name": "Player 1321"
+		},
+		{
+			"name": "Player 2545"
+		},
+		{
+			"name": "Player 4773"
+		},
+		{
+			"name": "Player 4534"
+		},
+		{
+			"name": "Player 7890"
+		},
+		{
+			"name": "asdfasf"
+		},
+		{
+			"name": "cnbdvxvb"
+		},
+		{
+			"name": "fjkkedj"
+		},
+		{
+			"name": "-*__*-"
+		},
+		{
+			"name": "芷若",
+			"countryCode": "cn"
+		},
+		{
+			"name": "语嫣",
+			"countryCode": "cn"
+		},
+		{
+			"name": "徽因",
+			"countryCode": "cn"
+		},
+		{
+			"name": "映月",
+			"countryCode": "cn"
+		},
+		{
+			"name": "望舒",
+			"countryCode": "cn"
+		},
+		{
+			"name": "风眠",
+			"countryCode": "cn"
+		},
+		{
+			"name": "莫愁",
+			"countryCode": "cn"
+		},
+		{
+			"name": "飞鸿",
+			"countryCode": "cn"
+		},
+		{
+			"name": "念真",
+			"countryCode": "cn"
+		},
+		{
+			"name": "青山",
+			"countryCode": "cn"
+		},
+		{
+			"name": "如是",
+			"countryCode": "cn"
+		},
+		{
+			"name": "王秀英",
+			"countryCode": "cn"
+		},
+		{
+			"name": "李秀英",
+			"countryCode": "cn"
+		},
+		{
+			"name": "Wang Wei",
+			"countryCode": "cn"
+		},
+		{
+			"name": "Li Wei",
+			"countryCode": "cn"
+		},
+		{
+			"name": "Wang Xiu Ying",
+			"countryCode": "cn"
+		},
+		{
+			"name": "Li Xiu Ying",
+			"countryCode": "cn"
+		},
+		{
+			"name": "Zhang Min",
+			"countryCode": "cn"
+		},
+		{
+			"name": "Zhang Li",
+			"countryCode": "cn"
+		},
+		{
+			"name": "Lê Tuyến",
+			"countryCode": "vn"
+		},
+		{
+			"name": "Dinh Vinh",
+			"countryCode": "vn"
+		},
+		{
+			"name": "Hữu Tỉnh",
+			"countryCode": "vn"
+		},
+		{
+			"name": "Phan Nghĩa",
+			"countryCode": "vn"
+		}
+	]
+}

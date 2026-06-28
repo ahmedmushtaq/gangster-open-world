@@ -265,7 +265,7 @@ MonoBehaviour:
   windClip: {fileID: 8300000, guid: 6c7312d1af74e3f4599722894161fafc, type: 3}
   brakeClip: {fileID: 8300000, guid: 4b6a38decd073724fb0aebb87b9ae8ee, type: 3}
   indicatorClip: {fileID: 8300000, guid: 64545518873b33e49b90fdf05c6ea7a6, type: 3}
-  NOSClip: {fileID: 8300000, guid: e1aff378bb8865e4ca81a3912720a97f, type: 3}
+  NOSClip: {fileID: 8300000, guid: c4f4f3897b2737b429ae0efd9a124838, type: 3}
   turboClip: {fileID: 8300000, guid: 7f48c51367eb26f4bb55673f28ae5404, type: 3}
   blowoutClip:
   - {fileID: 8300000, guid: fe7d483597e1b604a8f6f21f68b9df07, type: 3}
@@ -275,15 +275,15 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 4ebe01570cad61a40be61693713688b4, type: 3}
   - {fileID: 8300000, guid: f772a702dcfbfe9478afe01aa9429fbc, type: 3}
   useSharedAudioSources: 0
-  maxGearShiftingSoundVolume: 0.5
-  maxCrashSoundVolume: 0.5
-  maxWindSoundVolume: 1
-  maxBrakeSoundVolume: 0.494
+  maxGearShiftingSoundVolume: 0.3
+  maxCrashSoundVolume: 0.3
+  maxWindSoundVolume: 0.3
+  maxBrakeSoundVolume: 0.3
   foldGeneralSettings: 1
   foldBehaviorSettings: 1
   foldControllerSettings: 1
   foldUISettings: 1
   foldWheelPhysics: 1
-  foldSFX: 0
+  foldSFX: 1
   foldOptimization: 1
   foldTagsAndLayers: 0

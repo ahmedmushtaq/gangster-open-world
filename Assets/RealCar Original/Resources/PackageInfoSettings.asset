@@ -1,0 +1,115 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39103811654714ae22ff122ae20957a0, type: 3}
+  m_Name: PackageInfoSettings
+  m_EditorClassIdentifier:
+  packages:
+  - name: com.google.external-dependency-manager
+    displayName: External Dependency Manager for Unity
+    version: 1.2.179
+    dowloadUrl: https://dl.google.com/games/registry/unity/com.google.external-dependency-manager/com.google.external-dependency-manager-1.2.179.tgz
+    isRequest: 1
+  - name: com.google.firebase.app
+    displayName: Firebase App
+    version: 11.7.0
+    dowloadUrl: https://dl.google.com/games/registry/unity/com.google.firebase.app/com.google.firebase.app-11.7.0.tgz
+    isRequest: 1
+  - name: com.google.firebase.messaging
+    displayName: Firebase Cloud Messaging
+    version: 11.7.0
+    dowloadUrl: https://dl.google.com/games/registry/unity/com.google.firebase.messaging/com.google.firebase.messaging-11.7.0.tgz
+    isRequest: 1
+  - name: com.google.firebase.crashlytics
+    displayName: Firebase Crashlytics
+    version: 11.7.0
+    dowloadUrl: https://dl.google.com/games/registry/unity/com.google.firebase.crashlytics/com.google.firebase.crashlytics-11.7.0.tgz
+    isRequest: 1
+  - name: com.google.firebase.remote-config
+    displayName: Firebase Remote Config
+    version: 11.7.0
+    dowloadUrl: https://dl.google.com/games/registry/unity/com.google.firebase.remote-config/com.google.firebase.remote-config-11.7.0.tgz
+    isRequest: 1
+  - name: com.google.firebase.analytics
+    displayName: Google Analytics for Firebase
+    version: 11.7.0
+    dowloadUrl: https://dl.google.com/games/registry/unity/com.google.firebase.analytics/com.google.firebase.analytics-11.7.0.tgz
+    isRequest: 1
+  - name: com.google.android.appbundle
+    displayName: Android App Bundle
+    version: 1.9.0
+    dowloadUrl: https://dl.google.com/games/registry/unity/com.google.android.appbundle/com.google.android.appbundle-1.9.0.tgz
+    isRequest: 1
+  - name: com.google.play.common
+    displayName: Play Common
+    version: 1.8.2
+    dowloadUrl: https://dl.google.com/games/registry/unity/com.google.play.common/com.google.play.common-1.8.2.tgz
+    isRequest: 1
+  - name: com.google.play.core
+    displayName: Play Core
+    version: 1.8.3
+    dowloadUrl: https://dl.google.com/games/registry/unity/com.google.play.core/com.google.play.core-1.8.3.tgz
+    isRequest: 1
+  - name: com.google.play.review
+    displayName: Play In-App Review
+    version: 1.8.1
+    dowloadUrl: https://dl.google.com/games/registry/unity/com.google.play.review/com.google.play.review-1.8.1.tgz
+    isRequest: 1
+  - name: com.google.play.appupdate
+    displayName: Play In-App Update
+    version: 1.8.1
+    dowloadUrl: https://dl.google.com/games/registry/unity/com.google.play.appupdate/com.google.play.appupdate-1.8.1.tgz
+    isRequest: 1
+  - name: com.unity.ads.ios-support
+    displayName: iOS 14 Advertising Support
+    version: 1.2.0
+    dowloadUrl:
+    isRequest: 1
+  - name: com.unity.mobile.notifications
+    displayName: Mobile Notifications
+    version: 2.3.2
+    dowloadUrl:
+    isRequest: 1
+  - name: com.unity.mobile.android-logcat
+    displayName: Android Logcat
+    version: 1.3.2
+    dowloadUrl:
+    isRequest: 1
+  - name: appsflyer-unity-plugin
+    displayName: AppsFlyer
+    version: Lastest
+    dowloadUrl: https://github.com/AppsFlyerSDK/appsflyer-unity-plugin.git#upm
+    isRequest: 1
+  - name: appsflyer-unity-adrevenue-generic-connector
+    displayName: AppsFlyer AdRevenue Connector
+    version: Lastest
+    dowloadUrl: https://github.com/AppsFlyerSDK/appsflyer-unity-adrevenue-generic-connector.git#upm
+    isRequest: 1
+  - name: google.ads
+    displayName: GoogleMobileAds
+    version: 8.7.0
+    dowloadUrl: https://drive.google.com/uc?export=download&id=1966GZBxk1kGZDIxPgLnhIdckNM9wqHzp
+    isRequest: 0
+  - name: google.ads.mediation
+    displayName: GoogleMobileAds Mediation
+    version: 24.03.01
+    dowloadUrl: https://drive.google.com/uc?export=download&id=13pzAp_Nbfg8mm6xvfo1ZF9GLbD0D4c2D
+    isRequest: 0
+  - name: ironsouce.ads
+    displayName: IronSource
+    version: 7.8.1
+    dowloadUrl: https://drive.google.com/uc?export=download&id=1bjM3X5zy0A8NnrIJuXWi6GovZ_a9ltJg
+    isRequest: 0
+  - name: max.ads
+    displayName: MAX
+    version: 5.11.1
+    dowloadUrl:
+    isRequest: 0

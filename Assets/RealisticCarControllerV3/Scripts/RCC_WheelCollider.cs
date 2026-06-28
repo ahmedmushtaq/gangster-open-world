@@ -281,7 +281,7 @@ public class RCC_WheelCollider : MonoBehaviour {
 //		wheelRPMToSpeed = carController.speed;
 		Frictions ();
 		SkidMarks ();
-		//Audio ();
+		Audio ();
 		Smoke ();
 
 		// Return if RCC is disabled.
@@ -450,7 +450,7 @@ public class RCC_WheelCollider : MonoBehaviour {
 		wheelSlipAmountForward = Mathf.Abs(GroundHit.forwardSlip);
 		wheelSlipAmountSideways = Mathf.Abs(GroundHit.sidewaysSlip);
 
-		totalSlip = Mathf.Lerp(totalSlip, ((wheelSlipAmountSideways + wheelSlipAmountForward)  ), Time.fixedDeltaTime * 5f);
+		totalSlip = Mathf.Lerp(totalSlip, ((wheelSlipAmountSideways + wheelSlipAmountForward) / 2f), Time.fixedDeltaTime * 5f);
 
 		// If scene has skidmarks manager...
 		if(!RCCSettings.dontUseSkidmarks){

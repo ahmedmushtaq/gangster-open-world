@@ -20,6 +20,8 @@ public class GameManager : MonoBehaviour
     [Header("Vehicle References")]
     [SerializeField] private RCC_CarControllerV3[] cars;
     [SerializeField] private RCC_CarControllerV3 activeCar;
+    [SerializeField] public GameObject startPos;
+
 
 
     [Header("TrafficController")]
@@ -32,7 +34,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private Button changeCarBtn;
     [SerializeField] private Button carSelectionBtn;
 
-    private int currentCarIndex = 0;
+    public int currentCarIndex = 0;
 
     public RCC_CarControllerV3[] Cars => cars;
     public RCC_CarControllerV3 ActiveCar => activeCar;
@@ -57,8 +59,9 @@ public class GameManager : MonoBehaviour
     private void Start()
     {
         currentCarIndex = PlayerPrefs.GetInt("SelectedCarIndex", 0);
-        cars[currentCarIndex].gameObject.SetActive(true);
-        activeCar = cars[currentCarIndex];
+        activeCar = Instantiate(cars[currentCarIndex], startPos.transform.position, startPos.transform.rotation);
+        //cars[currentCarIndex].gameObject.SetActive(true);
+        //activeCar = cars[currentCarIndex];
         trafficComponent.player = activeCar.transform; // Set the traffic system's player reference to the active car
         trafficComponent.gameObject.SetActive(true);
         Invoke(nameof(GetActiveCar), 1f); // Delay to ensure RCC_SceneManager has initialized
@@ -111,13 +114,11 @@ public class GameManager : MonoBehaviour
         }
 
         if (activeCar != null)
-            activeCar.gameObject.SetActive(false);
+            Destroy(activeCar.gameObject);
+        //activeCar.gameObject.SetActive(false);
 
         currentCarIndex = (currentCarIndex + 1) % cars.Length;
-        activeCar = cars[currentCarIndex];
-
-        if (activeCar != null)
-            activeCar.gameObject.SetActive(true);
+        activeCar = Instantiate(cars[currentCarIndex], startPos.transform.position, startPos.transform.rotation);
 
         PlayerPrefs.SetInt("SelectedCarIndex", currentCarIndex);
         PlayerPrefs.Save();
@@ -138,5 +139,18 @@ public class GameManager : MonoBehaviour
     {
         //PlayerPrefs.SetInt("SelectedCarIndex", currentCarIndex);
         SceneManager.LoadScene(0);
+    }
+
+    public void PauseGame()
+    {
+        //PlayerPrefs.SetInt("SelectedCarIndex", currentCarIndex);
+        SceneManager.LoadScene(1);
+    }
+
+    public void DestroyandInstantiateCar(GameObject position)
+    {
+        if (activeCar != null)
+            Destroy(activeCar.gameObject);
+        activeCar = Instantiate(cars[currentCarIndex], position.transform.position, position.transform.rotation);
     }
 }

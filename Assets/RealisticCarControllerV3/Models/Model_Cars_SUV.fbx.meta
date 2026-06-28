@@ -1,287 +1,101 @@
 fileFormatVersion: 2
 guid: d05d2f7aa44360f458762588a3ae3ded
 ModelImporter:
-  serializedVersion: 19301
-  internalIDToNameTable:
-  - first:
-      1: 100000
-    second: Car
-  - first:
-      1: 100002
-    second: Car1
-  - first:
-      1: 100004
-    second: Car10
-  - first:
-      1: 100006
-    second: Car11
-  - first:
-      1: 100008
-    second: Car12
-  - first:
-      1: 100010
-    second: Car13
-  - first:
-      1: 100012
-    second: Car2
-  - first:
-      1: 100014
-    second: Car3
-  - first:
-      1: 100016
-    second: Car4
-  - first:
-      1: 100018
-    second: Car5
-  - first:
-      1: 100020
-    second: Car6
-  - first:
-      1: 100022
-    second: Car7
-  - first:
-      1: 100024
-    second: Car8
-  - first:
-      1: 100026
-    second: Car9
-  - first:
-      1: 100028
-    second: //RootNode
-  - first:
-      1: 100030
-    second: polySurface1
-  - first:
-      1: 100032
-    second: transform1
-  - first:
-      1: 100034
-    second: transform10
-  - first:
-      1: 100036
-    second: transform11
-  - first:
-      1: 100038
-    second: transform12
-  - first:
-      1: 100040
-    second: transform13
-  - first:
-      1: 100042
-    second: transform14
-  - first:
-      1: 100044
-    second: transform2
-  - first:
-      1: 100046
-    second: transform3
-  - first:
-      1: 100048
-    second: transform4
-  - first:
-      1: 100050
-    second: transform5
-  - first:
-      1: 100052
-    second: transform6
-  - first:
-      1: 100054
-    second: transform7
-  - first:
-      1: 100056
-    second: transform8
-  - first:
-      1: 100058
-    second: transform9
-  - first:
-      1: 100060
-    second: Car_Body
-  - first:
-      1: 100062
-    second: LB_Wheel
-  - first:
-      1: 100064
-    second: LF_Wheel
-  - first:
-      1: 100066
-    second: RB_Wheel
-  - first:
-      1: 100068
-    second: RF_Wheel
-  - first:
-      4: 400000
-    second: Car
-  - first:
-      4: 400002
-    second: Car1
-  - first:
-      4: 400004
-    second: Car10
-  - first:
-      4: 400006
-    second: Car11
-  - first:
-      4: 400008
-    second: Car12
-  - first:
-      4: 400010
-    second: Car13
-  - first:
-      4: 400012
-    second: Car2
-  - first:
-      4: 400014
-    second: Car3
-  - first:
-      4: 400016
-    second: Car4
-  - first:
-      4: 400018
-    second: Car5
-  - first:
-      4: 400020
-    second: Car6
-  - first:
-      4: 400022
-    second: Car7
-  - first:
-      4: 400024
-    second: Car8
-  - first:
-      4: 400026
-    second: Car9
-  - first:
-      4: 400028
-    second: //RootNode
-  - first:
-      4: 400030
-    second: polySurface1
-  - first:
-      4: 400032
-    second: transform1
-  - first:
-      4: 400034
-    second: transform10
-  - first:
-      4: 400036
-    second: transform11
-  - first:
-      4: 400038
-    second: transform12
-  - first:
-      4: 400040
-    second: transform13
-  - first:
-      4: 400042
-    second: transform14
-  - first:
-      4: 400044
-    second: transform2
-  - first:
-      4: 400046
-    second: transform3
-  - first:
-      4: 400048
-    second: transform4
-  - first:
-      4: 400050
-    second: transform5
-  - first:
-      4: 400052
-    second: transform6
-  - first:
-      4: 400054
-    second: transform7
-  - first:
-      4: 400056
-    second: transform8
-  - first:
-      4: 400058
-    second: transform9
-  - first:
-      4: 400060
-    second: Car_Body
-  - first:
-      4: 400062
-    second: LB_Wheel
-  - first:
-      4: 400064
-    second: LF_Wheel
-  - first:
-      4: 400066
-    second: RB_Wheel
-  - first:
-      4: 400068
-    second: RF_Wheel
-  - first:
-      23: 2300000
-    second: polySurface1
-  - first:
-      23: 2300002
-    second: //RootNode
-  - first:
-      23: 2300004
-    second: Car_Body
-  - first:
-      23: 2300006
-    second: LB_Wheel
-  - first:
-      23: 2300008
-    second: LF_Wheel
-  - first:
-      23: 2300010
-    second: RB_Wheel
-  - first:
-      23: 2300012
-    second: RF_Wheel
-  - first:
-      33: 3300000
-    second: polySurface1
-  - first:
-      33: 3300002
-    second: //RootNode
-  - first:
-      33: 3300004
-    second: Car_Body
-  - first:
-      33: 3300006
-    second: LB_Wheel
-  - first:
-      33: 3300008
-    second: LF_Wheel
-  - first:
-      33: 3300010
-    second: RB_Wheel
-  - first:
-      33: 3300012
-    second: RF_Wheel
-  - first:
-      43: 4300000
-    second: polySurface1
-  - first:
-      43: 4300002
-    second: Dodge
-  - first:
-      43: 4300004
-    second: Car_Body
-  - first:
-      43: 4300006
-    second: LB_Wheel
-  - first:
-      43: 4300008
-    second: LF_Wheel
-  - first:
-      43: 4300010
-    second: RF_Wheel
-  - first:
-      43: 4300012
-    second: RB_Wheel
-  - first:
-      95: 9500000
-    second: //RootNode
-  - first:
-      41386430: 2186277476908879412
-    second: ImportLogs
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Car
+    100002: Car1
+    100004: Car10
+    100006: Car11
+    100008: Car12
+    100010: Car13
+    100012: Car2
+    100014: Car3
+    100016: Car4
+    100018: Car5
+    100020: Car6
+    100022: Car7
+    100024: Car8
+    100026: Car9
+    100028: //RootNode
+    100030: polySurface1
+    100032: transform1
+    100034: transform10
+    100036: transform11
+    100038: transform12
+    100040: transform13
+    100042: transform14
+    100044: transform2
+    100046: transform3
+    100048: transform4
+    100050: transform5
+    100052: transform6
+    100054: transform7
+    100056: transform8
+    100058: transform9
+    100060: Car_Body
+    100062: LB_Wheel
+    100064: LF_Wheel
+    100066: RB_Wheel
+    100068: RF_Wheel
+    400000: Car
+    400002: Car1
+    400004: Car10
+    400006: Car11
+    400008: Car12
+    400010: Car13
+    400012: Car2
+    400014: Car3
+    400016: Car4
+    400018: Car5
+    400020: Car6
+    400022: Car7
+    400024: Car8
+    400026: Car9
+    400028: //RootNode
+    400030: polySurface1
+    400032: transform1
+    400034: transform10
+    400036: transform11
+    400038: transform12
+    400040: transform13
+    400042: transform14
+    400044: transform2
+    400046: transform3
+    400048: transform4
+    400050: transform5
+    400052: transform6
+    400054: transform7
+    400056: transform8
+    400058: transform9
+    400060: Car_Body
+    400062: LB_Wheel
+    400064: LF_Wheel
+    400066: RB_Wheel
+    400068: RF_Wheel
+    2300000: polySurface1
+    2300002: //RootNode
+    2300004: Car_Body
+    2300006: LB_Wheel
+    2300008: LF_Wheel
+    2300010: RB_Wheel
+    2300012: RF_Wheel
+    3300000: polySurface1
+    3300002: //RootNode
+    3300004: Car_Body
+    3300006: LB_Wheel
+    3300008: LF_Wheel
+    3300010: RB_Wheel
+    3300012: RF_Wheel
+    4300000: polySurface1
+    4300002: Dodge
+    4300004: Car_Body
+    4300006: LB_Wheel
+    4300008: LF_Wheel
+    4300010: RF_Wheel
+    4300012: RB_Wheel
+    9500000: //RootNode
+    2186277476908879412: ImportLogs
   externalObjects:
   - first:
       type: UnityEngine:Material
@@ -289,7 +103,7 @@ ModelImporter:
       name: Mat_Dodge
     second: {fileID: 2100000, guid: 6f1faf759dcf1a142a6b4bde5f792b84, type: 2}
   materials:
-    materialImportMode: 0
+    importMaterials: 1
     materialName: 1
     materialSearch: 1
     materialLocation: 0
@@ -319,25 +133,19 @@ ModelImporter:
   meshes:
     lODScreenPercentages: []
     globalScale: 0.00027
-    meshCompression: 3
+    meshCompression: 0
     addColliders: 0
-    useSRGBMaterialColor: 1
-    sortHierarchyByName: 1
     importVisibility: 0
     importBlendShapes: 1
     importCameras: 0
     importLights: 0
-    fileIdsGeneration: 1
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
+    optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
     preserveHierarchy: 0
-    skinWeightsMode: 0
-    maxBonesPerVertex: 4
-    minBoneWeight: 0.001
-    meshOptimizationFlags: -1
     indexFormat: 1
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
@@ -349,13 +157,10 @@ ModelImporter:
     normalImportMode: 0
     tangentImportMode: 3
     normalCalculationMode: 0
-    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
-    blendShapeNormalImportMode: 1
-    normalSmoothingSource: 0
-  referencedClips: []
   importAnimation: 0
+  copyAvatar: 0
   humanDescription:
-    serializedVersion: 3
+    serializedVersion: 2
     human: []
     skeleton: []
     armTwist: 0.5
@@ -365,16 +170,14 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 0.00027
     rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
     hasTranslationDoF: 0
     hasExtraRoot: 0
     skeletonHasParents: 0
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 0
   humanoidOversampling: 1
-  avatarSetup: 0
   additionalBone: 0
   userData: 
   assetBundleName: 

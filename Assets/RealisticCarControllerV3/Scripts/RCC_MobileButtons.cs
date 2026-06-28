@@ -214,8 +214,8 @@ public class RCC_MobileButtons : MonoBehaviour {
 				brakeButton.transform.position = orgBrakeButtonPos;
 			}
 
-			//if(NOSButton && NOSButton.gameObject.activeInHierarchy)
-			//	NOSButton.gameObject.SetActive(false);
+			if(NOSButton && NOSButton.gameObject.activeInHierarchy)
+				NOSButton.gameObject.SetActive(false);
 
 			if(NOSButtonSteeringWheel && NOSButtonSteeringWheel.gameObject.activeInHierarchy != canUseNos)
 				NOSButtonSteeringWheel.gameObject.SetActive(canUseNos);

@@ -1,0 +1,167 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!43 &4300000
+Mesh:
+  serializedVersion: 11
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Car_Nissan_GT_R_Flares_BackBrake
+  m_SubMeshes:
+  - serializedVersion: 2
+    firstByte: 0
+    indexCount: 54
+    topology: 0
+    baseVertex: 0
+    firstVertex: 0
+    vertexCount: 32
+    localAABB:
+      m_Center: {x: -5.9604645E-08, y: 0.87525487, z: -2.169536}
+      m_Extent: {x: 1.0431046, y: 0.21299827, z: 0.23658633}
+  m_Shapes:
+    vertices: []
+    shapes: []
+    channels: []
+    fullWeights: []
+  m_BindPose: []
+  m_BoneNameHashes:
+  m_RootBoneNameHash: 0
+  m_BonesAABB: []
+  m_VariableBoneCountWeights:
+    m_Data:
+  m_MeshCompression: 1
+  m_IsReadable: 1
+  m_KeepVertices: 1
+  m_KeepIndices: 1
+  m_IndexFormat: 0
+  m_IndexBuffer:
+  m_VertexData:
+    serializedVersion: 3
+    m_VertexCount: 0
+    m_Channels:
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    m_DataSize: 0
+    _typelessdata:
+  m_CompressedMesh:
+    m_Vertices:
+      m_NumItems: 96
+      m_Range: 3.4943757
+      m_Start: -2.4061224
+      m_Data: 7b1afc8fe6eb215016bfffff9fad0efda18f3afaa32a32b1fca80c5e1b16e3016c28e600003038c15bbe3f050c4a5dae9df7a580b1bae4051e2e050cdcd17b43fbdccd1046b068b35f7b0c61045bfdfe6cc2d01dbda4f02f890c32394c4cfb85d12093c331f1cfc30cc566863afaa32ae275a1ffff9fad0e48eef98fe6eb2100db63a80c5e1b1678aba79df7a58001549f5bbe3f050ce0066a28e6000080d17b051e2e050c61045bfdfe6cc21046b068b35f7b0ce6367a43fbdccd606ea3a4f02f890c91cf494cfb85d110f99c31f1cfc30cfab7690efb48bea07f9b94f3bf940bc8504c39ff4bb9800cc5e6b08fe40b
+      m_BitSize: 20
+    m_UV:
+      m_NumItems: 64
+      m_Range: 0.92881745
+      m_Start: 0.05724126
+      m_Data: 38b9413838b96e9600006e960000413838b9413838b96e9600006e960000413883953e34b14b3e34b14b639b8395639b76c63e3476c6639b00006e9638b96e9638b941380000413800006e9638b96e9638b9413800004138b14b639bb14b3e3483953e348395639b76c63e3476c6639bffff033a94f1033a94f15682ffff5682
+      m_BitSize: 16
+    m_Normals:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data:
+      m_BitSize: 0
+    m_Tangents:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data:
+      m_BitSize: 0
+    m_Weights:
+      m_NumItems: 0
+      m_Data:
+      m_BitSize: 0
+    m_NormalSigns:
+      m_NumItems: 0
+      m_Data:
+      m_BitSize: 0
+    m_TangentSigns:
+      m_NumItems: 0
+      m_Data:
+      m_BitSize: 0
+    m_FloatColors:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data:
+      m_BitSize: 0
+    m_BoneIndices:
+      m_NumItems: 0
+      m_Data:
+      m_BitSize: 0
+    m_Triangles:
+      m_NumItems: 54
+      m_Data: 200820062986988392426a31b4d86aee4107a39c54d26a2fb63867acb3debc7bee3f
+      m_BitSize: 5
+    m_UVInfo: 5
+  m_LocalAABB:
+    m_Center: {x: -5.9604645E-08, y: 0.87525487, z: -2.169536}
+    m_Extent: {x: 1.043108, y: 0.21300161, z: 0.23658967}
+  m_MeshUsageFlags: 0
+  m_CookingOptions: 30
+  m_BakedConvexCollisionMesh:
+  m_BakedTriangleCollisionMesh:
+  m_MeshMetrics[0]: 1.8416071
+  m_MeshMetrics[1]: 1
+  m_MeshOptimizationFlags: -1
+  m_StreamData:
+    serializedVersion: 2
+    offset: 0
+    size: 0
+    path:

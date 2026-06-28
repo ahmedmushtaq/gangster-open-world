@@ -78,8 +78,10 @@ public class RCC_Camera : MonoBehaviour{
 	private int direction = 1;
 	private int lastDirection = 1;
 
-	public float TPSDistance = 6f;				// The distance for TPS camera mode.
-	public float TPSHeight = 2f;					// The height we want the camera to be above the target for TPS camera mode.
+	public float TPSDistance = 6f;              // The distance for TPS camera mode.
+    public float nosDistanceOffset = 2.0f;   // Additional distance when NOS is active
+    public float nosDistanceLerpSpeed = 5f;  // Smoothing speed for transition
+    public float TPSHeight = 2f;					// The height we want the camera to be above the target for TPS camera mode.
 	public float TPSHeightDamping = 10f;	// Height movement damper.
 	public float TPSRotationDamping = 5f;	// Rotation movement damper.
 	public float TPSTiltMaximum = 15f;		// Maximum tilt angle related with rigidbody local velocity.
@@ -140,14 +142,15 @@ public class RCC_Camera : MonoBehaviour{
 
 	public delegate void onBCGCameraSpawned(GameObject BCGCamera);
 	public static event onBCGCameraSpawned OnBCGCameraSpawned;
+    private float originalTPSDistance;
 
-	void Awake(){
+    void Awake(){
 		
 		// Getting Camera.
 		thisCam = GetComponentInChildren<Camera>();
 		camerainstance = this;
-
-	}
+        originalTPSDistance = TPSDistance;
+    }
 
 	void OnEnable(){
 
@@ -468,7 +471,26 @@ public class RCC_Camera : MonoBehaviour{
 
 		// Set the position of the camera on the x-z plane to distance meters behind the target.
 		targetPosition = playerCar.transform.position;
-		targetPosition -= ((currentRotation * orbitRotation) * Vector3.forward * (TPSDistance * Mathf.Lerp(1f, 1f, (playerRigid.linearVelocity.magnitude * 3.6f) / 100f)));
+
+        // Get the car's NOS state
+        //float nosBonus = 0f;
+        //if (playerCar != null && playerCar.nosActive)
+        //    nosBonus = nosDistanceOffset;
+
+        //float targetDistance = originalTPSDistance + nosBonus;
+        // ---- NOS Distance Boost ----
+        float nosBonus = 0f;
+        if (playerCar != null && playerCar.nosActive)
+            nosBonus = nosDistanceOffset;
+
+        float targetDistance = originalTPSDistance + nosBonus;
+        TPSDistance = Mathf.Lerp(TPSDistance, targetDistance, Time.deltaTime * nosDistanceLerpSpeed);
+        // -----------------------------
+
+        // Smoothly move the actual TPSDistance towards the target
+        TPSDistance = Mathf.Lerp(TPSDistance, targetDistance, Time.deltaTime * nosDistanceLerpSpeed);
+
+        targetPosition -= ((currentRotation * orbitRotation) * Vector3.forward * (TPSDistance * Mathf.Lerp(1f, 1f, (playerRigid.linearVelocity.magnitude * 3.6f) / 100f)));
 		//targetPosition -= ((currentRotation * orbitRotation) * Vector3.forward * (TPSDistance * Mathf.Lerp(1f, .75f, (playerRigid.linearVelocity.magnitude * 3.6f) / 100f)));
 		targetPosition += Vector3.up * (TPSHeight * Mathf.Lerp(1f, 1f, (playerRigid.linearVelocity.magnitude * 3.6f) / 100f));
 		//targetPosition += Vector3.up * (TPSHeight * Mathf.Lerp(1f, .75f, (playerRigid.linearVelocity.magnitude * 3.6f) / 100f));

@@ -19,7 +19,7 @@ public class RCC_Skidmarks : MonoBehaviour {
 	private MeshFilter meshFilter;
 	private Mesh mesh;
 
-	public int maxMarks = 200;			// Maximum number of marks total handled by one instance of the script.
+	public int maxMarks = 1024;			// Maximum number of marks total handled by one instance of the script.
 	public float markWidth = 0.275f;		// The width of the skidmarks. Should match the width of the wheel that it is used for. In meters.
 	public float groundOffset = 0.02f;	// The distance the skidmarks is places above the surface it is placed upon. In meters.
 	public float minDistance = 0.1f;		// The minimum distance between two marks places next to each other. 

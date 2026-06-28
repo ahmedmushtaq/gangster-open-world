@@ -1,0 +1,326 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a488e9adce6d27d78b447f304d62a74, type: 3}
+  m_Name: RCC_Settings
+  m_EditorClassIdentifier:
+  behaviorSelectedIndex: 2
+  overrideBehavior: 1
+  overrideFPS: 0
+  overrideFixedTimeStep: 0
+  fixedTimeStep: 0.02
+  maxAngularVelocity: 8
+  maxFPS: 60
+  useShortcuts: 0
+  useFixedWheelColliders: 1
+  lockAndUnlockCursor: 0
+  behaviorTypes:
+  - behaviorName: City Drift
+    steeringHelper: 1
+    tractionHelper: 1
+    angularDragHelper: 1
+    counterSteering: 0
+    limitSteering: 1
+    steeringSensitivity: 1
+    ABS: 1
+    ESP: 0
+    TCS: 1
+    applyExternalWheelFrictions: 0
+    applyRelativeTorque: 0
+    steeringType: 0
+    steeringCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 35
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0.3790813
+      - serializedVersion: 3
+        time: 80
+        value: 20
+        inSlope: -0.20255093
+        outSlope: -0.20255093
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0.06520603
+      - serializedVersion: 3
+        time: 300
+        value: 5
+        inSlope: -0.0030142237
+        outSlope: -0.0030142237
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0.1043297
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    highSpeedSteerAngleMinimum: 0
+    highSpeedSteerAngleMaximum: 60
+    highSpeedSteerAngleAtspeedMinimum: 0
+    highSpeedSteerAngleAtspeedMaximum: 350
+    counterSteeringMinimum: 0.1
+    counterSteeringMaximum: 1
+    steeringSensitivityMinimum: 0.1
+    steeringSensitivityMaximum: 1
+    steerHelperAngularVelStrengthMinimum: 0.125
+    steerHelperAngularVelStrengthMaximum: 0.25
+    steerHelperLinearVelStrengthMinimum: 0.125
+    steerHelperLinearVelStrengthMaximum: 0.25
+    tractionHelperStrengthMinimum: 0.125
+    tractionHelperStrengthMaximum: 0.25
+    antiRollFrontHorizontalMinimum: 6000
+    antiRollRearHorizontalMinimum: 6000
+    gearShiftingDelayMaximum: 0.15
+    angularDrag: 0.1
+    angularDragHelperMinimum: 0.1
+    angularDragHelperMaximum: 0.5
+    forwardExtremumSlip: 0.2
+    forwardExtremumValue: 1.5
+    forwardAsymptoteSlip: 0.2
+    forwardAsymptoteValue: 2
+    sidewaysExtremumSlip: 0.125
+    sidewaysExtremumValue: 0.75
+    sidewaysAsymptoteSlip: 0.125
+    sidewaysAsymptoteValue: 1
+  - behaviorName: City Arcade
+    steeringHelper: 1
+    tractionHelper: 1
+    angularDragHelper: 1
+    counterSteering: 0
+    limitSteering: 0
+    steeringSensitivity: 1
+    ABS: 0
+    ESP: 0
+    TCS: 0
+    applyExternalWheelFrictions: 0
+    applyRelativeTorque: 0
+    steeringType: 0
+    steeringCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 40
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0.45696396
+      - serializedVersion: 3
+        time: 75
+        value: 20
+        inSlope: -0.2157122
+        outSlope: -0.2157122
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0.21752742
+        outWeight: 0.06478873
+      - serializedVersion: 3
+        time: 300
+        value: 5
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    highSpeedSteerAngleMinimum: 0
+    highSpeedSteerAngleMaximum: 60
+    highSpeedSteerAngleAtspeedMinimum: 100
+    highSpeedSteerAngleAtspeedMaximum: 350
+    counterSteeringMinimum: 0
+    counterSteeringMaximum: 0
+    steeringSensitivityMinimum: 1
+    steeringSensitivityMaximum: 1
+    steerHelperAngularVelStrengthMinimum: 0.5
+    steerHelperAngularVelStrengthMaximum: 1
+    steerHelperLinearVelStrengthMinimum: 0.5
+    steerHelperLinearVelStrengthMaximum: 1
+    tractionHelperStrengthMinimum: 0.25
+    tractionHelperStrengthMaximum: 1
+    antiRollFrontHorizontalMinimum: 7500
+    antiRollRearHorizontalMinimum: 7500
+    gearShiftingDelayMaximum: 0.1
+    angularDrag: 0.5
+    angularDragHelperMinimum: 0.1
+    angularDragHelperMaximum: 0.25
+    forwardExtremumSlip: 0.2
+    forwardExtremumValue: 1
+    forwardAsymptoteSlip: 0.2
+    forwardAsymptoteValue: 1
+    sidewaysExtremumSlip: 0.25
+    sidewaysExtremumValue: 1
+    sidewaysAsymptoteSlip: 0.25
+    sidewaysAsymptoteValue: 1
+  - behaviorName: City Race
+    steeringHelper: 1
+    tractionHelper: 1
+    angularDragHelper: 1
+    counterSteering: 0
+    limitSteering: 1
+    steeringSensitivity: 1
+    ABS: 1
+    ESP: 1
+    TCS: 1
+    applyExternalWheelFrictions: 0
+    applyRelativeTorque: 0
+    steeringType: 0
+    steeringCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 25
+        value: 40
+        inSlope: 0.5920603
+        outSlope: 0.5920603
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0.16901383
+      - serializedVersion: 3
+        time: 50
+        value: 40
+        inSlope: -0.23299426
+        outSlope: -0.23299426
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.058685355
+      - serializedVersion: 3
+        time: 200
+        value: 25
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0.11829682
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    highSpeedSteerAngleMinimum: 0
+    highSpeedSteerAngleMaximum: 60
+    highSpeedSteerAngleAtspeedMinimum: 100
+    highSpeedSteerAngleAtspeedMaximum: 350
+    counterSteeringMinimum: 0.125
+    counterSteeringMaximum: 0.25
+    steeringSensitivityMinimum: 0.25
+    steeringSensitivityMaximum: 0.5
+    steerHelperAngularVelStrengthMinimum: 0.05
+    steerHelperAngularVelStrengthMaximum: 0.25
+    steerHelperLinearVelStrengthMinimum: 0.05
+    steerHelperLinearVelStrengthMaximum: 0.25
+    tractionHelperStrengthMinimum: 0.05
+    tractionHelperStrengthMaximum: 0.25
+    antiRollFrontHorizontalMinimum: 1000
+    antiRollRearHorizontalMinimum: 1000
+    gearShiftingDelayMaximum: 0.25
+    angularDrag: 0.05
+    angularDragHelperMinimum: 0.05
+    angularDragHelperMaximum: 0.25
+    forwardExtremumSlip: 0.2
+    forwardExtremumValue: 1.5
+    forwardAsymptoteSlip: 0.8
+    forwardAsymptoteValue: 1.25
+    sidewaysExtremumSlip: 0.25
+    sidewaysExtremumValue: 1.68
+    sidewaysAsymptoteSlip: 0.8
+    sidewaysAsymptoteValue: 1
+  useAutomaticGear: 1
+  useAutomaticClutch: 1
+  runEngineAtAwake: 1
+  autoReverse: 1
+  autoReset: 1
+  contactParticles: {fileID: 1709254077376921, guid: b6ef685eb9d8f22429023d502a9edb70, type: 2}
+  speedFakeScale: 1.125
+  units: 0
+  uiType: 0
+  useTelemetry: 0
+  mobileController: 0
+  mobileControllerEnabled: 0
+  steeringWheelEnabled: 0
+  UIButtonSensitivity: 0.75
+  UIButtonGravity: 6
+  gyroSensitivity: 1.5
+  useHeadLightsAsVertexLights: 1
+  useBrakeLightsAsVertexLights: 1
+  useReverseLightsAsVertexLights: 1
+  useIndicatorLightsAsVertexLights: 1
+  useOtherLightsAsVertexLights: 1
+  useLightProjectorForLightingEffect: 1
+  setLayers: 1
+  RCCLayer: RCC
+  WheelColliderLayer: RCC_WheelCollider
+  DetachablePartLayer: RCC_DetachablePart
+  exhaustGas: {fileID: 1709254077376921, guid: 4cbf163976f208940a090e7891d0967b, type: 2}
+  skidmarksManager: {fileID: 114703437598541787, guid: af6920f08adc17444955eb845048092a, type: 2}
+  projector: {fileID: 1709254077376921, guid: bc03b851b7c6566448f009d1bac8f746, type: 2}
+  projectorIgnoreLayer:
+    serializedVersion: 2
+    m_Bits: 21285687
+  headLights: {fileID: 1709254077376921, guid: bc03b851b7c6566448f009d1bac8f746, type: 2}
+  brakeLights: {fileID: 1709254077376921, guid: 8da6b77f2c1c2ad41805560085b2681f, type: 2}
+  reverseLights: {fileID: 1709254077376921, guid: 6f81059bd0ddb6b439bd9e075f14cc9f, type: 2}
+  indicatorLights: {fileID: 1709254077376921, guid: 9090388c9bf6f8d48b059a54029698f4, type: 2}
+  lightTrailers: {fileID: 0}
+  mirrors: {fileID: 0}
+  RCCMainCamera: {fileID: 114703437598541787, guid: 4f666f17c08358640931130c6ed6bd6a, type: 2}
+  hoodCamera: {fileID: 1709254077376921, guid: 34bf5676e3218d54784f4691baaf3ea4, type: 2}
+  cinematicCamera: {fileID: 1709254077376921, guid: 4606df9414c31744a9ab321f213520ca, type: 2}
+  RCCCanvas: {fileID: 0}
+  RCCTelemetry: {fileID: 0}
+  dontUseAnyParticleEffects: 0
+  dontUseSkidmarks: 0
+  audioMixer: {fileID: 24300000, guid: 86b5e5b9c0e586d41a6704f19b7bc423, type: 2}
+  gearShiftingClips:
+  - {fileID: 8300000, guid: 785d343a09e102b43920371a7dcdf382, type: 3}
+  - {fileID: 8300000, guid: 34942c1affe81e545b2d612a317f37eb, type: 3}
+  - {fileID: 8300000, guid: 5110c127abd3e3d4e9d13f4f9de2a003, type: 3}
+  - {fileID: 8300000, guid: 19543a45909955e43b447305377d9f05, type: 3}
+  - {fileID: 8300000, guid: a5962e181abbfd14ca3dc3a3c5b024de, type: 3}
+  crashClips:
+  - {fileID: 8300000, guid: e35ca8e026666b54781281443914d8d4, type: 3}
+  - {fileID: 8300000, guid: d98a3a93bbfffdb458796b2c8d22bbe9, type: 3}
+  - {fileID: 8300000, guid: 9303474b1bd197b4ebdf8393923a6bcd, type: 3}
+  - {fileID: 8300000, guid: c6bcfab982b897b4f92ab15dfa90af04, type: 3}
+  reversingClip: {fileID: 8300000, guid: 494405ee3bd3b634e979255797362c59, type: 3}
+  brakeClip: {fileID: 8300000, guid: 326082706c61e12408225f55ee3a494c, type: 3}
+  indicatorClip: {fileID: 8300000, guid: c64fa7ca6c6202744a22a1ee92195a78, type: 3}
+  bumpClip: {fileID: 8300000, guid: 74ee7e7f6ec0d6c4697b276f9a552640, type: 3}
+  NOSClip: {fileID: 8300000, guid: 8a07c40270264384a9111a88bea4bfdd, type: 3}
+  blowoutClip: []
+  exhaustFlameClips:
+  - {fileID: 8300000, guid: 86b32362ef312a246bff5fe19808d2dd, type: 3}
+  - {fileID: 8300000, guid: a8af7de4fc805a847b3a36a6e7ebf702, type: 3}
+  - {fileID: 8300000, guid: 0222e90ce1ad1834294c8de8e3b2dc0d, type: 3}
+  - {fileID: 8300000, guid: 8267d6a3465cea249b6d167b758c2a8d, type: 3}
+  maxGearShiftingSoundVolume: 0.75
+  maxCrashSoundVolume: 0.5
+  maxBrakeSoundVolume: 0.65
+  foldGeneralSettings: 1
+  foldBehaviorSettings: 1
+  foldControllerSettings: 1
+  foldUISettings: 1
+  foldWheelPhysics: 1
+  foldSFX: 1
+  foldOptimization: 1
+  foldTagsAndLayers: 0

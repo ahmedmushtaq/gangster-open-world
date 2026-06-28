@@ -7,6 +7,9 @@ public class LevelData : MonoBehaviour
     public GameObject playerEndingPoint;
     //public GameObject playerStartCamera;
 
+    public GameObject[] aiCars;
+    public GameObject[] aiPositions;
+
     [Header("Time Limit")]
     public float timeLimit = 60f;   // seconds for this level
 

@@ -60,8 +60,8 @@ public class RCC_Exhaust : MonoBehaviour {
 
 	public float minSpeed = .5f;
 	public float maxSpeed = 5f;
-
-	void Start () {
+    public GameObject nosEffect;
+    void Start () {
 
 		if (RCCSettings.dontUseAnyParticleEffects) {
 			Destroy (gameObject);
@@ -146,64 +146,90 @@ public class RCC_Exhaust : MonoBehaviour {
 
 	}
 
-	void Flame(){
+    void Flame()
+    {
 
-		if(carController.engineRunning){
+        if (carController.engineRunning)
+        {
 
-			var main = flame.main;
+            var main = flame.main;
 
-			if(carController._gasInput >= .25f)
-				flameTime = 0f;
+            if (carController._gasInput >= .25f)
+                flameTime = 0f;
 
-			if(((carController.useExhaustFlame && carController.engineRPM >= 5000 && carController.engineRPM <= 5500 && carController._gasInput <= .25f && flameTime <= .5f) || carController._boostInput >= .75f) || previewFlames){
+            if (((carController.useExhaustFlame && carController.engineRPM >= 5000 && carController.engineRPM <= 5500 && carController._gasInput <= .25f && flameTime <= .5f) || carController._boostInput >= .75f) || previewFlames)
+            {
 
-				flameTime += Time.deltaTime;
-				subEmission.enabled = true;
+                flameTime += Time.deltaTime;
+                subEmission.enabled = true;
 
-				if(flameLight)
-					flameLight.intensity = flameSource.pitch * 3f * Random.Range(.25f, 1f) ;
+                // --- Toggle NOS effect ---
+                if (nosEffect != null)
+                    nosEffect.SetActive(true);
+                // -------------------------
 
-				if(carController._boostInput >= .75f && flame){
-					main.startColor = boostFlameColor;
-					flameLight.color = main.startColor.color;
-				}else{
-					main.startColor = flameColor;
-					flameLight.color = main.startColor.color;
-				}
+                if (flameLight)
+                    flameLight.intensity = flameSource.pitch * 3f * Random.Range(.25f, 1f);
 
-				if(!flameSource.isPlaying){
-					flameSource.clip = RCCSettings.exhaustFlameClips[Random.Range(0, RCCSettings.exhaustFlameClips.Length)];
-					flameSource.Play();
-				}
+                if (carController._boostInput >= .75f && flame)
+                {
+                    main.startColor = boostFlameColor;
+                    flameLight.color = main.startColor.color;
+                }
+                else
+                {
+                    main.startColor = flameColor;
+                    flameLight.color = main.startColor.color;
+                }
 
-			}else{
+                if (!flameSource.isPlaying)
+                {
+                    flameSource.clip = RCCSettings.exhaustFlameClips[Random.Range(0, RCCSettings.exhaustFlameClips.Length)];
+                    flameSource.Play();
+                }
 
-				subEmission.enabled = false;
+            }
+            else
+            {
 
-				if(flameLight)
-					flameLight.intensity = 0f;
-				if(flameSource.isPlaying)
-					flameSource.Stop();
+                subEmission.enabled = false;
 
-			}
+                // --- Turn off NOS effect ---
+                if (nosEffect != null)
+                    nosEffect.SetActive(false);
+                // ---------------------------
 
-		}else{
+                if (flameLight)
+                    flameLight.intensity = 0f;
+                if (flameSource.isPlaying)
+                    flameSource.Stop();
 
-			if(emission.enabled)
-				emission.enabled = false;
+            }
 
-			subEmission.enabled = false;
+        }
+        else
+        {
 
-			if(flameLight)
-				flameLight.intensity = 0f;
-			if(flameSource.isPlaying)
-				flameSource.Stop();
+            if (emission.enabled)
+                emission.enabled = false;
 
-		}
+            subEmission.enabled = false;
 
-	}
+            // --- Turn off NOS effect if engine is off ---
+            if (nosEffect != null)
+                nosEffect.SetActive(false);
+            // -------------------------------------------
 
-	private void LensFlare(){
+            if (flameLight)
+                flameLight.intensity = 0f;
+            if (flameSource.isPlaying)
+                flameSource.Stop();
+
+        }
+
+    }
+
+    private void LensFlare(){
 
 		if (!RCC_SceneManager.Instance.activePlayerCamera)
 			return;

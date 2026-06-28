@@ -1,0 +1,103 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -673331378, guid: 431b5a09feef39c755e31e790438de49, type: 3}
+  m_Name: AdsSettingsAsset
+  m_EditorClassIdentifier:
+  adsNetWork: 0100000004000000
+  AppsFlyerDevKey: Qhno4yJY6KHmZp9uS9DRe4
+  AppleAppId: 1659964432
+  urlPrivacyPolicyANDROID: http://zendios.net/privacy-policy
+  urlPrivacyPolicyIOS: http://zendios.net/privacy-policy
+  useBanner: 0
+  bannerPosition: 3
+  fixBannerSmallSize: 0
+  customSafeBannerArea: 125
+  useMRec: 4
+  autoReLoadMax: 2
+  ratioInterPerReward: 5
+  showIRON: 1
+  ironAndroidAppKey: 1fadc5745
+  ironIOSAppKey: 17c5af76d
+  showMAX: 0
+  maxSdkKey:
+  MAX_Android:
+    bannerUnitId:
+    interUnitId:
+    rewaredUnitId:
+    appOpenUnitId:
+    mrecUnitId:
+  MAX_iOS:
+    bannerUnitId:
+    interUnitId:
+    rewaredUnitId:
+    appOpenUnitId:
+    mrecUnitId:
+  showADMOB: 1
+  useAdmobTestAdUnitId: 0
+  ADMOB_Android:
+    appId: ca-app-pub-5904408074441373~7542174944
+    bannerIds: []
+    interIds:
+    - ca-app-pub-5904408074441373/9179999098
+    - ca-app-pub-5904408074441373/2954583663
+    - ca-app-pub-5904408074441373/3281924717
+    rewardIds:
+    - ca-app-pub-5904408074441373/6553835750
+    - ca-app-pub-5904408074441373/6243129979
+    - ca-app-pub-5904408074441373/4930048303
+    mrecIds:
+    - ca-app-pub-5904408074441373/5425463283
+    - ca-app-pub-5904408074441373/9026361594
+    - ca-app-pub-5904408074441373/2608292909
+    appOpenIds:
+    - ca-app-pub-5904408074441373/5996873578
+    - ca-app-pub-5904408074441373/1486218271
+    - ca-app-pub-5904408074441373/7368830841
+    interOpenIds:
+    - ca-app-pub-5904408074441373/1347509095
+    - ca-app-pub-5904408074441373/5095182410
+    - ca-app-pub-5904408074441373/1214495775
+    mrecOpenIds:
+    - ca-app-pub-5904408074441373/7713279923
+    - ca-app-pub-5904408074441373/8681912512
+    - ca-app-pub-5904408074441373/8623036912
+    rewardInterIds: []
+    mrecInterIds: []
+  ADMOB_iOS:
+    appId: ca-app-pub-5904408074441373~7814474512
+    bannerIds: []
+    interIds:
+    - ca-app-pub-5904408074441373/3673641102
+    - ca-app-pub-5904408074441373/8215521347
+    - ca-app-pub-5904408074441373/2360559436
+    rewardIds:
+    - ca-app-pub-5904408074441373/1342953243
+    - ca-app-pub-5904408074441373/7852559266
+    - ca-app-pub-5904408074441373/8103840706
+    mrecIds:
+    - ca-app-pub-5904408074441373/8719467115
+    - ca-app-pub-5904408074441373/5226395920
+    - ca-app-pub-5904408074441373/5589358005
+    appOpenIds:
+    - ca-app-pub-5904408074441373/3426191102
+    - ca-app-pub-5904408074441373/2464463220
+    - ca-app-pub-5904408074441373/6347905904
+    interOpenIds:
+    - ca-app-pub-5904408074441373/5477677360
+    - ca-app-pub-5904408074441373/8734396095
+    - ca-app-pub-5904408074441373/8814249158
+    mrecOpenIds:
+    - ca-app-pub-5904408074441373/7501167484
+    - ca-app-pub-5904408074441373/4780222100
+    - ca-app-pub-5904408074441373/9392871645
+    rewardInterIds: []
+    mrecInterIds: []

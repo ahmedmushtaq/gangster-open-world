@@ -51,29 +51,36 @@ public class RCC_CameraEditor : Editor {
 
 		EditorGUILayout.Space ();
 
-		EditorGUILayout.BeginVertical(GUI.skin.box);
-		EditorGUILayout.LabelField ("TPS", EditorStyles.boldLabel);
-		EditorGUILayout.PropertyField(serializedObject.FindProperty("TPSDistance"), new GUIContent("TPS Distance", "TPS Distance."), false);
-		EditorGUILayout.PropertyField(serializedObject.FindProperty("TPSHeight"), new GUIContent("TPS Height", "TPS Height."), false);
-		EditorGUILayout.PropertyField(serializedObject.FindProperty("TPSHeightDamping"), new GUIContent("TPS Height Damping", "TPS Height Damping."), false);
-		EditorGUILayout.PropertyField(serializedObject.FindProperty("TPSRotationDamping"), new GUIContent("TPS Rotation Damping", "TPS Rotation Damping."), false);
-		EditorGUILayout.PropertyField(serializedObject.FindProperty("TPSMinimumFOV"), new GUIContent("TPS Minimum FOV", "TPS Minimum FOV."), false);
-		EditorGUILayout.PropertyField(serializedObject.FindProperty("TPSMaximumFOV"), new GUIContent("TPS Maximum FOV", "TPS Maximum FOV."), false);
-		EditorGUILayout.PropertyField(serializedObject.FindProperty("TPSTiltMaximum"), new GUIContent("TPS Tilt Maximum", "TPS Tilt Maximum."), false);
-		EditorGUILayout.PropertyField(serializedObject.FindProperty("TPSTiltMultiplier"), new GUIContent("TPS Tilt Multiplier", "TPS Tilt Multiplier."), false);
-		EditorGUILayout.PropertyField(serializedObject.FindProperty("TPSYawAngle"), new GUIContent("TPS Yaw Angle", "TPS Pitch Angle."), false);
-		EditorGUILayout.PropertyField(serializedObject.FindProperty("TPSPitchAngle"), new GUIContent("TPS Pitch Angle", "TPS Pitch Angle."), false);
-		EditorGUILayout.PropertyField(serializedObject.FindProperty("TPSOffsetX"), new GUIContent("TPS Offset X", "TPS Offset X."), false);
-		EditorGUILayout.PropertyField(serializedObject.FindProperty("TPSOffsetY"), new GUIContent("TPS Offset Y", "TPS Offset Y."), false);
-		EditorGUILayout.PropertyField(serializedObject.FindProperty("TPSAutoFocus"), new GUIContent("Use Auto Focus", "Use Auto Focus."), false);
-		EditorGUILayout.PropertyField (serializedObject.FindProperty ("useOrbitInTPSCameraMode"), new GUIContent ("Use Orbit", "Use Orbit In TPS Camera Mode."), false);
-		EditorGUILayout.PropertyField(serializedObject.FindProperty("useOcclusion"), new GUIContent("Use Occlusion", "Use Occlusion."), false);
-		EditorGUILayout.PropertyField(serializedObject.FindProperty("occlusionLayerMask"), new GUIContent("Occlusion LayerMask", "Occlusion LayerMask."), false);
+        EditorGUILayout.BeginVertical(GUI.skin.box);
+        EditorGUILayout.LabelField("TPS", EditorStyles.boldLabel);
+        EditorGUILayout.PropertyField(serializedObject.FindProperty("TPSDistance"), new GUIContent("TPS Distance", "TPS Distance."), false);
+        EditorGUILayout.PropertyField(serializedObject.FindProperty("TPSHeight"), new GUIContent("TPS Height", "TPS Height."), false);
+        EditorGUILayout.PropertyField(serializedObject.FindProperty("TPSHeightDamping"), new GUIContent("TPS Height Damping", "TPS Height Damping."), false);
+        EditorGUILayout.PropertyField(serializedObject.FindProperty("TPSRotationDamping"), new GUIContent("TPS Rotation Damping", "TPS Rotation Damping."), false);
+        EditorGUILayout.PropertyField(serializedObject.FindProperty("TPSMinimumFOV"), new GUIContent("TPS Minimum FOV", "TPS Minimum FOV."), false);
+        EditorGUILayout.PropertyField(serializedObject.FindProperty("TPSMaximumFOV"), new GUIContent("TPS Maximum FOV", "TPS Maximum FOV."), false);
+        EditorGUILayout.PropertyField(serializedObject.FindProperty("TPSTiltMaximum"), new GUIContent("TPS Tilt Maximum", "TPS Tilt Maximum."), false);
+        EditorGUILayout.PropertyField(serializedObject.FindProperty("TPSTiltMultiplier"), new GUIContent("TPS Tilt Multiplier", "TPS Tilt Multiplier."), false);
+        EditorGUILayout.PropertyField(serializedObject.FindProperty("TPSYawAngle"), new GUIContent("TPS Yaw Angle", "TPS Pitch Angle."), false);
+        EditorGUILayout.PropertyField(serializedObject.FindProperty("TPSPitchAngle"), new GUIContent("TPS Pitch Angle", "TPS Pitch Angle."), false);
+        EditorGUILayout.PropertyField(serializedObject.FindProperty("TPSOffsetX"), new GUIContent("TPS Offset X", "TPS Offset X."), false);
+        EditorGUILayout.PropertyField(serializedObject.FindProperty("TPSOffsetY"), new GUIContent("TPS Offset Y", "TPS Offset Y."), false);
+        EditorGUILayout.PropertyField(serializedObject.FindProperty("TPSAutoFocus"), new GUIContent("Use Auto Focus", "Use Auto Focus."), false);
+        EditorGUILayout.PropertyField(serializedObject.FindProperty("useOrbitInTPSCameraMode"), new GUIContent("Use Orbit", "Use Orbit In TPS Camera Mode."), false);
+        EditorGUILayout.PropertyField(serializedObject.FindProperty("useOcclusion"), new GUIContent("Use Occlusion", "Use Occlusion."), false);
+        EditorGUILayout.PropertyField(serializedObject.FindProperty("occlusionLayerMask"), new GUIContent("Occlusion LayerMask", "Occlusion LayerMask."), false);
 
-		EditorGUILayout.Space ();
-		EditorGUILayout.EndVertical ();
+        // --- NEW: NOS Camera Boost ---
+        EditorGUILayout.Space();
+        EditorGUILayout.LabelField("NOS Camera Boost", EditorStyles.boldLabel);
+        EditorGUILayout.PropertyField(serializedObject.FindProperty("nosDistanceOffset"), new GUIContent("NOS Distance Offset", "Extra distance added to TPSDistance when NOS is active."), false);
+        EditorGUILayout.PropertyField(serializedObject.FindProperty("nosDistanceLerpSpeed"), new GUIContent("NOS Lerp Speed", "Smoothing speed for the distance transition."), false);
+        // -----------------------------
 
-		EditorGUILayout.Space ();
+        EditorGUILayout.Space();
+        EditorGUILayout.EndVertical();
+
+        EditorGUILayout.Space ();
 
 		EditorGUILayout.BeginVertical(GUI.skin.box);
 		EditorGUILayout.LabelField ("FPS", EditorStyles.boldLabel);

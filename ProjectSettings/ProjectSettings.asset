@@ -828,7 +828,7 @@ PlayerSettings:
   webWasm2023: 0
   webEnableSubmoduleStrippingCompatibility: 0
   scriptingDefineSymbols:
-    Android: BCG_RCCP;BCG_URP;BCG_RCC;GLEY_TRAFFIC_SYSTEM
+    Android: BCG_RCCP;BCG_URP;BCG_RCC;GLEY_TRAFFIC_SYSTEM;EMS_URP_On
     EmbeddedLinux: BCG_RCCP;BCG_URP
     GameCoreScarlett: BCG_RCCP;BCG_URP
     GameCoreXboxOne: BCG_RCCP;BCG_URP

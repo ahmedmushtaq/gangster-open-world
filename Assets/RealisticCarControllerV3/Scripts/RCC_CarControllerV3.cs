@@ -2,18 +2,15 @@
 //            Realistic Car Controller
 //
 // Copyright © 2014 - 2019 BoneCracker Games
-// http://www.bonecrackergames.comF
+// http://www.bonecrackergames.com
 // Buğra Özdoğanlar
 //
 //----------------------------------------------
 
-using UnityEngine;
-using UnityEngine.Audio;
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using UnityEngine.EventSystems;
-using RVP;
+using UnityEngine;
 
 [AddComponentMenu("BoneCracker Games/Realistic Car Controller/Main/RCC Realistic Car Controller V3")]
 [RequireComponent (typeof(Rigidbody))]
@@ -40,24 +37,7 @@ public class RCC_CarControllerV3 : MonoBehaviour {
 
 	internal Rigidbody rigid;							// Rigidbody.
 	internal bool isSleeping = false;				// Used For Disabling Unnecessary Raycasts When RB Is Sleeping.
-	public bool externalController = false;     // Use AI Controller.
-	public Vector3 localVelocity;
-	public Vector3 localAngularVel;
-	public float driftSpinAssist = 2;
-	public float driftSpinSpeed = 3;
-	public float driftSpinExponent = 2;
-	public bool autoSteerDrift = true;
-	public float maxDriftAngle = 180f;
-	float targetDriftAngle;
-	public float driftPush = 20f;
-	public bool straightenAssist = true;
-	public float sqrVelMag;
-	public AnimationCurve driftSpinCurve = AnimationCurve.Linear(0, 0, 10, 1);
-	public bool basedOnWheelsGrounded = true;
-    float groundedFactor;
-	public int groundedWheels;
-
-
+	public bool externalController = false;		// Use AI Controller.
 
 	[Obsolete("Warning 'AIController' is obsolete: 'Please use externalController.")]
 	public bool AIController { get { return this.externalController; } set { this.externalController = value; } }
@@ -103,7 +83,7 @@ public class RCC_CarControllerV3 : MonoBehaviour {
 	public bool engineRunning = false;																		// Engine running now?
 	public bool autoReverse{get{if(!externalController) return RCCSettings.autoReverse; else return true;}}                            // Enables / Disables auto reversing when player press brake button. Useful for if you are making parking style game.
 	public bool automaticGear{get{if(!externalController) return RCCSettings.useAutomaticGear; else return true;}}                // Enables / Disables automatic gear shifting of the vehicle.
-	internal bool semiAutomaticGear = false;													// Enables / Disables automatic gear shifting of the vehicle.
+	internal bool semiAutomaticGear = false;															// Enables / Disables automatic gear shifting of the vehicle.
 	internal bool canGoReverseNow = false;
 	 
 	// Configurations.
@@ -146,16 +126,10 @@ public class RCC_CarControllerV3 : MonoBehaviour {
 	public float engineHeat = 15f;									// Engine heat.
 	public float engineCoolingWaterThreshold = 60f;		// Engine coolign water engage point.
 	public float engineHeatRate = 1f;								// Engine heat multiplier.
-	public float engineCoolRate = 1f;                               // Engine cool multiplier.
+	public float engineCoolRate = 1f;								// Engine cool multiplier.
 
-    private void Start()
-    {
-
-		driftSpinCurve.AddKey(2.933843f, 0.6353245f);
-
-	}
-    // Gears.
-    [System.Serializable]
+	// Gears.
+	[System.Serializable]
 	public class Gear{
 
 		public float maxRatio;
@@ -257,28 +231,38 @@ public class RCC_CarControllerV3 : MonoBehaviour {
 
 	private bool permanentGas = false;
 
-	#region Processed Inputs
-	// Processed Inputs. DO NOT FEED THESE VALUES on your own script. Feed only above inputs.
-	internal float _gasInput{get{
+    #region Processed Inputs
+    // Processed Inputs. DO NOT FEED THESE VALUES on your own script. Feed only above inputs.
+    internal float _gasInput
+    {
+        get
+        {
+            if (_fuelInput <= 0f) return 0f;
 
-			if(_fuelInput <= 0f)
-				return 0f;
+            // ---- NEW: auto-throttle when NOS active ----
+            if (nosActive && autoThrottleOnNOS)
+                return 1f;
 
-			if(!automaticGear || semiAutomaticGear){
-				if(!changingGear && !cutGas)
-					return Mathf.Clamp01(gasInput);
-				else
-					return 0f;
-			}else{
-				if(!changingGear && !cutGas)
-					return (direction == 1 ? Mathf.Clamp01(gasInput) : Mathf.Clamp01(brakeInput));
-				else
-					return 0f;
-			}
-				
-		}set{gasInput = value;}}
+            // ---- original logic ----
+            if (!automaticGear || semiAutomaticGear)
+            {
+                if (!changingGear && !cutGas)
+                    return Mathf.Clamp01(gasInput);
+                else
+                    return 0f;
+            }
+            else
+            {
+                if (!changingGear && !cutGas)
+                    return (direction == 1 ? Mathf.Clamp01(gasInput) : Mathf.Clamp01(brakeInput));
+                else
+                    return 0f;
+            }
+        }
+        set { gasInput = value; }
+    }
 
-	internal float _brakeInput{get{
+    internal float _brakeInput{get{
 
 			if(!automaticGear || semiAutomaticGear){
 				return Mathf.Clamp01(brakeInput);
@@ -291,17 +275,21 @@ public class RCC_CarControllerV3 : MonoBehaviour {
 				
 		}set{brakeInput = value;}}
 
-	internal float _boostInput{get{
-			
-			if(useNOS && NoS > 5 && _gasInput >= .5f){
-				return boostInput * 1f;
-			}else{
-				return 0f;
-			}
+    internal float _boostInput
+    {
+        get
+        {
+            // Return 1 if NOS is active (so exhaust flame and other effects see boost)
+            if (useNOS && nosActive)
+                return 1f;
 
-		}set{boostInput = value;}}
+            // If NOS is not active, return 0 (or you can still use manual boostInput if you have a separate key)
+            return 0f;
+        }
+        set { boostInput = value; }
+    }
 
-	internal float _steerInput{get{
+    internal float _steerInput{get{
 
 			return (steerInput + _counterSteerInput);
 
@@ -447,10 +435,19 @@ public class RCC_CarControllerV3 : MonoBehaviour {
 	public delegate void onRCCPlayerCollision(RCC_CarControllerV3 RCC, Collision collision);
 	public static event onRCCPlayerCollision OnRCCPlayerCollision;
 
-	void Awake (){
+    // NOS – Charge System
+    public int maxNOSCharges = 2;           // Number of charges player starts with
+    public int nosCharges;                 // Current charges left
+    public float nosDurationPerCharge = 12f; // Seconds each charge lasts
+    public bool nosActive = false;
+    public float nosTimer = 0f;            // Remaining time of current charge
+    public bool autoThrottleOnNOS = true;   // Force full gas while active
 
-		// Overriding Fixed TimeStep.
-		if(RCCSettings.overrideFixedTimeStep)
+
+    void Awake (){
+        nosCharges = maxNOSCharges;
+        // Overriding Fixed TimeStep.
+        if (RCCSettings.overrideFixedTimeStep)
 			Time.fixedDeltaTime = RCCSettings.fixedTimeStep;
 
 		// Getting Rigidbody and settings.
@@ -734,7 +731,7 @@ public class RCC_CarControllerV3 : MonoBehaviour {
 		brakeSound = RCC_CreateAudioSource.NewAudioSource(gameObject, "Brake Sound AudioSource", 1, 10, 0, brakeClip, true, true, false);
 
 		if(useNOS)
-			//NOSSound = RCC_CreateAudioSource.NewAudioSource(gameObject, "NOS Sound AudioSource", 5, 10, 1f, NOSClip, true, false, false);
+			NOSSound = RCC_CreateAudioSource.NewAudioSource(gameObject, "NOS Sound AudioSource", 5, 10, 1f, NOSClip, true, false, false);
 		if(useNOS || useTurbo)
 			blowSound = RCC_CreateAudioSource.NewAudioSource(gameObject, "NOS Blow", 1, 10, 1, null, false, false, false);
 		if(useTurbo){
@@ -1143,7 +1140,7 @@ public class RCC_CarControllerV3 : MonoBehaviour {
 				}
 					
 			}
-	
+			
 		}
 		
 		mesh.vertices = vertices;
@@ -1214,6 +1211,7 @@ public class RCC_CarControllerV3 : MonoBehaviour {
 			brakeInput = 0f;
 			boostInput = 0f;
 			handbrakeInput = 1f;
+
 		}
 			
 		Audio();
@@ -1383,15 +1381,8 @@ public class RCC_CarControllerV3 : MonoBehaviour {
 	}
 	
 	void FixedUpdate (){
-		
-		localVelocity = this.transform.InverseTransformDirection(rigid.linearVelocity);
-		localAngularVel = this.transform.InverseTransformDirection(rigid.angularVelocity);
-		sqrVelMag = rigid.linearVelocity.sqrMagnitude;
-		if (groundedWheels > 0)
-		{
-			groundedFactor = basedOnWheelsGrounded ? groundedWheels /  4 : 1;
-		}
-		if (rigid.linearVelocity.magnitude < .01f && Mathf.Abs(_steerInput) < .01f && Mathf.Abs(_gasInput) < .01f && Mathf.Abs(rigid.angularVelocity.magnitude) < .01f)
+
+		if(rigid.linearVelocity.magnitude < .01f && Mathf.Abs(_steerInput) < .01f && Mathf.Abs(_gasInput) < .01f && Mathf.Abs(rigid.angularVelocity.magnitude) < .01f)
 			isSleeping = true;
 		else
 			isSleeping = false;
@@ -1417,8 +1408,7 @@ public class RCC_CarControllerV3 : MonoBehaviour {
 
 		}
 
-		AntiRollBars(); 
-		GetGroundedWheels();
+		AntiRollBars();
 		DriftVariables();
 		RevLimiter();
 		Turbo();
@@ -1453,30 +1443,7 @@ public class RCC_CarControllerV3 : MonoBehaviour {
 		rigid.AddRelativeForce (Vector3.down * (speed * downForce), ForceMode.Force);
 
 	}
-	void GetGroundedWheels()
-	{
-		groundedWheels = 0;
-		if (FrontRightWheelCollider.wheelCollider.isGrounded)
-		{
-			groundedWheels++;
-			
-		}
-		if (FrontLeftWheelCollider.wheelCollider.isGrounded)
-		{
-			groundedWheels++;
-			
-		}
-		if (RearRightWheelCollider.wheelCollider.isGrounded)
-		{
-			groundedWheels++;
-			
-		}
-		if (RearLeftWheelCollider.wheelCollider.isGrounded)
-		{
-			groundedWheels++;
-		}
 
-	}
 	/// <summary>
 	/// Engine.
 	/// </summary>
@@ -2046,58 +2013,149 @@ public class RCC_CarControllerV3 : MonoBehaviour {
 	/// </summary>
 	private void RevLimiter(){
 
-		if((useRevLimiter && engineRPM >= maxEngineRPM ))
+		if((useRevLimiter && engineRPM >= maxEngineRPM))
 			cutGas = true;
 		else if(engineRPM < (maxEngineRPM * .95f))
 			cutGas = false;
 		
 	}
 
-	/// <summary>
-	/// NOS.
-	/// </summary>
-	private void NOS(){
+    /// <summary>
+    /// NOS.
+    /// </summary>
+    private void NOS()
+    {
+        if (!useNOS) return;
 
-		if(!useNOS)
-			return;
+        // Ensure audio sources exist
+        if (!NOSSound)
+            NOSSound = RCC_CreateAudioSource.NewAudioSource(gameObject, "NOS Sound AudioSource", 5, 10, 1f, NOSClip, true, false, false);
+        if (!blowSound)
+            blowSound = RCC_CreateAudioSource.NewAudioSource(gameObject, "NOS Blow", 1, 10, 1, null, false, false, false);
 
-		if(!NOSSound)
-			//NOSSound = RCC_CreateAudioSource.NewAudioSource(gameObject, "NOS Sound AudioSource", 5, 10, 1f, NOSClip, true, false, false);
+        // Activate via boostInput (keyboard/controller) if charges available
+        if (boostInput >= 0.8f && nosCharges > 0 && !nosActive)
+        {
+            ActivateNOS();
+        }
 
-		if(!blowSound)
-			blowSound = RCC_CreateAudioSource.NewAudioSource(gameObject, "NOS Blow", 1, 10, 1, null, false, false, false);
+        if (nosActive)
+        {
+            // Decrease timer
+            nosTimer -= Time.fixedDeltaTime;
 
-		if(boostInput >= .8f && _gasInput >= .8f && NoS > 5){
-			
-			//NoS -= NoSConsumption * Time.fixedDeltaTime;
-			//NoSRegenerateTime = 0f;
+            // Update NoS (percentage) for dashboard needle
+            NoS = (nosTimer / nosDurationPerCharge) * 100f;
+            NoS = Mathf.Clamp(NoS, 0f, 100f);
 
-			//if(!NOSSound.isPlaying)
-			//	NOSSound.Play();
-			
-		}else{
-			
-			//if(NoS < 100 && NoSRegenerateTime > 3)
-				//NoS += (NoSConsumption / 1.5f) * Time.fixedDeltaTime;
-			
-			//NoSRegenerateTime += Time.fixedDeltaTime;
+            // Play NOS sound
+            if (!NOSSound.isPlaying)
+                NOSSound.Play();
 
-			//if(NOSSound.isPlaying){
-				
-			//	NOSSound.Stop();
-			//	blowSound.clip = RCCSettings.blowoutClip[UnityEngine.Random.Range(0, RCCSettings.blowoutClip.Length)];
-			//	blowSound.Play();
+            // If timer runs out, stop
+            if (nosTimer <= 0f)
+            {
+                nosActive = false;
+                NoS = 0f;
+                NOSSound.Stop();
+                // Blowout sound
+                blowSound.clip = RCCSettings.blowoutClip[UnityEngine.Random.Range(0, RCCSettings.blowoutClip.Length)];
+                blowSound.Play();
+            }
+        }
+        else
+        {
+            // When idle, stop sound and reset NoS to 0 (or you could keep it at 0)
+            if (NOSSound.isPlaying)
+            {
+                NOSSound.Stop();
+                blowSound.clip = RCCSettings.blowoutClip[UnityEngine.Random.Range(0, RCCSettings.blowoutClip.Length)];
+                blowSound.Play();
+            }
+            NoS = 0f;
+        }
+    }
 
-			//}
+    // Add these somewhere inside the class (e.g., near the NOS variables)
 
-		}
+    /// <summary>
+    /// Adds a number of NOS charges (caps at maxNOSCharges).
+    /// </summary>
+    public void AddNOSCharges(int count)
+    {
+        if (!useNOS) return;
+        nosCharges += count;
+        //if (nosCharges > maxNOSCharges) nosCharges = maxNOSCharges;
+    }
 
-	}
+    /// <summary>
+    /// Consumes one charge and starts NOS (if not already active).
+    /// </summary>
+    public void ActivateNOS()
+    {
+        if (!useNOS) return;
+        if (nosActive) return;
+        if (nosCharges <= 0) return;
 
-	/// <summary>
-	/// Turbo.
-	/// </summary>
-	private void Turbo(){
+        nosCharges--;
+        nosActive = true;
+        nosTimer = nosDurationPerCharge;
+    }
+
+    /// <summary>
+    /// Adds extra time to the currently running NOS (if active).
+    /// If not active, it adds a charge instead.
+    /// </summary>
+    public void AddNOSTime(float seconds)
+    {
+        if (!useNOS) return;
+        if (nosActive)
+        {
+            nosTimer += seconds;
+            // Optionally cap the maximum time (e.g., never exceed 2x duration)
+        }
+        else
+        {
+            // Add a charge if NOS is not running (so the player can use it later)
+            AddNOSCharges(1);
+        }
+    }
+
+    /// <summary>
+    /// Immediately stops the current NOS boost without refunding the used charge.
+    /// </summary>
+    public void ForceStopNOS()
+    {
+        if (!nosActive)
+            return;
+
+        // Stop the timer and reset gauge
+        nosActive = false;
+        nosTimer = 0f;
+        NoS = 0f;
+
+        // Stop the looping NOS sound
+        if (NOSSound != null && NOSSound.isPlaying)
+            NOSSound.Stop();
+
+        // Play the blowout sound (if available)
+        if (blowSound != null)
+        {
+            if (RCCSettings != null && RCCSettings.blowoutClip.Length > 0)
+            {
+                blowSound.clip = RCCSettings.blowoutClip[UnityEngine.Random.Range(0, RCCSettings.blowoutClip.Length)];
+                blowSound.Play();
+            }
+        }
+
+        // Optionally, you can also cut gas if you want to prevent lingering throttle
+        // (auto-throttle will stop immediately because nosActive is now false)
+    }
+
+    /// <summary>
+    /// Turbo.
+    /// </summary>
+    private void Turbo(){
 
 		if(!useTurbo)
 			return;
@@ -2166,69 +2224,17 @@ public class RCC_CarControllerV3 : MonoBehaviour {
 		RearRightWheelCollider.wheelCollider.GetGroundHit(out hit);
 
 		if(Mathf.Abs(hit.sidewaysSlip) > .25f)
-        {
 			driftingNow = true;
-            ApplySpinAssist();
-            float pushFactor = (gasInput - brakeInput) * Mathf.Abs(localVelocity.x) * driftPush * groundedFactor * (1 - Mathf.Abs(Vector3.Dot(this.transform.forward, rigid.linearVelocity.normalized)));
-            rigid.AddForce(
-            COM.TransformDirection(new Vector3(Mathf.Abs(pushFactor) * Mathf.Sign(localVelocity.x), Mathf.Abs(pushFactor) * Mathf.Sign(localVelocity.z), 0)),
-            ForceMode.Acceleration);
-        }
 		else
 			driftingNow = false;
 		
 		if(speed > 10f)
-        {
-			driftAngle = hit.sidewaysSlip * 2f;
-            //if (driftAngle > 0.1)
-            //    driftAngle = 0f;
-            //if (driftAngle < -0.1)
-            //    driftAngle = 0f;
-            //Debug.Log(hit.sidewaysSlip);
-		}
-			
+			driftAngle = hit.sidewaysSlip * .75f;
 		else
 			driftAngle = 0f;
 		
 	}
-	void ApplySpinAssist()
-	{
-		//Get desired rotation speed
-		float targetTurnSpeed = 0;
 
-		//Auto steer drift
-		if (autoSteerDrift)
-		{
-			int steerSign = 0;
-			if (steerInput != 0)
-			{
-				steerSign = (int)Mathf.Sign(steerInput);
-			}
-
-			targetDriftAngle = (steerSign != Mathf.Sign(localVelocity.x) ? steerInput : steerSign) * -maxDriftAngle;
-			Vector3 velDir = new Vector3(localVelocity.x, 0, localVelocity.z).normalized;
-			Vector3 targetDir = new Vector3(Mathf.Sin(targetDriftAngle * Mathf.Deg2Rad), 0, Mathf.Cos(targetDriftAngle * Mathf.Deg2Rad)).normalized;
-			Vector3 driftTorqueTemp = velDir - targetDir;
-			targetTurnSpeed = driftTorqueTemp.magnitude * Mathf.Sign(driftTorqueTemp.z) * steerSign * driftSpinSpeed - localAngularVel.y * Mathf.Clamp01(Vector3.Dot(velDir, targetDir)) * 2;
-		}
-		else
-		{
-			targetTurnSpeed = steerInput * driftSpinSpeed * (localVelocity.z < 0 ? ( Mathf.Sign(F.MaxAbs(gasInput, -brakeInput))) : 1);
-		}
-
-		rigid.AddRelativeTorque(
-			new Vector3(0, (targetTurnSpeed - localAngularVel.y) * driftSpinAssist * driftSpinCurve.Evaluate(Mathf.Abs(Mathf.Pow(localVelocity.x, driftSpinExponent))) * groundedFactor, 0),
-			ForceMode.Acceleration);
-
-		float rightVelDot = Vector3.Dot(this.transform.right, rigid.linearVelocity.normalized);
-
-		if (straightenAssist && steerInput == 0 && Mathf.Abs(rightVelDot) < 0.1f && sqrVelMag > 5)
-		{
-			rigid.AddRelativeTorque(
-				new Vector3(0, rightVelDot * 100 * Mathf.Sign(localVelocity.z) * driftSpinAssist, 0),
-				ForceMode.Acceleration);
-		}
-	}
 	/// <summary>
 	/// Resets the car.
 	/// </summary>
@@ -2297,10 +2303,10 @@ public class RCC_CarControllerV3 : MonoBehaviour {
 
 			if (collision.contacts[0].thisCollider.gameObject.transform != transform.parent){
 
-				//crashSound = RCC_CreateAudioSource.NewAudioSource(gameObject, "Crash Sound AudioSource", 5, 20, RCCSettings.maxCrashSoundVolume, crashClips[UnityEngine.Random.Range(0, crashClips.Length)], false, true, true);
+				crashSound = RCC_CreateAudioSource.NewAudioSource(gameObject, "Crash Sound AudioSource", 5, 20, RCCSettings.maxCrashSoundVolume, crashClips[UnityEngine.Random.Range(0, crashClips.Length)], false, true, true);
 
-				//if(!crashSound.isPlaying)
-				//	crashSound.Play();
+				if(!crashSound.isPlaying)
+					crashSound.Play();
 
 			}
 
