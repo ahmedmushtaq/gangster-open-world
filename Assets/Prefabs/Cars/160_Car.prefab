@@ -1870,6 +1870,7 @@ GameObject:
   - component: {fileID: 8807879670036723978}
   - component: {fileID: 6575958710671779547}
   - component: {fileID: 1970916542620173423}
+  - component: {fileID: -7220514252667153810}
   m_Layer: 13
   m_Name: 160_Car
   m_TagString: Player
@@ -1896,6 +1897,7 @@ Transform:
   - {fileID: 3171415686797741110}
   - {fileID: 6448314180794717712}
   - {fileID: 8648967808499769373}
+  - {fileID: 2570507906774315759}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!54 &8074099445193207542
@@ -2214,7 +2216,7 @@ MonoBehaviour:
   downForce: 60
   speed: 0
   orgMaxSpeed: 0
-  maxspeed: 200
+  maxspeed: 240
   useFuelConsumption: 0
   fuelTankCapacity: 62
   fuelTank: 62
@@ -2510,7 +2512,7 @@ MonoBehaviour:
   minEngineSoundPitch: 0.75
   maxEngineSoundPitch: 1.75
   minEngineSoundVolume: 0.05
-  maxEngineSoundVolume: 0.5
+  maxEngineSoundVolume: 0.75
   idleEngineSoundVolume: 0.25
   gasInput: 0
   brakeInput: 0
@@ -2607,6 +2609,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1d204e3674d92d46820131cf7f92657, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SickscoreGames.HUDNavigationSystem.HNSPlayerController
+--- !u!114 &-7220514252667153810
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3646864956736906979}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a08bd3079f91b446b3044ad5ee79802, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RCCV3_PaintManager
 --- !u!1 &3728458180277301296
 GameObject:
   m_ObjectHideFlags: 0
@@ -14972,6 +14986,52 @@ MeshRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!1 &9071179608074835719
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2570507906774315759}
+  - component: {fileID: 1474696104821778605}
+  m_Layer: 0
+  m_Name: PaintScript
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2570507906774315759
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9071179608074835719}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4579971003352006753}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1474696104821778605
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9071179608074835719}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07efc15361f4e7e428daf8bb7e4e2ea8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RCCV3_Paintable
+  paintMaterial: {fileID: 2100000, guid: d26868df01b119d499c0a86aa8252dfc, type: 2}
+  propertyName: _PearlColor
 --- !u!1001 &1999216393020792644
 PrefabInstance:
   m_ObjectHideFlags: 0

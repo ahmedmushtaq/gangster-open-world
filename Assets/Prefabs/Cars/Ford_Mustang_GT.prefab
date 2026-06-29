@@ -5629,6 +5629,52 @@ Transform:
   - {fileID: 1384653529703495492}
   m_Father: {fileID: 1892124228804692847}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &3166844532416748053
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8274623951280702049}
+  - component: {fileID: 3344542879275894253}
+  m_Layer: 0
+  m_Name: PaintScript
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8274623951280702049
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3166844532416748053}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6194935635976228317}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3344542879275894253
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3166844532416748053}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07efc15361f4e7e428daf8bb7e4e2ea8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RCCV3_Paintable
+  paintMaterial: {fileID: 2100000, guid: 565072176334a57489d343262ca5bffe, type: 2}
+  propertyName: _PearlColor
 --- !u!1 &3302485653913864612
 GameObject:
   m_ObjectHideFlags: 0
@@ -11663,6 +11709,7 @@ GameObject:
   - component: {fileID: 244349978064442838}
   - component: {fileID: 6206629560299005530}
   - component: {fileID: 5877231679190120851}
+  - component: {fileID: 3298582902523332315}
   m_Layer: 13
   m_Name: Ford_Mustang_GT
   m_TagString: Player
@@ -11689,6 +11736,7 @@ Transform:
   - {fileID: 4389831764635200544}
   - {fileID: 2071012679335484681}
   - {fileID: 783933001491007945}
+  - {fileID: 8274623951280702049}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!54 &4123203861817492968
@@ -12007,7 +12055,7 @@ MonoBehaviour:
   downForce: 60
   speed: 0
   orgMaxSpeed: 0
-  maxspeed: 200
+  maxspeed: 310
   useFuelConsumption: 0
   fuelTankCapacity: 62
   fuelTank: 62
@@ -12303,7 +12351,7 @@ MonoBehaviour:
   minEngineSoundPitch: 0.75
   maxEngineSoundPitch: 1.75
   minEngineSoundVolume: 0.05
-  maxEngineSoundVolume: 0.5
+  maxEngineSoundVolume: 0.75
   idleEngineSoundVolume: 0.25
   gasInput: 0
   brakeInput: 0
@@ -12400,6 +12448,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1d204e3674d92d46820131cf7f92657, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SickscoreGames.HUDNavigationSystem.HNSPlayerController
+--- !u!114 &3298582902523332315
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8748388622595063291}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a08bd3079f91b446b3044ad5ee79802, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RCCV3_PaintManager
 --- !u!1001 &1986222020155102923
 PrefabInstance:
   m_ObjectHideFlags: 0

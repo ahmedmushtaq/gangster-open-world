@@ -168,7 +168,7 @@ public class MissionManager : MonoBehaviour
 
         if (missionType == MissionType.Parking)
         {
-            Debug.LogError($"Current{missionType}Mission " +
+            Debug.Log($"Current{missionType}Mission " +
                 PlayerPrefs.GetInt($"Current{missionType}Mission"));
             currentMissionIndex = PlayerPrefs.GetInt($"Current{missionType}Mission", 0);
             missionTitleText.text = parkingMissions[currentMissionIndex].missionName;
@@ -181,7 +181,7 @@ public class MissionManager : MonoBehaviour
         }
         else if (missionType == MissionType.JumpTrail)
         {
-            Debug.LogError($"Current{missionType}Mission " +
+            Debug.Log($"Current{missionType}Mission " +
                 PlayerPrefs.GetInt($"Current{missionType}Mission"));
             currentMissionIndex = PlayerPrefs.GetInt($"Current{missionType}Mission", 0);
             missionTitleText.text = jumpTrailMissions[currentMissionIndex].missionName;
@@ -194,7 +194,7 @@ public class MissionManager : MonoBehaviour
         }
         else if (missionType == MissionType.MegaRamp)
         {
-            Debug.LogError($"Current{missionType}Mission " +
+            Debug.Log($"Current{missionType}Mission " +
                 PlayerPrefs.GetInt($"Current{missionType}Mission"));
             currentMissionIndex = PlayerPrefs.GetInt($"Current{missionType}Mission", 0);
             missionTitleText.text = megaRampMissions[currentMissionIndex].missionName;
@@ -207,7 +207,7 @@ public class MissionManager : MonoBehaviour
         }
         else if (missionType == MissionType.Race)
         {
-            Debug.LogError($"Current{missionType}Mission " +
+            Debug.Log($"Current{missionType}Mission " +
                 PlayerPrefs.GetInt($"Current{missionType}Mission"));
             currentMissionIndex = PlayerPrefs.GetInt($"Current{missionType}Mission", 0);
             missionTitleText.text = raceMissions[currentMissionIndex].missionName;
@@ -704,7 +704,7 @@ public class MissionManager : MonoBehaviour
 
     public void OnCarFullyInside()
     {
-        Debug.LogError("Car fully inside trigger detected in MissionManager.");
+        Debug.Log("Car fully inside trigger detected in MissionManager.");
         if (levelCompleted) return;
         // Show the fill image – it will be updated via ParkingFinish's own timer
         if (fillBar != null)
@@ -890,7 +890,7 @@ public class MissionManager : MonoBehaviour
 
         if (missionType == MissionType.Parking)
         {
-            Debug.LogError($"Current{missionType}Mission " +
+            Debug.Log($"Current{missionType}Mission " +
                 PlayerPrefs.GetInt($"Current{missionType}Mission"));
             currentMissionIndex = PlayerPrefs.GetInt($"Current{missionType}Mission", 0);
             missionTitleText.text = parkingMissions[currentMissionIndex].missionName;
@@ -903,7 +903,7 @@ public class MissionManager : MonoBehaviour
         }
         else if (missionType == MissionType.JumpTrail)
         {
-            Debug.LogError($"Current{missionType}Mission " +
+            Debug.Log($"Current{missionType}Mission " +
                 PlayerPrefs.GetInt($"Current{missionType}Mission"));
             currentMissionIndex = PlayerPrefs.GetInt($"Current{missionType}Mission", 0);
             missionTitleText.text = jumpTrailMissions[currentMissionIndex].missionName;
@@ -916,7 +916,7 @@ public class MissionManager : MonoBehaviour
         }
         else if (missionType == MissionType.MegaRamp)
         {
-            Debug.LogError($"Current{missionType}Mission " +
+            Debug.Log($"Current{missionType}Mission " +
                 PlayerPrefs.GetInt($"Current{missionType}Mission"));
             currentMissionIndex = PlayerPrefs.GetInt($"Current{missionType}Mission", 0);
             missionTitleText.text = megaRampMissions[currentMissionIndex].missionName;
@@ -929,7 +929,7 @@ public class MissionManager : MonoBehaviour
         }
         else if (missionType == MissionType.Race)
         {
-            Debug.LogError($"Current{missionType}Mission " +
+            Debug.Log($"Current{missionType}Mission " +
                 PlayerPrefs.GetInt($"Current{missionType}Mission"));
             currentMissionIndex = PlayerPrefs.GetInt($"Current{missionType}Mission", 0);
             missionTitleText.text = raceMissions[currentMissionIndex].missionName;

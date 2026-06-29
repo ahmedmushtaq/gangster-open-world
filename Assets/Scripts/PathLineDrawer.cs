@@ -36,7 +36,7 @@ public class PathLineDrawer : MonoBehaviour
     {
         if (pathManager == null)
         {
-            Debug.LogError("PathLineDrawer: No PathManager assigned!");
+            Debug.Log("PathLineDrawer: No PathManager assigned!");
             lineRenderer.positionCount = 0;
             return;
         }

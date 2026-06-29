@@ -29,7 +29,7 @@ public class MegaRampFinish : MonoBehaviour
 
     public void LevelComplete()
     {
-        Debug.LogError("CAR FULLY PARKED!");
+        Debug.Log("CAR FULLY PARKED!");
         if (MissionManager.Instance != null)
         {
             //car.transform.position = finalPos.transform.position;

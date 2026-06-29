@@ -23,7 +23,7 @@ public class MissionPopUp : MonoBehaviour
 
     public void ShowPopUp()
     {
-        Debug.LogError($"Showing pop-up for mission type: {missionType}");
+        Debug.Log($"Showing pop-up for mission type: {missionType}");
         if (MissionManager.Instance != null)
         {
             MissionManager.Instance.ShowMissionPanel(missionType);

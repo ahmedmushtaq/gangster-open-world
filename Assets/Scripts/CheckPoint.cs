@@ -36,7 +36,7 @@ public class CheckPoint : MonoBehaviour
 
     public void LevelComplete()
     {
-        Debug.LogError("CAR FULLY PARKED!");
+        Debug.Log("CAR FULLY PARKED!");
         if (MissionManager.Instance != null)
         {
             // Get the car controller

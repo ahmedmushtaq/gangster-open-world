@@ -51,7 +51,7 @@ public class ParkingFinish : MonoBehaviour
         triggerCollider = GetComponent<Collider>();
         if (triggerCollider == null || !triggerCollider.isTrigger)
         {
-            Debug.LogError("ParkingFinish: This script requires a Trigger Collider on the same GameObject!");
+            Debug.Log("ParkingFinish: This script requires a Trigger Collider on the same GameObject!");
         }
 
         // Set up the material for color changes
@@ -67,7 +67,7 @@ public class ParkingFinish : MonoBehaviour
         }
         else
         {
-            Debug.LogError("ParkingFinish: No MeshRenderer or Material assigned for visual feedback!");
+            Debug.Log("ParkingFinish: No MeshRenderer or Material assigned for visual feedback!");
         }
 
         // Set initial color (idle/blue)
@@ -166,7 +166,7 @@ public class ParkingFinish : MonoBehaviour
                 if (currentInsideTimer >= requiredInsideTime)
                 {
                     // Timer complete – level success
-                    Debug.LogError("CAR FULLY PARKED!");
+                    Debug.Log("CAR FULLY PARKED!");
                     OnParkingSuccess?.Invoke();
                     OnCarParked();
                     // Reset timer so we don't trigger again
@@ -299,7 +299,7 @@ public class ParkingFinish : MonoBehaviour
 
     public void LevelComplete()
     {
-        Debug.LogError("CAR FULLY PARKED!");
+        Debug.Log("CAR FULLY PARKED!");
         
         if (MissionManager.Instance != null)
         {

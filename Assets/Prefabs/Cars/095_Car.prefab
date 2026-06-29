@@ -212,6 +212,52 @@ MeshRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!1 &401746583637991422
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6013855001165814798}
+  - component: {fileID: 5562941418572330488}
+  m_Layer: 0
+  m_Name: PaintScript
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6013855001165814798
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 401746583637991422}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2202898340352477577}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5562941418572330488
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 401746583637991422}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07efc15361f4e7e428daf8bb7e4e2ea8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RCCV3_Paintable
+  paintMaterial: {fileID: 2100000, guid: 51c7ab3dd9c1ed34bbdf5ccb522d8709, type: 2}
+  propertyName: _PearlColor
 --- !u!1 &402275751809477448
 GameObject:
   m_ObjectHideFlags: 0
@@ -11127,6 +11173,7 @@ GameObject:
   - component: {fileID: 2194982807703976701}
   - component: {fileID: 7785271080463072822}
   - component: {fileID: 31464806567007473}
+  - component: {fileID: 1216538497024372243}
   m_Layer: 13
   m_Name: 095_Car
   m_TagString: Player
@@ -11153,6 +11200,7 @@ Transform:
   - {fileID: 1406705507000126623}
   - {fileID: 6647567615081659967}
   - {fileID: 3690082973881858218}
+  - {fileID: 6013855001165814798}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!54 &2329525295981929368
@@ -11764,10 +11812,10 @@ MonoBehaviour:
   engineClipHighOff: {fileID: 8300000, guid: 8018305de1b557743aa6d2fdd2328698, type: 3}
   engineClipMedOff: {fileID: 8300000, guid: 95418c710083dbc49928bc7650862a80, type: 3}
   engineClipLowOff: {fileID: 8300000, guid: 734d63f4b0cc2f14b950830ce7b09766, type: 3}
-  minEngineSoundPitch: 0.5
-  maxEngineSoundPitch: 1.5
+  minEngineSoundPitch: 0.75
+  maxEngineSoundPitch: 1.75
   minEngineSoundVolume: 0.05
-  maxEngineSoundVolume: 0.5
+  maxEngineSoundVolume: 0.75
   idleEngineSoundVolume: 0.25
   gasInput: 0
   brakeInput: 0
@@ -11864,6 +11912,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1d204e3674d92d46820131cf7f92657, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SickscoreGames.HUDNavigationSystem.HNSPlayerController
+--- !u!114 &1216538497024372243
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3831741602618061249}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a08bd3079f91b446b3044ad5ee79802, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RCCV3_PaintManager
 --- !u!1 &3980025977361377539
 GameObject:
   m_ObjectHideFlags: 0

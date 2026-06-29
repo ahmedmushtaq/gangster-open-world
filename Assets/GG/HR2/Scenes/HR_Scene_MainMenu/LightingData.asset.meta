@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 2cda4b74423648348a8e2b47e108c54b
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 112000000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 292882
+  packageName: Highway Racer 2
+  packageVersion: 1.51
+  assetPath: Assets/HR2/Scenes/HR_Scene_MainMenu/LightingData.asset
+  uploadId: 739365

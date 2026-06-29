@@ -28,7 +28,7 @@ public class JumpFinish : MonoBehaviour
 
     public void LevelComplete()
     {
-        Debug.LogError("CAR FULLY PARKED!");
+        Debug.Log("CAR FULLY PARKED!");
         if (MissionManager.Instance != null && GameManager.Instance != null)
         {
             GameManager.Instance.DestroyandInstantiateCar(finalPos);
